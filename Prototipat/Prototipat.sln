@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prototipat", "Prototipat\Pr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dades", "Dades\Dades.csproj", "{FF6DAA49-93EB-4D8B-8514-D7239A23F6BE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taula_opcions", "Taula_opcions\Taula_opcions.csproj", "{74BF33A0-03FF-4760-BE0C-58AEAE194035}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FF6DAA49-93EB-4D8B-8514-D7239A23F6BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF6DAA49-93EB-4D8B-8514-D7239A23F6BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF6DAA49-93EB-4D8B-8514-D7239A23F6BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{74BF33A0-03FF-4760-BE0C-58AEAE194035}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74BF33A0-03FF-4760-BE0C-58AEAE194035}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74BF33A0-03FF-4760-BE0C-58AEAE194035}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74BF33A0-03FF-4760-BE0C-58AEAE194035}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

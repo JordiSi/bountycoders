@@ -16,5 +16,7 @@ namespace Prototipat
         {
             InitializeComponent();
         }
+
+        //MenuStrip.ControlCollection
     }
 }

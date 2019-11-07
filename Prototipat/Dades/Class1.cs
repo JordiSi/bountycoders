@@ -40,26 +40,26 @@ namespace Dades
             conn.Open();
             SqlCommandBuilder cmdBuilder;
             cmdBuilder = new SqlCommandBuilder(adapter);
-            //DbCommand
             if (dts.HasChanges()) {
                 adapter.Update(dts.Tables[0]);
-                //result = ?
             }
 
             conn.Close();
         }
         public void Executa(string query, DataSet dts)
         {
-            //recoger manualmente (substring) los valores de los nombres de las columnas y los valores a añadir
-            //variable array recogida columnas y variable array recogida valores
             conn.Open();
 
             SqlCommand command = new SqlCommand(query, conn);
             command.CommandType = CommandType.Text;
-            //command.Parameters.AddWithValue("@NOMBRECOLUMNA", VALOR);
             int rows = command.ExecuteNonQuery();
 
             conn.Close();
+        }
+        public void prova()
+        {
+            Prueba frm = new Prueba();
+            frm.ShowDialog();
         }
     }
 }

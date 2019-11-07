@@ -47,6 +47,8 @@
             // 
             // opcio1ToolStripMenuItem
             // 
+            this.opcio1ToolStripMenuItem.Checked = true;
+            this.opcio1ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.opcio1ToolStripMenuItem.Name = "opcio1ToolStripMenuItem";
             this.opcio1ToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
             this.opcio1ToolStripMenuItem.Text = "opcio1";
