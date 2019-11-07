@@ -55,6 +55,7 @@ namespace Prototipat
         {
             Frm_Taula_Opcions frm = new Frm_Taula_Opcions();
             frm.ShowDialog();
+            //
         }
 
     }
