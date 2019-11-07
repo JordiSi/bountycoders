@@ -22,10 +22,5 @@ namespace Dades
             Prueba frm = new Prueba();
             frm.ShowDialog();
         }
-
-        private void Prueba_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
