@@ -1,0 +1,6 @@
+C:\Users\admin\source\repos\Prototipat\Dades\bin\Debug\Dades.dll
+C:\Users\admin\source\repos\Prototipat\Dades\bin\Debug\Dades.pdb
+C:\Users\admin\source\repos\Prototipat\Dades\obj\Debug\Dades.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Prototipat\Dades\obj\Debug\Dades.dll
+C:\Users\admin\source\repos\Prototipat\Dades\obj\Debug\Dades.pdb
+C:\Users\admin\source\repos\Prototipat\Dades\obj\Debug\Dades.csprojAssemblyReference.cache
