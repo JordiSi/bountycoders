@@ -21,6 +21,7 @@ namespace Dades
         {
             Prueba frm = new Prueba();
             frm.ShowDialog();
+            //
         }
     }
 }
