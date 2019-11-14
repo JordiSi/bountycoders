@@ -9,7 +9,6 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Dades;
-
 namespace Prototipat
 {
     public partial class Frm_Taula_Opcions : Form
@@ -57,6 +56,5 @@ namespace Prototipat
             frm.ShowDialog();
             //
         }
-
     }
 }

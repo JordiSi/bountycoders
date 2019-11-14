@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dades", "Dades\Dades.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taula_opcions", "Taula_opcions\Taula_opcions.csproj", "{74BF33A0-03FF-4760-BE0C-58AEAE194035}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls", "CustomControls\CustomControls.csproj", "{39674C44-38C7-48D9-9022-47D7068CB20A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{74BF33A0-03FF-4760-BE0C-58AEAE194035}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74BF33A0-03FF-4760-BE0C-58AEAE194035}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74BF33A0-03FF-4760-BE0C-58AEAE194035}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39674C44-38C7-48D9-9022-47D7068CB20A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39674C44-38C7-48D9-9022-47D7068CB20A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39674C44-38C7-48D9-9022-47D7068CB20A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39674C44-38C7-48D9-9022-47D7068CB20A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
