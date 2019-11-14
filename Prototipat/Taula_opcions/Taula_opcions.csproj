@@ -83,6 +83,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ComboFK\ComboFK.csproj">
+      <Project>{a5af7a37-6e5f-4af6-a04e-31b62083a027}</Project>
+      <Name>ComboFK</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CustomControls\CustomControls.csproj">
       <Project>{39674c44-38c7-48d9-9022-47d7068cb20a}</Project>
       <Name>CustomControls</Name>

@@ -30,24 +30,33 @@ namespace Prototipat
             query = "select * from planets";
             dts = dades.PortarTaula(query);
             dtgUsers.DataSource = dts.Tables[0];
+
+            foreach (Control ctr1 in this.Controls)
+            {
+                if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
+                {
+                    ctr1.DataBindings.Clear();
+                    ctr1.DataBindings.Add("Text", dts.Tables[0], ((CustomControls.SWTextBox)ctr1).CampoBD );
+                }
+            }
         }
 
         private void btn_updateDTG_Click(object sender, EventArgs e)
         {
-            dades.Actualitzar(dts);
+            dades.Actualitzar(query, dts);
         }
 
         private void btn_executeDTG_Click(object sender, EventArgs e)
         {
-            if (Consulta.Text != "")
-            {
-                query = Consulta.Text;
-                dades.Executa(query, dts);
-            }
-            else
-            {
-                MessageBox.Show("Introdueix un valor per la consulta");
-            }
+            //    if (Consulta.Text != "")
+            //    {
+            //        query = Consulta.Text;
+            //        dades.Executa(query, dts);
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Introdueix un valor per la consulta");
+            //    }
         }
         public void prova()
         {
