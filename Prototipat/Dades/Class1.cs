@@ -56,10 +56,5 @@ namespace Dades
 
             conn.Close();
         }
-        public void prova()
-        {
-            Prueba frm = new Prueba();
-            frm.ShowDialog();
-        }
     }
 }

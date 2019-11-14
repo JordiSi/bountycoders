@@ -30,7 +30,6 @@ namespace Prototipat
             query = "select * from planets";
             dts = dades.PortarTaula(query);
             dtgUsers.DataSource = dts.Tables[0];
-            dades.prova();
         }
 
         private void btn_updateDTG_Click(object sender, EventArgs e)
