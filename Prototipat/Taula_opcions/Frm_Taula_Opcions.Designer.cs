@@ -35,8 +35,8 @@
             this.btn_updateDTG = new System.Windows.Forms.Button();
             this.btn_executeDTG = new System.Windows.Forms.Button();
             this.Consulta = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.swTextBox1 = new CustomControls.SWTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,17 +85,18 @@
             this.Consulta.Size = new System.Drawing.Size(413, 34);
             this.Consulta.TabIndex = 5;
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(31, 103);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 6;
-            // 
             // contextMenuStrip1
             // 
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // swTextBox1
+            // 
+            this.swTextBox1.Location = new System.Drawing.Point(45, 95);
+            this.swTextBox1.Name = "swTextBox1";
+            this.swTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.swTextBox1.TabIndex = 6;
+            this.swTextBox1.TipoValor = CustomControls.SWTextBox.TipoDato.Codigo;
             // 
             // Frm_Taula_Opcions
             // 
@@ -103,7 +104,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(960, 516);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.swTextBox1);
             this.Controls.Add(this.Consulta);
             this.Controls.Add(this.btn_executeDTG);
             this.Controls.Add(this.btn_updateDTG);
@@ -123,7 +124,7 @@
         private System.Windows.Forms.Button btn_updateDTG;
         private System.Windows.Forms.Button btn_executeDTG;
         private System.Windows.Forms.TextBox Consulta;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        public CustomControls.SWTextBox swTextBox1;
     }
 }
