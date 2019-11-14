@@ -28,14 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Taula_Opcions));
             this.dtgUsers = new System.Windows.Forms.DataGridView();
             this.btn_loadDTG = new System.Windows.Forms.Button();
             this.btn_updateDTG = new System.Windows.Forms.Button();
             this.btn_executeDTG = new System.Windows.Forms.Button();
             this.Consulta = new System.Windows.Forms.TextBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.swTextBox1 = new CustomControls.SWTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsers)).BeginInit();
             this.SuspendLayout();
@@ -85,13 +83,11 @@
             this.Consulta.Size = new System.Drawing.Size(413, 34);
             this.Consulta.TabIndex = 5;
             // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
-            // 
             // swTextBox1
             // 
+            this.swTextBox1.CampoBD = null;
+            this.swTextBox1.Foranea = false;
+            this.swTextBox1.Llenar = false;
             this.swTextBox1.Location = new System.Drawing.Point(45, 95);
             this.swTextBox1.Name = "swTextBox1";
             this.swTextBox1.Size = new System.Drawing.Size(100, 20);
@@ -124,7 +120,6 @@
         private System.Windows.Forms.Button btn_updateDTG;
         private System.Windows.Forms.Button btn_executeDTG;
         private System.Windows.Forms.TextBox Consulta;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
         public CustomControls.SWTextBox swTextBox1;
     }
 }
