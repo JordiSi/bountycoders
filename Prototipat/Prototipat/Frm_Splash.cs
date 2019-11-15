@@ -25,7 +25,7 @@ namespace Prototipat
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (progressBar1.Value != 100)
+            if (progressBar1.Value < 100)
             {
                 progressBar1.Value++;
                 label1.Text = progressBar1.Value.ToString() + "%";

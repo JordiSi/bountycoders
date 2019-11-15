@@ -51,12 +51,5 @@ namespace Prototipat
                 MessageBox.Show("Introdueix un valor per la consulta");
             }
         }
-        public void prova()
-        {
-            Frm_Taula_Opcions frm = new Frm_Taula_Opcions();
-            frm.ShowDialog();
-            //
-        }
-
     }
 }

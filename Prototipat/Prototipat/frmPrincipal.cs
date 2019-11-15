@@ -17,6 +17,14 @@ namespace Prototipat
             InitializeComponent();
         }
 
-        //MenuStrip.ControlCollection
-    }
+		private void opcio1ToolStripMenuItem_Click(object sender,EventArgs e) {
+
+		}
+
+		private void frmPrincipal_FormClosing(object sender,FormClosingEventArgs e) {
+			 Environment.Exit(0);
+		}
+
+		//MenuStrip.ControlCollection
+	}
 }

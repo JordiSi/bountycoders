@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Prototipat
 {
-    public partial class Form1 : Form
+    public partial class Form1: Form
     {
         private string user = "bountycoders", password = "12345aA";
         public Form1()
