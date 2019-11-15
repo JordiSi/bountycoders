@@ -230,7 +230,7 @@
             // comboBoxFK1
             // 
             this.comboBoxFK1.FormattingEnabled = true;
-            this.comboBoxFK1.Location = new System.Drawing.Point(457, 132);
+            this.comboBoxFK1.Location = new System.Drawing.Point(457, 131);
             this.comboBoxFK1.Name = "comboBoxFK1";
             this.comboBoxFK1.Size = new System.Drawing.Size(100, 21);
             this.comboBoxFK1.TabIndex = 22;
@@ -238,9 +238,9 @@
             // comboBoxFK2
             // 
             this.comboBoxFK2.FormattingEnabled = true;
-            this.comboBoxFK2.Location = new System.Drawing.Point(663, 132);
+            this.comboBoxFK2.Location = new System.Drawing.Point(662, 131);
             this.comboBoxFK2.Name = "comboBoxFK2";
-            this.comboBoxFK2.Size = new System.Drawing.Size(99, 21);
+            this.comboBoxFK2.Size = new System.Drawing.Size(100, 21);
             this.comboBoxFK2.TabIndex = 23;
             // 
             // Frm_Taula_Opcions
