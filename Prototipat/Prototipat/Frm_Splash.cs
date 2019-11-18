@@ -11,9 +11,9 @@ using Taula_opcions;
 
 namespace Prototipat
 {
-    public partial class Splash : Form
+    public partial class Form_splash : Form
     {
-        public Splash()
+        public Form_splash()
         {
             InitializeComponent();
         }
@@ -33,9 +33,9 @@ namespace Prototipat
             else
             {
                 timer1.Stop();
-                Frm_Taula_Opcions frm = new Frm_Taula_Opcions();
-                this.Hide();
+                Form_principal frm = new Form_principal();
                 frm.Show();
+                this.Hide();
             }
             
         }

@@ -11,13 +11,13 @@ using System.Data.SqlClient;
 using Dades;
 namespace Prototipat
 {
-    public partial class Frm_Taula_Opcions : Form
+    public partial class Form_taulaOpcions : Form
     {
         private string query;
         private DataSet dts;
         private Dades.Class1 dades;
 
-        public Frm_Taula_Opcions()
+        public Form_taulaOpcions()
         {
             InitializeComponent();
 
@@ -60,9 +60,9 @@ namespace Prototipat
         }
         public void prova()
         {
-            Frm_Taula_Opcions frm = new Frm_Taula_Opcions();
+            Form_taulaOpcions frm = new Form_taulaOpcions();
             frm.ShowDialog();
             //
         }
-    }
+	}
 }

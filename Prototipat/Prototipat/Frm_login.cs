@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace Prototipat
 {
-    public partial class Form1: Form
+    public partial class Form_login: Form
     {
         private string user = "bountycoders", password = "12345aA";
-        public Form1()
+        public Form_login()
         {
             InitializeComponent();
         }
@@ -62,18 +62,18 @@ namespace Prototipat
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Splash frm = new Splash();
-            this.Hide();
+            Form_splash frm = new Form_splash();
             frm.Show();
+            this.Hide();
         }
 
         private void login_Click(object sender, EventArgs e)
         {
             if (txt_user.Text == user && txt_password.Text == password)
             {
-                Splash frm = new Splash();
-                this.Hide();
+                Form_splash frm = new Form_splash();
                 frm.Show();
+                this.Hide();
             }
             else {
                 MessageBox.Show("Login incorrecte");

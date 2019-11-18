@@ -1,6 +1,6 @@
 ﻿namespace Prototipat
 {
-    partial class Form1
+    partial class Form_login
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_login));
 			this.label3 = new System.Windows.Forms.Label();
 			this.txt_password = new System.Windows.Forms.TextBox();
 			this.txt_user = new System.Windows.Forms.TextBox();
@@ -108,7 +108,7 @@
 			this.button1.UseVisualStyleBackColor = true;
 			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
-			// Form1
+			// Form_login
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -123,7 +123,7 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.label1);
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-			this.Name = "Form1";
+			this.Name = "Form_login";
 			this.Text = "Login";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			this.ResumeLayout(false);
