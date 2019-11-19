@@ -24,6 +24,8 @@ namespace Dades
 
         public DataSet PortarTaula(string query)
         {
+            Connectar();
+
             conn.Open();
             adapter = new SqlDataAdapter(query, conn);
 
