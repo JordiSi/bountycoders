@@ -46,17 +46,20 @@
             this.TB_Long = new CustomControls.SWTextBox();
             this.TB_DescPlanet = new CustomControls.SWTextBox();
             this.TB_CodePlanet = new CustomControls.SWTextBox();
-            this.CB_IdSector = new ComboFK.ComboBoxFK();
-            this.CB_IdFiliation = new ComboFK.ComboBoxFK();
-            this.CB_IdNatives = new ComboFK.ComboBoxFK();
             this.TB_IdSector = new CustomControls.SWTextBox();
             this.TB_IdNatives = new CustomControls.SWTextBox();
             this.TB_IdFiliation = new CustomControls.SWTextBox();
+            this.CB_IdSector = new ComboFK.ComboBoxFK();
+            this.CB_IdFiliation = new ComboFK.ComboBoxFK();
+            this.CB_IdNatives = new ComboFK.ComboBoxFK();
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsers)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgUsers
             // 
+            this.dtgUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgUsers.Location = new System.Drawing.Point(12, 184);
             this.dtgUsers.Name = "dtgUsers";
@@ -219,6 +222,39 @@
             this.TB_CodePlanet.TabIndex = 6;
             this.TB_CodePlanet.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
             // 
+            // TB_IdSector
+            // 
+            this.TB_IdSector.CampoBD = "idSector";
+            this.TB_IdSector.Foranea = true;
+            this.TB_IdSector.Llenar = false;
+            this.TB_IdSector.Location = new System.Drawing.Point(563, 88);
+            this.TB_IdSector.Name = "TB_IdSector";
+            this.TB_IdSector.Size = new System.Drawing.Size(39, 20);
+            this.TB_IdSector.TabIndex = 25;
+            this.TB_IdSector.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            // 
+            // TB_IdNatives
+            // 
+            this.TB_IdNatives.CampoBD = "idNatives";
+            this.TB_IdNatives.Foranea = true;
+            this.TB_IdNatives.Llenar = false;
+            this.TB_IdNatives.Location = new System.Drawing.Point(564, 131);
+            this.TB_IdNatives.Name = "TB_IdNatives";
+            this.TB_IdNatives.Size = new System.Drawing.Size(38, 20);
+            this.TB_IdNatives.TabIndex = 26;
+            this.TB_IdNatives.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            // 
+            // TB_IdFiliation
+            // 
+            this.TB_IdFiliation.CampoBD = "idFiliation";
+            this.TB_IdFiliation.Foranea = true;
+            this.TB_IdFiliation.Llenar = false;
+            this.TB_IdFiliation.Location = new System.Drawing.Point(779, 131);
+            this.TB_IdFiliation.Name = "TB_IdFiliation";
+            this.TB_IdFiliation.Size = new System.Drawing.Size(38, 20);
+            this.TB_IdFiliation.TabIndex = 27;
+            this.TB_IdFiliation.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            // 
             // CB_IdSector
             // 
             this.CB_IdSector.controlID = "TB_IdSector";
@@ -255,43 +291,9 @@
             this.CB_IdNatives.taulaBD = "Species";
             this.CB_IdNatives.ValueMember = "IdSpecie";
             // 
-            // TB_IdSector
-            // 
-            this.TB_IdSector.CampoBD = "idSector";
-            this.TB_IdSector.Foranea = true;
-            this.TB_IdSector.Llenar = false;
-            this.TB_IdSector.Location = new System.Drawing.Point(563, 88);
-            this.TB_IdSector.Name = "TB_IdSector";
-            this.TB_IdSector.Size = new System.Drawing.Size(39, 20);
-            this.TB_IdSector.TabIndex = 25;
-            this.TB_IdSector.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
-            // 
-            // TB_IdNatives
-            // 
-            this.TB_IdNatives.CampoBD = "idNatives";
-            this.TB_IdNatives.Foranea = true;
-            this.TB_IdNatives.Llenar = false;
-            this.TB_IdNatives.Location = new System.Drawing.Point(564, 131);
-            this.TB_IdNatives.Name = "TB_IdNatives";
-            this.TB_IdNatives.Size = new System.Drawing.Size(38, 20);
-            this.TB_IdNatives.TabIndex = 26;
-            this.TB_IdNatives.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
-            // 
-            // TB_IdFiliation
-            // 
-            this.TB_IdFiliation.CampoBD = "idFiliation";
-            this.TB_IdFiliation.Foranea = true;
-            this.TB_IdFiliation.Llenar = false;
-            this.TB_IdFiliation.Location = new System.Drawing.Point(779, 131);
-            this.TB_IdFiliation.Name = "TB_IdFiliation";
-            this.TB_IdFiliation.Size = new System.Drawing.Size(38, 20);
-            this.TB_IdFiliation.TabIndex = 27;
-            this.TB_IdFiliation.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
-            // 
             // Form_taulaOpcions
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(960, 516);

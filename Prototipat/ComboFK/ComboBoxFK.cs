@@ -57,7 +57,21 @@ namespace ComboFK
         {
             //this.parent.controls
             //fer for each amb lo de adalt
+            foreach (Control ctr1 in this.Parent.Controls)
+            {
+                if (ctr1.GetType() == typeof(ComboFK.ComboBoxFK))
+                {
+                    foreach(Control ctr2 in this.Parent.Controls)
+                    {
+                        if ((((ComboFK.ComboBoxFK)ctr1).controlID).Equals(((CustomControls.SWTextBox)ctr2).Name))
+                        {
+                             ((ComboFK.ComboBoxFK)ctr1).SelectedValue = ((CustomControls.SWTextBox)ctr2).Text;
+                        }
+                            
+                    }
+                }
 
+            }
 
         }
 

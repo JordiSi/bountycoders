@@ -40,13 +40,13 @@ namespace Prototipat
 					ctr1.DataBindings.Add("Text", dts.Tables[0], ((CustomControls.SWTextBox)ctr1).CampoBD);
 				}
 
-                if (ctr1.GetType() == typeof(ComboFK.ComboBoxFK))
-                {
-                    ((ComboFK.ComboBoxFK)ctr1).CarregaDades();
-                }
+				if (ctr1.GetType() == typeof(ComboFK.ComboBoxFK))
+				{
+					((ComboFK.ComboBoxFK)ctr1).CarregaDades();
+				}
 
 
-            }
+			}
 
 		}
 
