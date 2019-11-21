@@ -32,7 +32,7 @@
             this.dtgUsers = new System.Windows.Forms.DataGridView();
             this.btn_loadDTG = new System.Windows.Forms.Button();
             this.btn_updateDTG = new System.Windows.Forms.Button();
-            this.btn_executeDTG = new System.Windows.Forms.Button();
+            this.btn_Nou = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -84,16 +84,19 @@
             this.btn_updateDTG.TabIndex = 3;
             this.btn_updateDTG.Text = "UPDATE";
             this.btn_updateDTG.UseVisualStyleBackColor = true;
+            this.btn_updateDTG.Visible = false;
             this.btn_updateDTG.Click += new System.EventHandler(this.btn_updateDTG_Click);
             // 
-            // btn_executeDTG
+            // btn_Nou
             // 
-            this.btn_executeDTG.Location = new System.Drawing.Point(323, 23);
-            this.btn_executeDTG.Name = "btn_executeDTG";
-            this.btn_executeDTG.Size = new System.Drawing.Size(100, 33);
-            this.btn_executeDTG.TabIndex = 4;
-            this.btn_executeDTG.Text = "EXECUTE";
-            this.btn_executeDTG.UseVisualStyleBackColor = true;
+            this.btn_Nou.Location = new System.Drawing.Point(323, 23);
+            this.btn_Nou.Name = "btn_Nou";
+            this.btn_Nou.Size = new System.Drawing.Size(100, 33);
+            this.btn_Nou.TabIndex = 4;
+            this.btn_Nou.Text = "NOU";
+            this.btn_Nou.UseVisualStyleBackColor = true;
+            this.btn_Nou.Visible = false;
+            this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
             // 
             // label1
             // 
@@ -103,6 +106,7 @@
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 14;
             this.label1.Text = "CodePlanet";
+            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -112,6 +116,7 @@
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 15;
             this.label2.Text = "DescPlanet";
+            this.label2.Visible = false;
             // 
             // label3
             // 
@@ -121,6 +126,7 @@
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 16;
             this.label3.Text = "idSector";
+            this.label3.Visible = false;
             // 
             // label4
             // 
@@ -130,6 +136,7 @@
             this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 17;
             this.label4.Text = "long";
+            this.label4.Visible = false;
             // 
             // label5
             // 
@@ -139,6 +146,7 @@
             this.label5.Size = new System.Drawing.Size(18, 13);
             this.label5.TabIndex = 18;
             this.label5.Text = "lat";
+            this.label5.Visible = false;
             // 
             // label6
             // 
@@ -148,6 +156,7 @@
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 19;
             this.label6.Text = "parsecs";
+            this.label6.Visible = false;
             // 
             // label7
             // 
@@ -157,6 +166,7 @@
             this.label7.Size = new System.Drawing.Size(51, 13);
             this.label7.TabIndex = 20;
             this.label7.Text = "idNatives";
+            this.label7.Visible = false;
             // 
             // label8
             // 
@@ -166,6 +176,7 @@
             this.label8.Size = new System.Drawing.Size(50, 13);
             this.label8.TabIndex = 21;
             this.label8.Text = "idFiliation";
+            this.label8.Visible = false;
             // 
             // TB_Parsecs
             // 
@@ -177,6 +188,7 @@
             this.TB_Parsecs.Size = new System.Drawing.Size(100, 20);
             this.TB_Parsecs.TabIndex = 11;
             this.TB_Parsecs.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_Parsecs.Visible = false;
             // 
             // TB_Lat
             // 
@@ -188,6 +200,7 @@
             this.TB_Lat.Size = new System.Drawing.Size(100, 20);
             this.TB_Lat.TabIndex = 10;
             this.TB_Lat.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_Lat.Visible = false;
             // 
             // TB_Long
             // 
@@ -199,6 +212,7 @@
             this.TB_Long.Size = new System.Drawing.Size(100, 20);
             this.TB_Long.TabIndex = 9;
             this.TB_Long.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_Long.Visible = false;
             // 
             // TB_DescPlanet
             // 
@@ -210,6 +224,7 @@
             this.TB_DescPlanet.Size = new System.Drawing.Size(100, 20);
             this.TB_DescPlanet.TabIndex = 7;
             this.TB_DescPlanet.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_DescPlanet.Visible = false;
             // 
             // TB_CodePlanet
             // 
@@ -221,6 +236,7 @@
             this.TB_CodePlanet.Size = new System.Drawing.Size(100, 20);
             this.TB_CodePlanet.TabIndex = 6;
             this.TB_CodePlanet.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
+            this.TB_CodePlanet.Visible = false;
             // 
             // TB_IdSector
             // 
@@ -233,6 +249,7 @@
             this.TB_IdSector.Size = new System.Drawing.Size(39, 20);
             this.TB_IdSector.TabIndex = 25;
             this.TB_IdSector.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_IdSector.Visible = false;
             // 
             // TB_IdNatives
             // 
@@ -245,6 +262,7 @@
             this.TB_IdNatives.Size = new System.Drawing.Size(38, 20);
             this.TB_IdNatives.TabIndex = 26;
             this.TB_IdNatives.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_IdNatives.Visible = false;
             // 
             // TB_IdFiliation
             // 
@@ -257,6 +275,7 @@
             this.TB_IdFiliation.Size = new System.Drawing.Size(38, 20);
             this.TB_IdFiliation.TabIndex = 27;
             this.TB_IdFiliation.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_IdFiliation.Visible = false;
             // 
             // CB_IdSector
             // 
@@ -269,6 +288,7 @@
             this.CB_IdSector.TabIndex = 24;
             this.CB_IdSector.taulaBD = "Sectors";
             this.CB_IdSector.ValueMember = "IdSector";
+            this.CB_IdSector.Visible = false;
             // 
             // CB_IdFiliation
             // 
@@ -281,6 +301,7 @@
             this.CB_IdFiliation.TabIndex = 23;
             this.CB_IdFiliation.taulaBD = "Filiations";
             this.CB_IdFiliation.ValueMember = "idFiliation";
+            this.CB_IdFiliation.Visible = false;
             // 
             // CB_IdNatives
             // 
@@ -293,6 +314,7 @@
             this.CB_IdNatives.TabIndex = 22;
             this.CB_IdNatives.taulaBD = "Species";
             this.CB_IdNatives.ValueMember = "IdSpecie";
+            this.CB_IdNatives.Visible = false;
             // 
             // Form_taulaOpcions
             // 
@@ -319,7 +341,7 @@
             this.Controls.Add(this.TB_Long);
             this.Controls.Add(this.TB_DescPlanet);
             this.Controls.Add(this.TB_CodePlanet);
-            this.Controls.Add(this.btn_executeDTG);
+            this.Controls.Add(this.btn_Nou);
             this.Controls.Add(this.btn_updateDTG);
             this.Controls.Add(this.btn_loadDTG);
             this.Controls.Add(this.dtgUsers);
@@ -336,7 +358,7 @@
         private System.Windows.Forms.DataGridView dtgUsers;
         private System.Windows.Forms.Button btn_loadDTG;
         private System.Windows.Forms.Button btn_updateDTG;
-        private System.Windows.Forms.Button btn_executeDTG;
+        private System.Windows.Forms.Button btn_Nou;
         public CustomControls.SWTextBox TB_CodePlanet;
         private CustomControls.SWTextBox TB_DescPlanet;
         private CustomControls.SWTextBox TB_Long;

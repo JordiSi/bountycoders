@@ -28,7 +28,12 @@ namespace Prototipat
 
 		private void btn_loadDTG_Click(object sender, EventArgs e)
 		{
-			query = "select * from planets";
+            foreach (Control ctr in this.Controls)
+            {
+                ctr.Visible = true;
+            }
+
+            query = "select * from planets";
 			dts = dades.PortarTaula(query);
 			dtgUsers.DataSource = dts.Tables[0];
 
@@ -55,23 +60,26 @@ namespace Prototipat
 			dades.Actualitzar(query, dts);
 		}
 
-		private void btn_executeDTG_Click(object sender, EventArgs e)
-		{
-			//    if (Consulta.Text != "")
-			//    {
-			//        query = Consulta.Text;
-			//        dades.Executa(query, dts);
-			//    }
-			//    else
-			//    {
-			//        MessageBox.Show("Introdueix un valor per la consulta");
-			//    }
-		}
+		//private void btn_executedtg_click(object sender, eventargs e)
+		//{
+  //          dades.executa(dts);
+  //      }
 		public void prova()
 		{
 			Form_taulaOpcions frm = new Form_taulaOpcions();
 			frm.ShowDialog();
 		}
 
+        private void btn_Nou_Click(object sender, EventArgs e)
+        {
+
+            foreach (Control ctr1 in this.Controls)
+            {
+                if(!((ctr1.GetType() == btn_updateDTG.GetType()) || (ctr1.GetType() == label1.GetType()))){
+                    ctr1.DataBindings.Clear();
+                    ctr1.Text = "";
+                }
+            }
+        }
     }
 	}

@@ -49,15 +49,16 @@ namespace Dades
 
             conn.Close();
         }
-        public void Executa(string query, DataSet dts)
-        {
-            conn.Open();
+        //public void executa(dataset dts)
+        //{
+        //    conn.open();
+        //    //string query = "insert into planets"
 
-            SqlCommand command = new SqlCommand(query, conn);
-            command.CommandType = CommandType.Text;
-            int rows = command.ExecuteNonQuery();
+        //    //sqlcommand command = new sqlcommand(query, conn);
+        //    //command.commandtype = commandtype.text;
+        //    //int rows = command.executenonquery();
 
-            conn.Close();
-        }
+        //    //conn.close();
+        //}
     }
 }
