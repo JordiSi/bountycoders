@@ -225,6 +225,7 @@
             // TB_IdSector
             // 
             this.TB_IdSector.CampoBD = "idSector";
+            this.TB_IdSector.Enabled = false;
             this.TB_IdSector.Foranea = true;
             this.TB_IdSector.Llenar = false;
             this.TB_IdSector.Location = new System.Drawing.Point(563, 88);
@@ -236,6 +237,7 @@
             // TB_IdNatives
             // 
             this.TB_IdNatives.CampoBD = "idNatives";
+            this.TB_IdNatives.Enabled = false;
             this.TB_IdNatives.Foranea = true;
             this.TB_IdNatives.Llenar = false;
             this.TB_IdNatives.Location = new System.Drawing.Point(564, 131);
@@ -247,6 +249,7 @@
             // TB_IdFiliation
             // 
             this.TB_IdFiliation.CampoBD = "idFiliation";
+            this.TB_IdFiliation.Enabled = false;
             this.TB_IdFiliation.Foranea = true;
             this.TB_IdFiliation.Llenar = false;
             this.TB_IdFiliation.Location = new System.Drawing.Point(779, 131);

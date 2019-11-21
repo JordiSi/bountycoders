@@ -72,5 +72,6 @@ namespace Prototipat
 			Form_taulaOpcions frm = new Form_taulaOpcions();
 			frm.ShowDialog();
 		}
-		}
+
+    }
 	}

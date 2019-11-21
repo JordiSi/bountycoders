@@ -55,17 +55,18 @@ namespace ComboFK
 
         private void ComboBoxFK_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            //this.parent.controls
-            //fer for each amb lo de adalt
             foreach (Control ctr1 in this.Parent.Controls)
             {
-                if (ctr1.GetType() == typeof(ComboFK.ComboBoxFK))
+                if (ctr1.GetType() == typeof(ComboBoxFK))
                 {
                     foreach(Control ctr2 in this.Parent.Controls)
                     {
-                        if ((((ComboFK.ComboBoxFK)ctr1).controlID).Equals(((CustomControls.SWTextBox)ctr2).Name))
+                        if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
                         {
-                             ((ComboFK.ComboBoxFK)ctr1).SelectedValue = ((CustomControls.SWTextBox)ctr2).Text;
+                            if (((ComboBoxFK)ctr1).controlID == ((CustomControls.SWTextBox)ctr2).Name)
+                            {
+                                ((CustomControls.SWTextBox)ctr2).Text = ((ComboBoxFK)ctr1).SelectedValue.ToString();
+                            }
                         }
                             
                     }
