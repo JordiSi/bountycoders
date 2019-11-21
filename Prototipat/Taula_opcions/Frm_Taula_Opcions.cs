@@ -28,12 +28,12 @@ namespace Prototipat
 
 		private void btn_loadDTG_Click(object sender, EventArgs e)
 		{
-            foreach (Control ctr in this.Controls)
-            {
-                ctr.Visible = true;
-            }
+			foreach (Control ctr in this.Controls)
+			{
+				ctr.Visible = true;
+			}
 
-            query = "select * from planets";
+			query = "select * from planets";
 			dts = dades.PortarTaula(query);
 			dtgUsers.DataSource = dts.Tables[0];
 
@@ -70,16 +70,16 @@ namespace Prototipat
 			frm.ShowDialog();
 		}
 
-        private void btn_Nou_Click(object sender, EventArgs e)
-        {
+		private void btn_Nou_Click(object sender, EventArgs e)
+		{
 
-            foreach (Control ctr1 in this.Controls)
-            {
-                if(!((ctr1.GetType() == btn_updateDTG.GetType()) || (ctr1.GetType() == label1.GetType()))){
-                    ctr1.DataBindings.Clear();
-                    ctr1.Text = "";
-                }
-            }
-        }
-    }
+			foreach (Control ctr1 in this.Controls)
+			{
+				if(!((ctr1.GetType() == btn_updateDTG.GetType()) || (ctr1.GetType() == label1.GetType()))){
+					ctr1.DataBindings.Clear();
+					ctr1.Text = "";
+				}
+			}
+		}
+	}
 	}

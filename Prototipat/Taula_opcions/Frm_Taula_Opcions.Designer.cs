@@ -68,33 +68,36 @@
             // 
             // btn_loadDTG
             // 
+            this.btn_loadDTG.BackColor = System.Drawing.Color.Gold;
             this.btn_loadDTG.Location = new System.Drawing.Point(31, 22);
             this.btn_loadDTG.Name = "btn_loadDTG";
             this.btn_loadDTG.Size = new System.Drawing.Size(100, 33);
             this.btn_loadDTG.TabIndex = 2;
             this.btn_loadDTG.Text = "LOAD";
-            this.btn_loadDTG.UseVisualStyleBackColor = true;
+            this.btn_loadDTG.UseVisualStyleBackColor = false;
             this.btn_loadDTG.Click += new System.EventHandler(this.btn_loadDTG_Click);
             // 
             // btn_updateDTG
             // 
+            this.btn_updateDTG.BackColor = System.Drawing.Color.Gold;
             this.btn_updateDTG.Location = new System.Drawing.Point(174, 23);
             this.btn_updateDTG.Name = "btn_updateDTG";
             this.btn_updateDTG.Size = new System.Drawing.Size(100, 32);
             this.btn_updateDTG.TabIndex = 3;
             this.btn_updateDTG.Text = "UPDATE";
-            this.btn_updateDTG.UseVisualStyleBackColor = true;
+            this.btn_updateDTG.UseVisualStyleBackColor = false;
             this.btn_updateDTG.Visible = false;
             this.btn_updateDTG.Click += new System.EventHandler(this.btn_updateDTG_Click);
             // 
             // btn_Nou
             // 
+            this.btn_Nou.BackColor = System.Drawing.Color.Gold;
             this.btn_Nou.Location = new System.Drawing.Point(323, 23);
             this.btn_Nou.Name = "btn_Nou";
             this.btn_Nou.Size = new System.Drawing.Size(100, 33);
             this.btn_Nou.TabIndex = 4;
             this.btn_Nou.Text = "NOU";
-            this.btn_Nou.UseVisualStyleBackColor = true;
+            this.btn_Nou.UseVisualStyleBackColor = false;
             this.btn_Nou.Visible = false;
             this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
             // 
