@@ -226,7 +226,7 @@
             this.TB_DescPlanet.Name = "TB_DescPlanet";
             this.TB_DescPlanet.Size = new System.Drawing.Size(100, 20);
             this.TB_DescPlanet.TabIndex = 7;
-            this.TB_DescPlanet.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_DescPlanet.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
             this.TB_DescPlanet.Visible = false;
             // 
             // TB_CodePlanet
@@ -247,7 +247,7 @@
             this.TB_IdSector.Enabled = false;
             this.TB_IdSector.Foranea = true;
             this.TB_IdSector.Llenar = false;
-            this.TB_IdSector.Location = new System.Drawing.Point(563, 88);
+            this.TB_IdSector.Location = new System.Drawing.Point(518, 88);
             this.TB_IdSector.Name = "TB_IdSector";
             this.TB_IdSector.Size = new System.Drawing.Size(39, 20);
             this.TB_IdSector.TabIndex = 25;
@@ -260,7 +260,7 @@
             this.TB_IdNatives.Enabled = false;
             this.TB_IdNatives.Foranea = true;
             this.TB_IdNatives.Llenar = false;
-            this.TB_IdNatives.Location = new System.Drawing.Point(564, 131);
+            this.TB_IdNatives.Location = new System.Drawing.Point(519, 131);
             this.TB_IdNatives.Name = "TB_IdNatives";
             this.TB_IdNatives.Size = new System.Drawing.Size(38, 20);
             this.TB_IdNatives.TabIndex = 26;
@@ -273,7 +273,7 @@
             this.TB_IdFiliation.Enabled = false;
             this.TB_IdFiliation.Foranea = true;
             this.TB_IdFiliation.Llenar = false;
-            this.TB_IdFiliation.Location = new System.Drawing.Point(779, 131);
+            this.TB_IdFiliation.Location = new System.Drawing.Point(735, 131);
             this.TB_IdFiliation.Name = "TB_IdFiliation";
             this.TB_IdFiliation.Size = new System.Drawing.Size(38, 20);
             this.TB_IdFiliation.TabIndex = 27;
@@ -325,12 +325,12 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(960, 516);
+            this.Controls.Add(this.CB_IdNatives);
+            this.Controls.Add(this.CB_IdFiliation);
+            this.Controls.Add(this.CB_IdSector);
             this.Controls.Add(this.TB_IdFiliation);
             this.Controls.Add(this.TB_IdNatives);
             this.Controls.Add(this.TB_IdSector);
-            this.Controls.Add(this.CB_IdSector);
-            this.Controls.Add(this.CB_IdFiliation);
-            this.Controls.Add(this.CB_IdNatives);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
