@@ -69,9 +69,9 @@
             // btn_loadDTG
             // 
             this.btn_loadDTG.BackColor = System.Drawing.Color.Gold;
-            this.btn_loadDTG.Location = new System.Drawing.Point(31, 22);
+            this.btn_loadDTG.Location = new System.Drawing.Point(32, 49);
             this.btn_loadDTG.Name = "btn_loadDTG";
-            this.btn_loadDTG.Size = new System.Drawing.Size(100, 33);
+            this.btn_loadDTG.Size = new System.Drawing.Size(100, 32);
             this.btn_loadDTG.TabIndex = 2;
             this.btn_loadDTG.Text = "LOAD";
             this.btn_loadDTG.UseVisualStyleBackColor = false;
@@ -80,7 +80,7 @@
             // btn_updateDTG
             // 
             this.btn_updateDTG.BackColor = System.Drawing.Color.Gold;
-            this.btn_updateDTG.Location = new System.Drawing.Point(174, 23);
+            this.btn_updateDTG.Location = new System.Drawing.Point(174, 50);
             this.btn_updateDTG.Name = "btn_updateDTG";
             this.btn_updateDTG.Size = new System.Drawing.Size(100, 32);
             this.btn_updateDTG.TabIndex = 3;
@@ -92,9 +92,9 @@
             // btn_Nou
             // 
             this.btn_Nou.BackColor = System.Drawing.Color.Gold;
-            this.btn_Nou.Location = new System.Drawing.Point(323, 23);
+            this.btn_Nou.Location = new System.Drawing.Point(319, 50);
             this.btn_Nou.Name = "btn_Nou";
-            this.btn_Nou.Size = new System.Drawing.Size(100, 33);
+            this.btn_Nou.Size = new System.Drawing.Size(100, 32);
             this.btn_Nou.TabIndex = 4;
             this.btn_Nou.Text = "NOU";
             this.btn_Nou.UseVisualStyleBackColor = false;
@@ -285,7 +285,7 @@
             this.CB_IdSector.controlID = "TB_IdSector";
             this.CB_IdSector.DisplayMember = "DescSector";
             this.CB_IdSector.FormattingEnabled = true;
-            this.CB_IdSector.Location = new System.Drawing.Point(458, 88);
+            this.CB_IdSector.Location = new System.Drawing.Point(458, 61);
             this.CB_IdSector.Name = "CB_IdSector";
             this.CB_IdSector.Size = new System.Drawing.Size(99, 21);
             this.CB_IdSector.TabIndex = 24;
@@ -348,6 +348,7 @@
             this.Controls.Add(this.btn_updateDTG);
             this.Controls.Add(this.btn_loadDTG);
             this.Controls.Add(this.dtgUsers);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_taulaOpcions";
             this.Text = "Taula";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

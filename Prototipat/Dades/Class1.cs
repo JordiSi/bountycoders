@@ -60,5 +60,9 @@ namespace Dades
 
         //    //conn.close();
         //}
+        public void crear (DataSet dts)
+        {
+            
+        }
     }
 }

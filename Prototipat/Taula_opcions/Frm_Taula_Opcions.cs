@@ -75,11 +75,12 @@ namespace Prototipat
 
 			foreach (Control ctr1 in this.Controls)
 			{
-				if(!((ctr1.GetType() == btn_updateDTG.GetType()) || (ctr1.GetType() == label1.GetType()))){
+				if(!((ctr1.GetType() == btn_updateDTG.GetType()) || (ctr1.GetType() == label1.GetType())|| (ctr1.GetType() == CB_IdFiliation.GetType()))){
 					ctr1.DataBindings.Clear();
 					ctr1.Text = "";
 				}
 			}
+
 		}
 	}
 	}
