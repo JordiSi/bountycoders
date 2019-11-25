@@ -16,6 +16,7 @@ namespace Dades
         private SqlDataAdapter adapter;
         private SqlConnection conn;
 
+
         public void Connectar()
         {
             string cnx = "Server = bountycoders.database.windows.net; Database = BountyCoders; User Id = bountycoders; Password = 123456aA;";
@@ -39,6 +40,7 @@ namespace Dades
 
         public void Actualitzar(string query, DataSet dts)
         {
+            Connectar();
             conn.Open();
             adapter = new SqlDataAdapter(query, conn);
             SqlCommandBuilder cmdBuilder;
@@ -60,9 +62,5 @@ namespace Dades
 
         //    //conn.close();
         //}
-        public void crear (DataSet dts)
-        {
-            
-        }
     }
 }

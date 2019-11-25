@@ -45,7 +45,7 @@ namespace ComboFK
 
         public void CarregaDades()
         {
-            string query = "select* from " + this.taulaBD;
+            string query = "select * from " + this.taulaBD;
             DataSet dts = new DataSet();
 
             dts = dades.PortarTaula(query);
