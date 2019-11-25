@@ -41,17 +41,17 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.CB_IdNatives = new ComboFK.ComboBoxFK();
+            this.CB_IdFiliation = new ComboFK.ComboBoxFK();
+            this.CB_IdSector = new ComboFK.ComboBoxFK();
+            this.TB_IdFiliation = new CustomControls.SWTextBox();
+            this.TB_IdNatives = new CustomControls.SWTextBox();
+            this.TB_IdSector = new CustomControls.SWTextBox();
             this.TB_Parsecs = new CustomControls.SWTextBox();
             this.TB_Lat = new CustomControls.SWTextBox();
             this.TB_Long = new CustomControls.SWTextBox();
             this.TB_DescPlanet = new CustomControls.SWTextBox();
             this.TB_CodePlanet = new CustomControls.SWTextBox();
-            this.TB_IdSector = new CustomControls.SWTextBox();
-            this.TB_IdNatives = new CustomControls.SWTextBox();
-            this.TB_IdFiliation = new CustomControls.SWTextBox();
-            this.CB_IdSector = new ComboFK.ComboBoxFK();
-            this.CB_IdFiliation = new ComboFK.ComboBoxFK();
-            this.CB_IdNatives = new ComboFK.ComboBoxFK();
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsers)).BeginInit();
             this.SuspendLayout();
             // 
@@ -181,6 +181,84 @@
             this.label8.Text = "idFiliation";
             this.label8.Visible = false;
             // 
+            // CB_IdNatives
+            // 
+            this.CB_IdNatives.controlID = "TB_IdNatives";
+            this.CB_IdNatives.DisplayMember = "DescSpecie";
+            this.CB_IdNatives.FormattingEnabled = true;
+            this.CB_IdNatives.Location = new System.Drawing.Point(457, 131);
+            this.CB_IdNatives.Name = "CB_IdNatives";
+            this.CB_IdNatives.Size = new System.Drawing.Size(100, 21);
+            this.CB_IdNatives.TabIndex = 22;
+            this.CB_IdNatives.taulaBD = "Species";
+            this.CB_IdNatives.ValueMember = "IdSpecie";
+            this.CB_IdNatives.Visible = false;
+            // 
+            // CB_IdFiliation
+            // 
+            this.CB_IdFiliation.controlID = "TB_IdFiliation";
+            this.CB_IdFiliation.DisplayMember = "DescFiliations";
+            this.CB_IdFiliation.FormattingEnabled = true;
+            this.CB_IdFiliation.Location = new System.Drawing.Point(673, 131);
+            this.CB_IdFiliation.Name = "CB_IdFiliation";
+            this.CB_IdFiliation.Size = new System.Drawing.Size(100, 21);
+            this.CB_IdFiliation.TabIndex = 23;
+            this.CB_IdFiliation.taulaBD = "Filiations";
+            this.CB_IdFiliation.ValueMember = "idFiliation";
+            this.CB_IdFiliation.Visible = false;
+            // 
+            // CB_IdSector
+            // 
+            this.CB_IdSector.controlID = "TB_IdSector";
+            this.CB_IdSector.DisplayMember = "DescSector";
+            this.CB_IdSector.FormattingEnabled = true;
+            this.CB_IdSector.Location = new System.Drawing.Point(458, 88);
+            this.CB_IdSector.Name = "CB_IdSector";
+            this.CB_IdSector.Size = new System.Drawing.Size(99, 21);
+            this.CB_IdSector.TabIndex = 24;
+            this.CB_IdSector.taulaBD = "Sectors";
+            this.CB_IdSector.ValueMember = "IdSector";
+            this.CB_IdSector.Visible = false;
+            // 
+            // TB_IdFiliation
+            // 
+            this.TB_IdFiliation.CampoBD = "idFiliation";
+            this.TB_IdFiliation.Enabled = false;
+            this.TB_IdFiliation.Foranea = true;
+            this.TB_IdFiliation.Llenar = false;
+            this.TB_IdFiliation.Location = new System.Drawing.Point(735, 131);
+            this.TB_IdFiliation.Name = "TB_IdFiliation";
+            this.TB_IdFiliation.Size = new System.Drawing.Size(38, 20);
+            this.TB_IdFiliation.TabIndex = 27;
+            this.TB_IdFiliation.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_IdFiliation.Visible = false;
+            // 
+            // TB_IdNatives
+            // 
+            this.TB_IdNatives.CampoBD = "idNatives";
+            this.TB_IdNatives.Enabled = false;
+            this.TB_IdNatives.Foranea = true;
+            this.TB_IdNatives.Llenar = false;
+            this.TB_IdNatives.Location = new System.Drawing.Point(519, 131);
+            this.TB_IdNatives.Name = "TB_IdNatives";
+            this.TB_IdNatives.Size = new System.Drawing.Size(38, 20);
+            this.TB_IdNatives.TabIndex = 26;
+            this.TB_IdNatives.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_IdNatives.Visible = false;
+            // 
+            // TB_IdSector
+            // 
+            this.TB_IdSector.CampoBD = "idSector";
+            this.TB_IdSector.Enabled = false;
+            this.TB_IdSector.Foranea = true;
+            this.TB_IdSector.Llenar = false;
+            this.TB_IdSector.Location = new System.Drawing.Point(518, 88);
+            this.TB_IdSector.Name = "TB_IdSector";
+            this.TB_IdSector.Size = new System.Drawing.Size(39, 20);
+            this.TB_IdSector.TabIndex = 25;
+            this.TB_IdSector.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.TB_IdSector.Visible = false;
+            // 
             // TB_Parsecs
             // 
             this.TB_Parsecs.CampoBD = "parsecs";
@@ -241,84 +319,6 @@
             this.TB_CodePlanet.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
             this.TB_CodePlanet.Visible = false;
             // 
-            // TB_IdSector
-            // 
-            this.TB_IdSector.CampoBD = "idSector";
-            this.TB_IdSector.Enabled = false;
-            this.TB_IdSector.Foranea = true;
-            this.TB_IdSector.Llenar = false;
-            this.TB_IdSector.Location = new System.Drawing.Point(518, 88);
-            this.TB_IdSector.Name = "TB_IdSector";
-            this.TB_IdSector.Size = new System.Drawing.Size(39, 20);
-            this.TB_IdSector.TabIndex = 25;
-            this.TB_IdSector.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
-            this.TB_IdSector.Visible = false;
-            // 
-            // TB_IdNatives
-            // 
-            this.TB_IdNatives.CampoBD = "idNatives";
-            this.TB_IdNatives.Enabled = false;
-            this.TB_IdNatives.Foranea = true;
-            this.TB_IdNatives.Llenar = false;
-            this.TB_IdNatives.Location = new System.Drawing.Point(519, 131);
-            this.TB_IdNatives.Name = "TB_IdNatives";
-            this.TB_IdNatives.Size = new System.Drawing.Size(38, 20);
-            this.TB_IdNatives.TabIndex = 26;
-            this.TB_IdNatives.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
-            this.TB_IdNatives.Visible = false;
-            // 
-            // TB_IdFiliation
-            // 
-            this.TB_IdFiliation.CampoBD = "idFiliation";
-            this.TB_IdFiliation.Enabled = false;
-            this.TB_IdFiliation.Foranea = true;
-            this.TB_IdFiliation.Llenar = false;
-            this.TB_IdFiliation.Location = new System.Drawing.Point(735, 131);
-            this.TB_IdFiliation.Name = "TB_IdFiliation";
-            this.TB_IdFiliation.Size = new System.Drawing.Size(38, 20);
-            this.TB_IdFiliation.TabIndex = 27;
-            this.TB_IdFiliation.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
-            this.TB_IdFiliation.Visible = false;
-            // 
-            // CB_IdSector
-            // 
-            this.CB_IdSector.controlID = "TB_IdSector";
-            this.CB_IdSector.DisplayMember = "DescSector";
-            this.CB_IdSector.FormattingEnabled = true;
-            this.CB_IdSector.Location = new System.Drawing.Point(458, 61);
-            this.CB_IdSector.Name = "CB_IdSector";
-            this.CB_IdSector.Size = new System.Drawing.Size(99, 21);
-            this.CB_IdSector.TabIndex = 24;
-            this.CB_IdSector.taulaBD = "Sectors";
-            this.CB_IdSector.ValueMember = "IdSector";
-            this.CB_IdSector.Visible = false;
-            // 
-            // CB_IdFiliation
-            // 
-            this.CB_IdFiliation.controlID = "TB_IdFiliation";
-            this.CB_IdFiliation.DisplayMember = "DescFiliations";
-            this.CB_IdFiliation.FormattingEnabled = true;
-            this.CB_IdFiliation.Location = new System.Drawing.Point(673, 131);
-            this.CB_IdFiliation.Name = "CB_IdFiliation";
-            this.CB_IdFiliation.Size = new System.Drawing.Size(100, 21);
-            this.CB_IdFiliation.TabIndex = 23;
-            this.CB_IdFiliation.taulaBD = "Filiations";
-            this.CB_IdFiliation.ValueMember = "idFiliation";
-            this.CB_IdFiliation.Visible = false;
-            // 
-            // CB_IdNatives
-            // 
-            this.CB_IdNatives.controlID = "TB_IdNatives";
-            this.CB_IdNatives.DisplayMember = "DescSpecie";
-            this.CB_IdNatives.FormattingEnabled = true;
-            this.CB_IdNatives.Location = new System.Drawing.Point(457, 131);
-            this.CB_IdNatives.Name = "CB_IdNatives";
-            this.CB_IdNatives.Size = new System.Drawing.Size(100, 21);
-            this.CB_IdNatives.TabIndex = 22;
-            this.CB_IdNatives.taulaBD = "Species";
-            this.CB_IdNatives.ValueMember = "IdSpecie";
-            this.CB_IdNatives.Visible = false;
-            // 
             // Form_taulaOpcions
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -350,6 +350,7 @@
             this.Controls.Add(this.dtgUsers);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form_taulaOpcions";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Taula";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.dtgUsers)).EndInit();
