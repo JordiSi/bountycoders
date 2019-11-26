@@ -164,7 +164,7 @@
             this.CB_IdNatives.controlID = "TB_IdNatives";
             this.CB_IdNatives.DisplayMember = "DescSpecie";
             this.CB_IdNatives.FormattingEnabled = true;
-            this.CB_IdNatives.Location = new System.Drawing.Point(457, 131);
+            this.CB_IdNatives.Location = new System.Drawing.Point(458, 144);
             this.CB_IdNatives.Name = "CB_IdNatives";
             this.CB_IdNatives.Size = new System.Drawing.Size(100, 21);
             this.CB_IdNatives.TabIndex = 22;
@@ -188,7 +188,7 @@
             this.CB_IdSector.controlID = "TB_IdSector";
             this.CB_IdSector.DisplayMember = "DescSector";
             this.CB_IdSector.FormattingEnabled = true;
-            this.CB_IdSector.Location = new System.Drawing.Point(458, 89);
+            this.CB_IdSector.Location = new System.Drawing.Point(458, 70);
             this.CB_IdSector.Name = "CB_IdSector";
             this.CB_IdSector.Size = new System.Drawing.Size(99, 21);
             this.CB_IdSector.TabIndex = 24;

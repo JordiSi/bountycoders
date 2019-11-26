@@ -15,10 +15,16 @@ namespace Prototipat
 {
 	public partial class Form_taulaOpcions : Form
 	{
-		private DataSet dts;
-		private Dades.Class1 dades;
+        DataRow row;
+        private DataSet dts;
+        private Dades.Class1 dades;
         string query = "select * from planets";
-        DataColumn column;
+        private string _taula;
+        public string taula
+        {
+            get { return _taula; }
+            set { _taula = value; }
+        }
 
         public Form_taulaOpcions()
 		{
@@ -35,12 +41,12 @@ namespace Prototipat
 		{
 
             btn_updateDTG.Text = "UPDATE";
-            dades.Actualitzar(query, dts);
-            carregarCamps();
             if (btn_Nou.Visible == false)
             {
                 crear();
             }
+            carregarCamps();
+            dades.Actualitzar(query, dts);
             btn_Nou.Visible = true;
         }
         private void btn_Nou_Click(object sender, EventArgs e)
@@ -54,37 +60,32 @@ namespace Prototipat
                 }
             }
             btn_Nou.Visible = false;
+            ControlCombo();
+            
 
         }
 
         private void crear()
         {
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
+            row = dts.Tables[0].NewRow();
+            //for (int i = 0; i < 2; i++) {
+                foreach (Control ctr1 in this.Controls)
                 {
-                    column = new DataColumn();
-                    column.ColumnName = ((CustomControls.SWTextBox)ctr1).CampoBD;
-                    dts.Tables[1].Columns.Add(column);
-                }
-                if (ctr1.GetType() == typeof(ComboFK.ComboBoxFK))
-                {
-                    column = new DataColumn();
-                    foreach(Control ctr2 in this.Controls)
+                    //if (ctr1.GetType() == typeof(CustomControls.SWTextBox) && i == 0)
+                    //{
+                    //    column = new DataColumn();
+                    //    column.ColumnName = ((CustomControls.SWTextBox)ctr1).CampoBD;
+                    //    table.Columns.Add(column);
+                    //}
+                    if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
                     {
-                        if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
-                        {
-                            if (((ComboBoxFK)ctr1).controlID == ((CustomControls.SWTextBox)ctr2).Name)
-                            {
-                                column.ColumnName = ((CustomControls.SWTextBox)ctr2).CampoBD;
-                            }
-                        }
+                        row[((CustomControls.SWTextBox)ctr1).CampoBD] = ctr1.Text;
                     }
-
-                    dts.Tables[0].Columns.Add(column);
-                    dtgUsers.DataSource = dts.Tables[0];
                 }
-            }
+            //}
+            dts.Tables[0].Rows.Add(row);
+            //dts.Tables[0].Columns.Add(column);
+            dtgUsers.DataSource = dts.Tables[0];
 
 
         }
@@ -106,6 +107,29 @@ namespace Prototipat
 
             }
         }
+
+        private void ControlCombo()
+        {
+            foreach (Control ctr1 in this.Controls)
+            {
+                if (ctr1.GetType() == typeof(ComboBoxFK))
+                {
+                    foreach (Control ctr2 in this.Controls)
+                    {
+                        if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
+                        {
+                            if (((ComboBoxFK)ctr1).controlID == ((CustomControls.SWTextBox)ctr2).Name)
+                            {
+                                ((CustomControls.SWTextBox)ctr2).Text = ((ComboBoxFK)ctr1).SelectedValue.ToString();
+                            }
+                        }
+
+                    }
+                }
+
+            }
+        }
+
 
         public void prova()
         {

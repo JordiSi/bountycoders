@@ -52,28 +52,23 @@ namespace ComboFK
             this.DataSource = dts.Tables[0];
         }
 
-
-        private void ComboBoxFK_SelectionChangeCommitted(object sender, EventArgs e)
+        private void ControlCombo()
         {
-            foreach (Control ctr1 in this.Parent.Controls)
+            foreach (Control ctr2 in this.Parent.Controls)
             {
-                if (ctr1.GetType() == typeof(ComboBoxFK))
+                if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
                 {
-                    foreach(Control ctr2 in this.Parent.Controls)
+                    if (this.controlID == ((CustomControls.SWTextBox)ctr2).Name)
                     {
-                        if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
-                        {
-                            if (((ComboBoxFK)ctr1).controlID == ((CustomControls.SWTextBox)ctr2).Name)
-                            {
-                                ((CustomControls.SWTextBox)ctr2).Text = ((ComboBoxFK)ctr1).SelectedValue.ToString();
-                            }
-                        }
-                            
+                        ((CustomControls.SWTextBox)ctr2).Text = this.SelectedValue.ToString();
                     }
                 }
-
-            }
-
+                        
+            } 
+        }
+        private void ComboBoxFK_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            ControlCombo();
         }
 
     }
