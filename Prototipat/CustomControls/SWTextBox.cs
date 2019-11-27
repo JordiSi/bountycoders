@@ -35,8 +35,6 @@ namespace CustomControls
             set { _Foranea = value; }
         }
 
-
-
         private TipoDato _TipoValor;
         private string _CampoBD;
         private bool _Llenar;
@@ -56,9 +54,6 @@ namespace CustomControls
         private void InitializeComponent()
         {
             this.SuspendLayout();
-            // 
-            // SWTextBox
-            // 
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SWTextBox_KeyPress);
             this.Leave += new System.EventHandler(this.SWTextBox_Leave);
             this.Enter += new System.EventHandler(this.SWTextBox_Enter);

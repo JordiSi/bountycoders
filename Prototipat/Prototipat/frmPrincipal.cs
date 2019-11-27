@@ -36,7 +36,5 @@ namespace Prototipat
             frm.Show();
             this.Hide();
 		}
-
-		//MenuStrip.ControlCollection
 	}
 }

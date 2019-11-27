@@ -16,7 +16,6 @@ namespace Dades
         private SqlDataAdapter adapter;
         private SqlConnection conn;
 
-
         public void Connectar()
         {
             string cnx = "Server = bountycoders.database.windows.net; Database = BountyCoders; User Id = bountycoders; Password = 123456aA;";
@@ -26,41 +25,28 @@ namespace Dades
         public DataSet PortarTaula(string query)
         {
             Connectar();
-
             conn.Open();
             adapter = new SqlDataAdapter(query, conn);
-
             DataSet dts = new DataSet();
             adapter.Fill(dts);
-
             conn.Close();
-
             return dts;
         }
 
         public void Actualitzar(string query, DataSet dts)
         {
+            //int res=0;
             Connectar();
             conn.Open();
             adapter = new SqlDataAdapter(query, conn);
             SqlCommandBuilder cmdBuilder;
             cmdBuilder = new SqlCommandBuilder(adapter);
-            if (dts.HasChanges()) {
+            if (dts.HasChanges())
+            {
                 adapter.Update(dts.Tables[0]);
             }
-
             conn.Close();
+            //return res;
         }
-        //public void executa(dataset dts)
-        //{
-        //    conn.open();
-        //    //string query = "insert into planets"
-
-        //    //sqlcommand command = new sqlcommand(query, conn);
-        //    //command.commandtype = commandtype.text;
-        //    //int rows = command.executenonquery();
-
-        //    //conn.close();
-        //}
     }
 }

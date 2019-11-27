@@ -37,7 +37,6 @@ namespace Prototipat
                 frm.Show();
                 this.Hide();
             }
-            
         }
     }
 }

@@ -15,26 +15,18 @@ namespace Prototipat
 {
 	public partial class Form_taulaOpcions : Form
 	{
-        DataRow row;
+        private DataRow row;
         private DataSet dts;
-        private Dades.Class1 dades;
+        private Class1 dades;
         string query = "select * from planets";
-        private string _taula;
-        public string taula
-        {
-            get { return _taula; }
-            set { _taula = value; }
-        }
 
         public Form_taulaOpcions()
 		{
 			InitializeComponent();
-
 			dades = new Dades.Class1();
             dts = dades.PortarTaula(query);
             dtgUsers.DataSource = dts.Tables[0];
             carregarCamps();
-
         }
 
 		private void btn_updateDTG_Click(object sender, EventArgs e)
@@ -47,6 +39,7 @@ namespace Prototipat
             }
             carregarCamps();
             dades.Actualitzar(query, dts);
+            //MessageBox.Show(res + " Valores Cambiados");
             btn_Nou.Visible = true;
         }
         private void btn_Nou_Click(object sender, EventArgs e)
@@ -68,26 +61,15 @@ namespace Prototipat
         private void crear()
         {
             row = dts.Tables[0].NewRow();
-            //for (int i = 0; i < 2; i++) {
                 foreach (Control ctr1 in this.Controls)
                 {
-                    //if (ctr1.GetType() == typeof(CustomControls.SWTextBox) && i == 0)
-                    //{
-                    //    column = new DataColumn();
-                    //    column.ColumnName = ((CustomControls.SWTextBox)ctr1).CampoBD;
-                    //    table.Columns.Add(column);
-                    //}
                     if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
                     {
                         row[((CustomControls.SWTextBox)ctr1).CampoBD] = ctr1.Text;
                     }
                 }
-            //}
             dts.Tables[0].Rows.Add(row);
-            //dts.Tables[0].Columns.Add(column);
             dtgUsers.DataSource = dts.Tables[0];
-
-
         }
 
         private void carregarCamps()
@@ -129,12 +111,5 @@ namespace Prototipat
 
             }
         }
-
-
-        public void prova()
-        {
-            Form_taulaOpcions frm = new Form_taulaOpcions();
-            frm.ShowDialog();
-        }
     }
-	}
+}
