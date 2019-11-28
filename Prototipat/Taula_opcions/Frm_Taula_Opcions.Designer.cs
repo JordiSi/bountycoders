@@ -288,7 +288,7 @@
             // Form_taulaOpcions
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackgroundImage = global::Taula_opcions.Properties.Resources.Eclipse_0;
+            this.BackgroundImage = global::Taula_opcions.Properties.Resources.HVE5bi;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(960, 516);
             this.Controls.Add(this.CB_IdNatives);

@@ -96,7 +96,9 @@
       <Name>Dades</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\HVE5bi.jpg" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Eclipse-0.jpg" />
   </ItemGroup>

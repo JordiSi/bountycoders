@@ -68,5 +68,8 @@
   <ItemGroup>
     <None Include="Resources\Eclipse-0.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kosmos-tumannost-zvezdy-7332.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
