@@ -71,5 +71,19 @@
   <ItemGroup>
     <None Include="Resources\kosmos-tumannost-zvezdy-7332.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ComboFK\ComboFK.csproj">
+      <Project>{a5af7a37-6e5f-4af6-a04e-31b62083a027}</Project>
+      <Name>ComboFK</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CustomControls\CustomControls.csproj">
+      <Project>{39674c44-38c7-48d9-9022-47d7068cb20a}</Project>
+      <Name>CustomControls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Dades\Dades.csproj">
+      <Project>{ff6daa49-93eb-4d8b-8514-d7239a23f6be}</Project>
+      <Name>Dades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
