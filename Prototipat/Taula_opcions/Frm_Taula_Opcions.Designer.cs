@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_taulaOpcions));
             this.dtgUsers = new System.Windows.Forms.DataGridView();
             this.btn_updateDTG = new System.Windows.Forms.Button();
             this.btn_Nou = new System.Windows.Forms.Button();
@@ -289,7 +288,7 @@
             // Form_taulaOpcions
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImage = global::Taula_opcions.Properties.Resources.Eclipse_0;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(960, 516);
             this.Controls.Add(this.CB_IdNatives);

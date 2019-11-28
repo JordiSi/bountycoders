@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls", "CustomCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComboFK", "ComboFK\ComboFK.csproj", "{A5AF7A37-6E5F-4AF6-A04E-31B62083A027}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "Base\Base.csproj", "{FDD8C3B6-B722-4731-8FB8-B93982400B05}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A5AF7A37-6E5F-4AF6-A04E-31B62083A027}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A5AF7A37-6E5F-4AF6-A04E-31B62083A027}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A5AF7A37-6E5F-4AF6-A04E-31B62083A027}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDD8C3B6-B722-4731-8FB8-B93982400B05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDD8C3B6-B722-4731-8FB8-B93982400B05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDD8C3B6-B722-4731-8FB8-B93982400B05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDD8C3B6-B722-4731-8FB8-B93982400B05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
