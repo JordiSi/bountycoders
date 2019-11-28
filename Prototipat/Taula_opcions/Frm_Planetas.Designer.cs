@@ -1,16 +1,16 @@
-﻿namespace Base
+﻿namespace Taula_opcions
 {
-    partial class frm_Base
+    partial class Frm_Planetas
     {
         /// <summary>
-        /// Required designer variable.
+        /// Variable del diseñador necesaria.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
         /// <summary>
-        /// Clean up any resources being used.
+        /// Limpiar los recursos que se estén usando.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        /// <param name="disposing">true si los recursos administrados se deben desechar; false en caso contrario.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -20,11 +20,11 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
+        #region Código generado por el Diseñador de Windows Forms
 
         /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
+        /// Método necesario para admitir el Diseñador. No se puede modificar
+        /// el contenido de este método con el editor de código.
         /// </summary>
         private void InitializeComponent()
         {
@@ -47,10 +47,6 @@
             this.TB_Long = new CustomControls.SWTextBox();
             this.TB_DescPlanet = new CustomControls.SWTextBox();
             this.TB_CodePlanet = new CustomControls.SWTextBox();
-            this.btn_Nou = new System.Windows.Forms.Button();
-            this.btn_updateDTG = new System.Windows.Forms.Button();
-            this.dtgUsers = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgUsers)).BeginInit();
             this.SuspendLayout();
             // 
             // CB_IdNatives
@@ -58,7 +54,7 @@
             this.CB_IdNatives.controlID = "TB_IdNatives";
             this.CB_IdNatives.DisplayMember = "DescSpecie";
             this.CB_IdNatives.FormattingEnabled = true;
-            this.CB_IdNatives.Location = new System.Drawing.Point(458, 126);
+            this.CB_IdNatives.Location = new System.Drawing.Point(463, 122);
             this.CB_IdNatives.Name = "CB_IdNatives";
             this.CB_IdNatives.Size = new System.Drawing.Size(100, 21);
             this.CB_IdNatives.TabIndex = 44;
@@ -70,7 +66,7 @@
             this.CB_IdFiliation.controlID = "TB_IdFiliation";
             this.CB_IdFiliation.DisplayMember = "DescFiliations";
             this.CB_IdFiliation.FormattingEnabled = true;
-            this.CB_IdFiliation.Location = new System.Drawing.Point(650, 113);
+            this.CB_IdFiliation.Location = new System.Drawing.Point(655, 122);
             this.CB_IdFiliation.Name = "CB_IdFiliation";
             this.CB_IdFiliation.Size = new System.Drawing.Size(100, 21);
             this.CB_IdFiliation.TabIndex = 45;
@@ -82,7 +78,7 @@
             this.CB_IdSector.controlID = "TB_IdSector";
             this.CB_IdSector.DisplayMember = "DescSector";
             this.CB_IdSector.FormattingEnabled = true;
-            this.CB_IdSector.Location = new System.Drawing.Point(458, 52);
+            this.CB_IdSector.Location = new System.Drawing.Point(463, 79);
             this.CB_IdSector.Name = "CB_IdSector";
             this.CB_IdSector.Size = new System.Drawing.Size(99, 21);
             this.CB_IdSector.TabIndex = 46;
@@ -95,7 +91,7 @@
             this.TB_IdFiliation.Enabled = false;
             this.TB_IdFiliation.Foranea = true;
             this.TB_IdFiliation.Llenar = false;
-            this.TB_IdFiliation.Location = new System.Drawing.Point(712, 113);
+            this.TB_IdFiliation.Location = new System.Drawing.Point(717, 122);
             this.TB_IdFiliation.Name = "TB_IdFiliation";
             this.TB_IdFiliation.Size = new System.Drawing.Size(38, 20);
             this.TB_IdFiliation.TabIndex = 49;
@@ -107,7 +103,7 @@
             this.TB_IdNatives.Enabled = false;
             this.TB_IdNatives.Foranea = true;
             this.TB_IdNatives.Llenar = false;
-            this.TB_IdNatives.Location = new System.Drawing.Point(519, 113);
+            this.TB_IdNatives.Location = new System.Drawing.Point(524, 122);
             this.TB_IdNatives.Name = "TB_IdNatives";
             this.TB_IdNatives.Size = new System.Drawing.Size(38, 20);
             this.TB_IdNatives.TabIndex = 48;
@@ -119,7 +115,7 @@
             this.TB_IdSector.Enabled = false;
             this.TB_IdSector.Foranea = true;
             this.TB_IdSector.Llenar = false;
-            this.TB_IdSector.Location = new System.Drawing.Point(518, 70);
+            this.TB_IdSector.Location = new System.Drawing.Point(523, 79);
             this.TB_IdSector.Name = "TB_IdSector";
             this.TB_IdSector.Size = new System.Drawing.Size(39, 20);
             this.TB_IdSector.TabIndex = 47;
@@ -128,7 +124,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(594, 117);
+            this.label8.Location = new System.Drawing.Point(599, 126);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(50, 13);
             this.label8.TabIndex = 43;
@@ -137,7 +133,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(400, 117);
+            this.label7.Location = new System.Drawing.Point(405, 126);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(51, 13);
             this.label7.TabIndex = 42;
@@ -146,7 +142,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(234, 116);
+            this.label6.Location = new System.Drawing.Point(239, 125);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 13);
             this.label6.TabIndex = 41;
@@ -155,7 +151,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(68, 117);
+            this.label5.Location = new System.Drawing.Point(73, 126);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(18, 13);
             this.label5.TabIndex = 40;
@@ -164,7 +160,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(617, 73);
+            this.label4.Location = new System.Drawing.Point(622, 82);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 39;
@@ -173,7 +169,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(405, 73);
+            this.label3.Location = new System.Drawing.Point(410, 82);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 38;
@@ -182,7 +178,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(216, 73);
+            this.label2.Location = new System.Drawing.Point(221, 82);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 13);
             this.label2.TabIndex = 37;
@@ -191,7 +187,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(24, 74);
+            this.label1.Location = new System.Drawing.Point(29, 83);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(62, 13);
             this.label1.TabIndex = 36;
@@ -202,7 +198,7 @@
             this.TB_Parsecs.CampoBD = "parsecs";
             this.TB_Parsecs.Foranea = false;
             this.TB_Parsecs.Llenar = false;
-            this.TB_Parsecs.Location = new System.Drawing.Point(284, 114);
+            this.TB_Parsecs.Location = new System.Drawing.Point(289, 123);
             this.TB_Parsecs.Name = "TB_Parsecs";
             this.TB_Parsecs.Size = new System.Drawing.Size(100, 20);
             this.TB_Parsecs.TabIndex = 35;
@@ -213,7 +209,7 @@
             this.TB_Lat.CampoBD = "lat";
             this.TB_Lat.Foranea = false;
             this.TB_Lat.Llenar = false;
-            this.TB_Lat.Location = new System.Drawing.Point(92, 114);
+            this.TB_Lat.Location = new System.Drawing.Point(97, 123);
             this.TB_Lat.Name = "TB_Lat";
             this.TB_Lat.Size = new System.Drawing.Size(100, 20);
             this.TB_Lat.TabIndex = 34;
@@ -224,7 +220,7 @@
             this.TB_Long.CampoBD = "long";
             this.TB_Long.Foranea = false;
             this.TB_Long.Llenar = false;
-            this.TB_Long.Location = new System.Drawing.Point(650, 70);
+            this.TB_Long.Location = new System.Drawing.Point(655, 79);
             this.TB_Long.Name = "TB_Long";
             this.TB_Long.Size = new System.Drawing.Size(100, 20);
             this.TB_Long.TabIndex = 33;
@@ -235,7 +231,7 @@
             this.TB_DescPlanet.CampoBD = "DescPlanet";
             this.TB_DescPlanet.Foranea = false;
             this.TB_DescPlanet.Llenar = false;
-            this.TB_DescPlanet.Location = new System.Drawing.Point(284, 70);
+            this.TB_DescPlanet.Location = new System.Drawing.Point(289, 79);
             this.TB_DescPlanet.Name = "TB_DescPlanet";
             this.TB_DescPlanet.Size = new System.Drawing.Size(100, 20);
             this.TB_DescPlanet.TabIndex = 32;
@@ -246,49 +242,15 @@
             this.TB_CodePlanet.CampoBD = "CodePlanet";
             this.TB_CodePlanet.Foranea = false;
             this.TB_CodePlanet.Llenar = false;
-            this.TB_CodePlanet.Location = new System.Drawing.Point(92, 70);
+            this.TB_CodePlanet.Location = new System.Drawing.Point(97, 79);
             this.TB_CodePlanet.Name = "TB_CodePlanet";
             this.TB_CodePlanet.Size = new System.Drawing.Size(100, 20);
             this.TB_CodePlanet.TabIndex = 31;
             this.TB_CodePlanet.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
             // 
-            // btn_Nou
-            // 
-            this.btn_Nou.BackColor = System.Drawing.Color.Gold;
-            this.btn_Nou.Location = new System.Drawing.Point(147, 31);
-            this.btn_Nou.Name = "btn_Nou";
-            this.btn_Nou.Size = new System.Drawing.Size(100, 32);
-            this.btn_Nou.TabIndex = 30;
-            this.btn_Nou.Text = "NOU";
-            this.btn_Nou.UseVisualStyleBackColor = false;
-            // 
-            // btn_updateDTG
-            // 
-            this.btn_updateDTG.BackColor = System.Drawing.Color.Gold;
-            this.btn_updateDTG.Location = new System.Drawing.Point(27, 31);
-            this.btn_updateDTG.Name = "btn_updateDTG";
-            this.btn_updateDTG.Size = new System.Drawing.Size(100, 32);
-            this.btn_updateDTG.TabIndex = 29;
-            this.btn_updateDTG.Text = "UPDATE";
-            this.btn_updateDTG.UseVisualStyleBackColor = false;
-            // 
-            // dtgUsers
-            // 
-            this.dtgUsers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtgUsers.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgUsers.Location = new System.Drawing.Point(12, 166);
-            this.dtgUsers.Name = "dtgUsers";
-            this.dtgUsers.Size = new System.Drawing.Size(936, 320);
-            this.dtgUsers.TabIndex = 28;
-            // 
-            // frm_Base
+            // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::Base.Properties.Resources.kosmos_tumannost_zvezdy_7332;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(960, 516);
             this.Controls.Add(this.CB_IdNatives);
             this.Controls.Add(this.CB_IdFiliation);
@@ -309,15 +271,27 @@
             this.Controls.Add(this.TB_Long);
             this.Controls.Add(this.TB_DescPlanet);
             this.Controls.Add(this.TB_CodePlanet);
-            this.Controls.Add(this.btn_Nou);
-            this.Controls.Add(this.btn_updateDTG);
-            this.Controls.Add(this.dtgUsers);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_Base";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_Base";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            ((System.ComponentModel.ISupportInitialize)(this.dtgUsers)).EndInit();
+            this.Location = new System.Drawing.Point(0, 0);
+            this.Name = "Form1";
+            this.Controls.SetChildIndex(this.TB_CodePlanet, 0);
+            this.Controls.SetChildIndex(this.TB_DescPlanet, 0);
+            this.Controls.SetChildIndex(this.TB_Long, 0);
+            this.Controls.SetChildIndex(this.TB_Lat, 0);
+            this.Controls.SetChildIndex(this.TB_Parsecs, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
+            this.Controls.SetChildIndex(this.label5, 0);
+            this.Controls.SetChildIndex(this.label6, 0);
+            this.Controls.SetChildIndex(this.label7, 0);
+            this.Controls.SetChildIndex(this.label8, 0);
+            this.Controls.SetChildIndex(this.TB_IdSector, 0);
+            this.Controls.SetChildIndex(this.TB_IdNatives, 0);
+            this.Controls.SetChildIndex(this.TB_IdFiliation, 0);
+            this.Controls.SetChildIndex(this.CB_IdSector, 0);
+            this.Controls.SetChildIndex(this.CB_IdFiliation, 0);
+            this.Controls.SetChildIndex(this.CB_IdNatives, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -344,8 +318,5 @@
         private CustomControls.SWTextBox TB_Long;
         private CustomControls.SWTextBox TB_DescPlanet;
         public CustomControls.SWTextBox TB_CodePlanet;
-        private System.Windows.Forms.Button btn_Nou;
-        private System.Windows.Forms.Button btn_updateDTG;
-        private System.Windows.Forms.DataGridView dtgUsers;
     }
 }
