@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Planetes;
 
 namespace Prototipat
 {
@@ -18,7 +19,7 @@ namespace Prototipat
         }
 
 		private void opcio1ToolStripMenuItem_Click(object sender,EventArgs e) {
-			Form_taulaOpcions frm = new Form_taulaOpcions();
+			frm_Planetes  frm = new frm_Planetes();
 			frm.MdiParent = this;
             frm.Show();
 		}

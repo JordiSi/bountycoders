@@ -102,6 +102,10 @@
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Base\Base.csproj">
+      <Project>{fdd8c3b6-b722-4731-8fb8-b93982400b05}</Project>
+      <Name>Base</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ComboFK\ComboFK.csproj">
       <Project>{a5af7a37-6e5f-4af6-a04e-31b62083a027}</Project>
       <Name>ComboFK</Name>
@@ -113,6 +117,10 @@
     <ProjectReference Include="..\Dades\Dades.csproj">
       <Project>{ff6daa49-93eb-4d8b-8514-d7239a23f6be}</Project>
       <Name>Dades</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Planetes\Planetes.csproj">
+      <Project>{132397ba-33c1-41b1-96a6-e0a6589d4f02}</Project>
+      <Name>Planetes</Name>
     </ProjectReference>
     <ProjectReference Include="..\Taula_opcions\Taula_opcions.csproj">
       <Project>{74bf33a0-03ff-4760-be0c-58aeae194035}</Project>

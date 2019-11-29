@@ -73,7 +73,6 @@
             this.btn_updateDTG.TabIndex = 3;
             this.btn_updateDTG.Text = "UPDATE";
             this.btn_updateDTG.UseVisualStyleBackColor = false;
-            this.btn_updateDTG.Click += new System.EventHandler(this.btn_updateDTG_Click);
             // 
             // btn_Nou
             // 
@@ -84,7 +83,6 @@
             this.btn_Nou.TabIndex = 4;
             this.btn_Nou.Text = "NOU";
             this.btn_Nou.UseVisualStyleBackColor = false;
-            this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
             // 
             // label1
             // 
