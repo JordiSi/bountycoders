@@ -8,5 +8,6 @@ namespace Taula_opcions
 {
     class classe
     {
+        private void metode2() { }
     }
 }
