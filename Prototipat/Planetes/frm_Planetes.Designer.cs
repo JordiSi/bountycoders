@@ -98,6 +98,7 @@
             this.TB_IdFiliation.CampoBD = "idFiliation";
             this.TB_IdFiliation.Enabled = false;
             this.TB_IdFiliation.Foranea = true;
+            this.TB_IdFiliation.IdCombobox = "CB_IdFiliation";
             this.TB_IdFiliation.Llenar = false;
             this.TB_IdFiliation.Location = new System.Drawing.Point(716, 126);
             this.TB_IdFiliation.Name = "TB_IdFiliation";
@@ -110,6 +111,7 @@
             this.TB_IdNatives.CampoBD = "idNatives";
             this.TB_IdNatives.Enabled = false;
             this.TB_IdNatives.Foranea = true;
+            this.TB_IdNatives.IdCombobox = "CB_IdNatives";
             this.TB_IdNatives.Llenar = false;
             this.TB_IdNatives.Location = new System.Drawing.Point(523, 126);
             this.TB_IdNatives.Name = "TB_IdNatives";
@@ -122,6 +124,7 @@
             this.TB_IdSector.CampoBD = "idSector";
             this.TB_IdSector.Enabled = false;
             this.TB_IdSector.Foranea = true;
+            this.TB_IdSector.IdCombobox = "CB_IdSector";
             this.TB_IdSector.Llenar = false;
             this.TB_IdSector.Location = new System.Drawing.Point(522, 83);
             this.TB_IdSector.Name = "TB_IdSector";
@@ -205,6 +208,7 @@
             // 
             this.TB_Parsecs.CampoBD = "parsecs";
             this.TB_Parsecs.Foranea = false;
+            this.TB_Parsecs.IdCombobox = null;
             this.TB_Parsecs.Llenar = false;
             this.TB_Parsecs.Location = new System.Drawing.Point(288, 127);
             this.TB_Parsecs.Name = "TB_Parsecs";
@@ -216,6 +220,7 @@
             // 
             this.TB_Lat.CampoBD = "lat";
             this.TB_Lat.Foranea = false;
+            this.TB_Lat.IdCombobox = null;
             this.TB_Lat.Llenar = false;
             this.TB_Lat.Location = new System.Drawing.Point(96, 127);
             this.TB_Lat.Name = "TB_Lat";
@@ -227,6 +232,7 @@
             // 
             this.TB_Long.CampoBD = "long";
             this.TB_Long.Foranea = false;
+            this.TB_Long.IdCombobox = null;
             this.TB_Long.Llenar = false;
             this.TB_Long.Location = new System.Drawing.Point(654, 83);
             this.TB_Long.Name = "TB_Long";
@@ -238,6 +244,7 @@
             // 
             this.TB_DescPlanet.CampoBD = "DescPlanet";
             this.TB_DescPlanet.Foranea = false;
+            this.TB_DescPlanet.IdCombobox = null;
             this.TB_DescPlanet.Llenar = false;
             this.TB_DescPlanet.Location = new System.Drawing.Point(288, 83);
             this.TB_DescPlanet.Name = "TB_DescPlanet";
@@ -249,6 +256,7 @@
             // 
             this.TB_CodePlanet.CampoBD = "CodePlanet";
             this.TB_CodePlanet.Foranea = false;
+            this.TB_CodePlanet.IdCombobox = null;
             this.TB_CodePlanet.Llenar = false;
             this.TB_CodePlanet.Location = new System.Drawing.Point(96, 83);
             this.TB_CodePlanet.Name = "TB_CodePlanet";
@@ -282,6 +290,7 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frm_Planetes";
             this.taula = "planets";
+            this.Load += new System.EventHandler(this.frm_Planetes_Load);
             this.Controls.SetChildIndex(this.btn_updateDTG, 0);
             this.Controls.SetChildIndex(this.btn_Nou, 0);
             this.Controls.SetChildIndex(this.TB_CodePlanet, 0);

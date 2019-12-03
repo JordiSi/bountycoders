@@ -24,6 +24,11 @@ namespace CustomControls
             get { return _CampoBD; }
             set { _CampoBD = value; }
         }
+        public string IdCombobox
+        {
+            get { return _IdCombobox; }
+            set { _IdCombobox = value; }
+        }
         public bool Llenar
         {
             get { return _Llenar; }
@@ -39,6 +44,7 @@ namespace CustomControls
         private string _CampoBD;
         private bool _Llenar;
         private bool _Foranea;
+        private string _IdCombobox;
 
         public SWTextBox()
         {
@@ -57,6 +63,7 @@ namespace CustomControls
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SWTextBox_KeyPress);
             this.Leave += new System.EventHandler(this.SWTextBox_Leave);
             this.Enter += new System.EventHandler(this.SWTextBox_Enter);
+            this.TextChanged += new System.EventHandler(this.SWTextBox_TextChanged);
             this.ResumeLayout(false);
 
         }
@@ -107,6 +114,16 @@ namespace CustomControls
         private void SWTextBox_Enter(object sender, EventArgs e)
         {
             this.BackColor = Color.LightGreen;
+        }
+        private void SWTextBox_TextChanged(object sender, EventArgs e)
+        {
+            foreach(Control ctr1 in this.Parent.Controls)
+            {
+                if(ctr1.Name == this.IdCombobox)
+                {
+                    ((ComboBox)ctr1).SelectedValue = this.Text;
+                }
+            }
         }
     }
 }

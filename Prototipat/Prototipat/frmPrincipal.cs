@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Planetes;
+//using Filiations;
 
 namespace Prototipat
 {
@@ -18,13 +19,18 @@ namespace Prototipat
             InitializeComponent();
         }
 
-		private void opcio1ToolStripMenuItem_Click(object sender,EventArgs e) {
+		private void planetesToolStripMenuItem_Click(object sender,EventArgs e) {
 			frm_Planetes  frm = new frm_Planetes();
 			frm.MdiParent = this;
             frm.Show();
 		}
-
-		private void frmPrincipal_FormClosing(object sender,FormClosingEventArgs e) {
+        //private void filiationsToolStripMenuItem_Click(object sender, EventArgs e)
+        //{
+        //    frm_Filiations frm = new frm_Filiations();
+        //    frm.MdiParent = this;
+        //    frm.Show();
+        //}
+            private void frmPrincipal_FormClosing(object sender,FormClosingEventArgs e) {
 			 Environment.Exit(0);
 		}
 

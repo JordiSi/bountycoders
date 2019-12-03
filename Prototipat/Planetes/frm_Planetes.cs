@@ -17,19 +17,27 @@ namespace Planetes
         private DataRow row;
         private DataSet dts;
         private Class1 dades;
+        private ComboBoxFK combo;
         string query;
+        
 
 
         public frm_Planetes()
         {
             InitializeComponent();
             dades = new Dades.Class1();
+            combo = new ComboBoxFK();
             query = "select * from " + this.taula;
             dts = dades.PortarTaula(query);
             dtgUsers.DataSource = dts.Tables[0];
             carregarCamps();
-            ControlCombo();
 
+            
+
+        }
+        private void frm_Planetes_Load(object sender, EventArgs e)
+        {
+            combo.ControlCombo();
         }
 
         private void btn_updateDTG_Click(object sender, EventArgs e)
@@ -58,7 +66,7 @@ namespace Planetes
                 }
             }
             btn_Nou.Visible = false;
-            ControlCombo();
+            combo.ControlCombo();
         }
 
         private void crear()
@@ -88,30 +96,31 @@ namespace Planetes
                 if (ctr1.GetType() == typeof(ComboFK.ComboBoxFK))
                 {
                     ((ComboFK.ComboBoxFK)ctr1).CarregaDades();
-                    //((ComboFK.ComboBoxFK)ctr1).DataBindings.Add("SelectedIndex", dts.Tables[0], ((ComboFK.ComboBoxFK)ctr1).DisplayMember);
                 }
             }
         }
 
-        private void ControlCombo()
-        {
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (ctr1.GetType() == typeof(ComboBoxFK))
-                {
-                    foreach (Control ctr2 in this.Controls)
-                    {
-                        if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
-                        {
-                            if (((ComboBoxFK)ctr1).controlID == ((CustomControls.SWTextBox)ctr2).Name)
-                            {
-                                ((CustomControls.SWTextBox)ctr2).Text = ((ComboBoxFK)ctr1).SelectedValue.ToString();
-                            }
-                        }
-                    }
-                }
-            }
-        }
+
+
+        //private void ControlCombo()
+        //{
+        //    foreach (Control ctr1 in this.Controls)
+        //    {
+        //        if (ctr1.GetType() == typeof(ComboBoxFK))
+        //        {
+        //            foreach (Control ctr2 in this.Controls)
+        //            {
+        //                if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
+        //                {
+        //                    if (((ComboBoxFK)ctr1).controlID == ((CustomControls.SWTextBox)ctr2).Name)
+        //                    {
+        //                        ((CustomControls.SWTextBox)ctr2).Text = ((ComboBoxFK)ctr1).SelectedValue.ToString();
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
 
     }
 }
