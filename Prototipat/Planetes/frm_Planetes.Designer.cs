@@ -290,7 +290,7 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frm_Planetes";
             this.taula = "planets";
-            this.Load += new System.EventHandler(this.frm_Planetes_Load);
+            //this.Load += new System.EventHandler(this.frm_Planetes_Load);
             this.Controls.SetChildIndex(this.btn_updateDTG, 0);
             this.Controls.SetChildIndex(this.btn_Nou, 0);
             this.Controls.SetChildIndex(this.TB_CodePlanet, 0);

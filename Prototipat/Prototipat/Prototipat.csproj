@@ -118,13 +118,49 @@
       <Project>{ff6daa49-93eb-4d8b-8514-d7239a23f6be}</Project>
       <Name>Dades</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Filiations\Filiations.csproj">
+      <Project>{1ceeef99-ec87-49f0-b1b6-36ac07055ac7}</Project>
+      <Name>Filiations</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Planetes\Planetes.csproj">
       <Project>{132397ba-33c1-41b1-96a6-e0a6589d4f02}</Project>
       <Name>Planetes</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Regions\Regions.csproj">
+      <Project>{a0fe52dd-3f7e-4744-be1a-09d45c170483}</Project>
+      <Name>Regions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Routes\Routes.csproj">
+      <Project>{c772caa7-dfc7-4ca8-b714-81032e4a76c9}</Project>
+      <Name>Routes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RouteTypes\RouteTypes.csproj">
+      <Project>{0bf45866-8caa-479a-8658-39730d0eabbb}</Project>
+      <Name>RouteTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sectors\Sectors.csproj">
+      <Project>{552baa20-af17-4f10-beb3-e62f38478122}</Project>
+      <Name>Sectors</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Species\Species.csproj">
+      <Project>{00083bcd-992c-4faa-881f-b4e3db60ad06}</Project>
+      <Name>Species</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Taula_opcions\Taula_opcions.csproj">
       <Project>{74bf33a0-03ff-4760-be0c-58aeae194035}</Project>
       <Name>Taula_opcions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserCategories\UserCategories.csproj">
+      <Project>{b6c8e78b-47ae-4eb2-8331-f16af7e1b25d}</Project>
+      <Name>UserCategories</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UserRanks\UserRanks.csproj">
+      <Project>{362dc535-725f-401a-8139-52e491673056}</Project>
+      <Name>UserRanks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Users\Users.csproj">
+      <Project>{bd5736da-df9b-4ba7-8141-5243b26ba1af}</Project>
+      <Name>Users</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

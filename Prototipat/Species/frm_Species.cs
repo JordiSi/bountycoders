@@ -9,13 +9,13 @@ using System.Data.SqlClient;
 using Dades;
 using ComboFK;
 using Base;
-using Filiations;
+using Species;
 
-namespace Filiations
+namespace Species
 {
-    public partial class frm_Filiations : Base.frm_Base
+    public partial class frm_Species : Base.frm_Base
     {
-        public frm_Filiations()
+        public frm_Species()
         {
             InitializeComponent();
         }

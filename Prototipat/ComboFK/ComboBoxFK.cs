@@ -35,7 +35,7 @@ namespace ComboFK
             dades.Connectar();
 
             this.SuspendLayout();
-            this.SelectedIndexChanged += new System.EventHandler(this.ComboBoxFK_SelectedIndexChanged);
+            //this.SelectedIndexChanged += new System.EventHandler(this.ComboBoxFK_SelectedIndexChanged);
             this.ResumeLayout(false);
         }
 
@@ -48,22 +48,22 @@ namespace ComboFK
             this.DataSource = dts.Tables[0];
         }
 
-        public void ControlCombo()
-        {
-            foreach (Control ctr1 in this.Parent.Controls)
-            {
-                if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
-                {
-                    if (this.controlID == ((CustomControls.SWTextBox)ctr1).Name)
-                    {
-                        ((CustomControls.SWTextBox)ctr1).Text = this.SelectedIndex.ToString();
-                    }
-                }      
-            } 
-        }
-        private void ComboBoxFK_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            ControlCombo();
-        }
+        //public void ControlCombo()
+        //{
+        //    foreach (Control ctr1 in this.Parent.Controls)
+        //    {
+        //        if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
+        //        {
+        //            if (this.controlID == ((CustomControls.SWTextBox)ctr1).Name)
+        //            {
+        //                ((CustomControls.SWTextBox)ctr1).Text = this.SelectedIndex.ToString();
+        //            }
+        //        }
+        //    }
+        //}
+        //private void ComboBoxFK_SelectedIndexChanged(object sender, EventArgs e)
+        //{
+        //    ControlCombo();
+        //}
     }
 }

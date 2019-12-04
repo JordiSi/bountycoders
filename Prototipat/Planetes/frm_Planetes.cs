@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using Dades;
 using ComboFK;
 using Base;
+using Planetes;
 
 namespace Planetes
 {
@@ -35,10 +36,10 @@ namespace Planetes
             
 
         }
-        private void frm_Planetes_Load(object sender, EventArgs e)
-        {
-            combo.ControlCombo();
-        }
+        //private void frm_Planetes_Load(object sender, EventArgs e)
+        //{
+        //    combo.ControlCombo();
+        //}
 
         private void btn_updateDTG_Click(object sender, EventArgs e)
         {
@@ -66,7 +67,7 @@ namespace Planetes
                 }
             }
             btn_Nou.Visible = false;
-            combo.ControlCombo();
+            //combo.ControlCombo();
         }
 
         private void crear()

@@ -9,13 +9,13 @@ using System.Data.SqlClient;
 using Dades;
 using ComboFK;
 using Base;
-using Filiations;
+using RouteTypes;
 
-namespace Filiations
+namespace RouteTypes
 {
-    public partial class frm_Filiations : Base.frm_Base
+    public partial class frm_RouteTypes : Base.frm_Base
     {
-        public frm_Filiations()
+        public frm_RouteTypes()
         {
             InitializeComponent();
         }

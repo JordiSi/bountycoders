@@ -31,16 +31,16 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opcio1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sortirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.filiationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.routesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.routeTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sectorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.routeTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.routesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.speciesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userRanksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.speciesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sortirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -54,8 +54,8 @@
             this.filiationsToolStripMenuItem,
             this.regionsToolStripMenuItem,
             this.sectorsToolStripMenuItem,
-            this.routeTypesToolStripMenuItem,
             this.routesToolStripMenuItem,
+            this.routeTypesToolStripMenuItem,
             this.speciesToolStripMenuItem,
             this.userCategoriesToolStripMenuItem,
             this.userRanksToolStripMenuItem,
@@ -64,7 +64,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1460, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1444, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -76,7 +76,7 @@
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
-            // planetesToolStripMenuItem
+            // opcio1ToolStripMenuItem
             // 
             this.opcio1ToolStripMenuItem.Checked = true;
             this.opcio1ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
@@ -86,6 +86,96 @@
             this.opcio1ToolStripMenuItem.Text = "Planetes";
             this.opcio1ToolStripMenuItem.Click += new System.EventHandler(this.planetesToolStripMenuItem_Click);
             // 
+            // filiationsToolStripMenuItem
+            // 
+            this.filiationsToolStripMenuItem.Checked = true;
+            this.filiationsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.filiationsToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filiationsToolStripMenuItem.Name = "filiationsToolStripMenuItem";
+            this.filiationsToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.filiationsToolStripMenuItem.Text = "Filiations";
+            this.filiationsToolStripMenuItem.Click += new System.EventHandler(this.filiationsToolStripMenuItem_Click);
+            // 
+            // regionsToolStripMenuItem
+            // 
+            this.regionsToolStripMenuItem.Checked = true;
+            this.regionsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.regionsToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regionsToolStripMenuItem.Name = "regionsToolStripMenuItem";
+            this.regionsToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.regionsToolStripMenuItem.Text = "Regions";
+            this.regionsToolStripMenuItem.Click += new System.EventHandler(this.regionsToolStripMenuItem_Click);
+            // 
+            // sectorsToolStripMenuItem
+            // 
+            this.sectorsToolStripMenuItem.Checked = true;
+            this.sectorsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.sectorsToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sectorsToolStripMenuItem.Name = "sectorsToolStripMenuItem";
+            this.sectorsToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.sectorsToolStripMenuItem.Text = "Sectors";
+            this.sectorsToolStripMenuItem.Click += new System.EventHandler(this.sectorsToolStripMenuItem_Click);
+            // 
+            // routeTypesToolStripMenuItem
+            // 
+            this.routeTypesToolStripMenuItem.Checked = true;
+            this.routeTypesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.routeTypesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routeTypesToolStripMenuItem.Name = "routeTypesToolStripMenuItem";
+            this.routeTypesToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
+            this.routeTypesToolStripMenuItem.Text = "RouteTypes";
+            this.routeTypesToolStripMenuItem.Click += new System.EventHandler(this.routeTypesToolStripMenuItem_Click);
+            // 
+            // routesToolStripMenuItem
+            // 
+            this.routesToolStripMenuItem.Checked = true;
+            this.routesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.routesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routesToolStripMenuItem.Name = "routesToolStripMenuItem";
+            this.routesToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.routesToolStripMenuItem.Text = "Routes";
+            this.routesToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
+            // 
+            // speciesToolStripMenuItem
+            // 
+            this.speciesToolStripMenuItem.Checked = true;
+            this.speciesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.speciesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.speciesToolStripMenuItem.Name = "speciesToolStripMenuItem";
+            this.speciesToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.speciesToolStripMenuItem.Text = "Species";
+            this.speciesToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
+            // 
+            // userCategoriesToolStripMenuItem
+            // 
+            this.userCategoriesToolStripMenuItem.Checked = true;
+            this.userCategoriesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.userCategoriesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userCategoriesToolStripMenuItem.Name = "userCategoriesToolStripMenuItem";
+            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.userCategoriesToolStripMenuItem.Text = "User Categories";
+            this.userCategoriesToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
+            // 
+            // userRanksToolStripMenuItem
+            // 
+            this.userRanksToolStripMenuItem.Checked = true;
+            this.userRanksToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.userRanksToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userRanksToolStripMenuItem.Name = "userRanksToolStripMenuItem";
+            this.userRanksToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.userRanksToolStripMenuItem.Text = "UserRanks";
+            this.userRanksToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
+            // 
+            // usersToolStripMenuItem
+            //
+            this.usersToolStripMenuItem.Checked = true;
+            this.usersToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.usersToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.usersToolStripMenuItem.Text = "Users";
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
+            // 
             // sortirToolStripMenuItem
             // 
             this.sortirToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -94,84 +184,18 @@
             this.sortirToolStripMenuItem.Text = "Sortir";
             this.sortirToolStripMenuItem.Click += new System.EventHandler(this.sortirToolStripMenuItem_Click);
             // 
-            // filiationsToolStripMenuItem
-            //
-            this.filiationsToolStripMenuItem.Checked = true;
-            this.filiationsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.filiationsToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.filiationsToolStripMenuItem.Name = "filiationsToolStripMenuItem";
-            this.filiationsToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
-            this.filiationsToolStripMenuItem.Text = "Filiations";
-            //this.filiationsToolStripMenuItem.Click += new System.EventHandler(this.filiationsToolStripMenuItem_Click);
-            // 
-            // regionsToolStripMenuItem
-            // 
-            this.regionsToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.regionsToolStripMenuItem.Name = "regionsToolStripMenuItem";
-            this.regionsToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
-            this.regionsToolStripMenuItem.Text = "Regions";
-            // 
-            // routesToolStripMenuItem
-            // 
-            this.routesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routesToolStripMenuItem.Name = "routesToolStripMenuItem";
-            this.routesToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
-            this.routesToolStripMenuItem.Text = "Routes";
-            // 
-            // routeTypesToolStripMenuItem
-            // 
-            this.routeTypesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeTypesToolStripMenuItem.Name = "routeTypesToolStripMenuItem";
-            this.routeTypesToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
-            this.routeTypesToolStripMenuItem.Text = "RouteTypes";
-            // 
-            // sectorsToolStripMenuItem
-            // 
-            this.sectorsToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sectorsToolStripMenuItem.Name = "sectorsToolStripMenuItem";
-            this.sectorsToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
-            this.sectorsToolStripMenuItem.Text = "Sectors";
-            // 
-            // userCategoriesToolStripMenuItem
-            // 
-            this.userCategoriesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userCategoriesToolStripMenuItem.Name = "userCategoriesToolStripMenuItem";
-            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
-            this.userCategoriesToolStripMenuItem.Text = "User Categories";
-            // 
-            // userRanksToolStripMenuItem
-            // 
-            this.userRanksToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.userRanksToolStripMenuItem.Name = "userRanksToolStripMenuItem";
-            this.userRanksToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
-            this.userRanksToolStripMenuItem.Text = "UserRanks";
-            // 
-            // speciesToolStripMenuItem
-            // 
-            this.speciesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.speciesToolStripMenuItem.Name = "speciesToolStripMenuItem";
-            this.speciesToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
-            this.speciesToolStripMenuItem.Text = "Species";
-            // 
-            // usersToolStripMenuItem
-            // 
-            this.usersToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
-            this.usersToolStripMenuItem.Text = "Users";
-            // 
             // Form_principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1460, 883);
+            this.ClientSize = new System.Drawing.Size(1444, 881);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form_principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú Principal - BOUNTY CODERS";
