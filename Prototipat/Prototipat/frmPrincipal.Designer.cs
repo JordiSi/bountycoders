@@ -34,8 +34,8 @@
             this.filiationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.regionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sectorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.routeTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.routesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.routeTypesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.speciesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userCategoriesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userRanksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -116,16 +116,6 @@
             this.sectorsToolStripMenuItem.Text = "Sectors";
             this.sectorsToolStripMenuItem.Click += new System.EventHandler(this.sectorsToolStripMenuItem_Click);
             // 
-            // routeTypesToolStripMenuItem
-            // 
-            this.routeTypesToolStripMenuItem.Checked = true;
-            this.routeTypesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.routeTypesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.routeTypesToolStripMenuItem.Name = "routeTypesToolStripMenuItem";
-            this.routeTypesToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
-            this.routeTypesToolStripMenuItem.Text = "RouteTypes";
-            this.routeTypesToolStripMenuItem.Click += new System.EventHandler(this.routeTypesToolStripMenuItem_Click);
-            // 
             // routesToolStripMenuItem
             // 
             this.routesToolStripMenuItem.Checked = true;
@@ -136,6 +126,16 @@
             this.routesToolStripMenuItem.Text = "Routes";
             this.routesToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
             // 
+            // routeTypesToolStripMenuItem
+            // 
+            this.routeTypesToolStripMenuItem.Checked = true;
+            this.routeTypesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.routeTypesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routeTypesToolStripMenuItem.Name = "routeTypesToolStripMenuItem";
+            this.routeTypesToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
+            this.routeTypesToolStripMenuItem.Text = "RouteTypes";
+            this.routeTypesToolStripMenuItem.Click += new System.EventHandler(this.routeTypesToolStripMenuItem_Click);
+            // 
             // speciesToolStripMenuItem
             // 
             this.speciesToolStripMenuItem.Checked = true;
@@ -144,7 +144,7 @@
             this.speciesToolStripMenuItem.Name = "speciesToolStripMenuItem";
             this.speciesToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.speciesToolStripMenuItem.Text = "Species";
-            this.speciesToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
+            this.speciesToolStripMenuItem.Click += new System.EventHandler(this.speciesToolStripMenuItem_Click);
             // 
             // userCategoriesToolStripMenuItem
             // 
@@ -154,7 +154,7 @@
             this.userCategoriesToolStripMenuItem.Name = "userCategoriesToolStripMenuItem";
             this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
             this.userCategoriesToolStripMenuItem.Text = "User Categories";
-            this.userCategoriesToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
+            this.userCategoriesToolStripMenuItem.Click += new System.EventHandler(this.userCategoriesToolStripMenuItem_Click);
             // 
             // userRanksToolStripMenuItem
             // 
@@ -164,17 +164,17 @@
             this.userRanksToolStripMenuItem.Name = "userRanksToolStripMenuItem";
             this.userRanksToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
             this.userRanksToolStripMenuItem.Text = "UserRanks";
-            this.userRanksToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
+            this.userRanksToolStripMenuItem.Click += new System.EventHandler(this.userRanksToolStripMenuItem_Click);
             // 
             // usersToolStripMenuItem
-            //
+            // 
             this.usersToolStripMenuItem.Checked = true;
             this.usersToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.usersToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
             this.usersToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
             this.usersToolStripMenuItem.Text = "Users";
-            this.usersToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
+            this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // sortirToolStripMenuItem
             // 

@@ -36,7 +36,7 @@ namespace Base
         //    combo.ControlCombo();
         //}
 
-        private void btn_updateDTG_Click(object sender, EventArgs e)
+        protected void btn_updateDTG_Click(object sender, EventArgs e)
         {
 
             btn_updateDTG.Text = "UPDATE";

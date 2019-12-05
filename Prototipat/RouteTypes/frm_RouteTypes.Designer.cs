@@ -28,19 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.swTextBox1 = new CustomControls.SWTextBox();
+            this.swTextBox2 = new CustomControls.SWTextBox();
             this.SuspendLayout();
+            // 
+            // swTextBox1
+            // 
+            this.swTextBox1.CampoBD = "coderoutetype";
+            this.swTextBox1.Foranea = false;
+            this.swTextBox1.IdCombobox = null;
+            this.swTextBox1.Llenar = false;
+            this.swTextBox1.Location = new System.Drawing.Point(27, 79);
+            this.swTextBox1.Name = "swTextBox1";
+            this.swTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.swTextBox1.TabIndex = 31;
+            this.swTextBox1.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            // 
+            // swTextBox2
+            // 
+            this.swTextBox2.CampoBD = "descroutetype";
+            this.swTextBox2.Foranea = false;
+            this.swTextBox2.IdCombobox = null;
+            this.swTextBox2.Llenar = false;
+            this.swTextBox2.Location = new System.Drawing.Point(27, 131);
+            this.swTextBox2.Name = "swTextBox2";
+            this.swTextBox2.Size = new System.Drawing.Size(100, 20);
+            this.swTextBox2.TabIndex = 32;
+            this.swTextBox2.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
             // 
             // frm_RouteTypes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(960, 516);
+            this.Controls.Add(this.swTextBox2);
+            this.Controls.Add(this.swTextBox1);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frm_RouteTypes";
             this.taula = "routetypes";
+            this.Controls.SetChildIndex(this.btn_updateDTG, 0);
+            this.Controls.SetChildIndex(this.btn_Nou, 0);
+            this.Controls.SetChildIndex(this.swTextBox1, 0);
+            this.Controls.SetChildIndex(this.swTextBox2, 0);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private CustomControls.SWTextBox swTextBox1;
+        private CustomControls.SWTextBox swTextBox2;
     }
 }
