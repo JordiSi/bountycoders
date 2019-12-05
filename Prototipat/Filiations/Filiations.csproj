@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_Filiations.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -56,10 +62,6 @@
       <Project>{fdd8c3b6-b722-4731-8fb8-b93982400b05}</Project>
       <Name>Base</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ComboFK\ComboFK.csproj">
-      <Project>{A5AF7A37-6E5F-4AF6-A04E-31B62083A027}</Project>
-      <Name>ComboFK</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CustomControls\CustomControls.csproj">
       <Project>{39674C44-38C7-48D9-9022-47D7068CB20A}</Project>
       <Name>CustomControls</Name>
@@ -68,6 +70,11 @@
       <Project>{FF6DAA49-93EB-4D8B-8514-D7239A23F6BE}</Project>
       <Name>Dades</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frm_Filiations.resx">
+      <DependentUpon>frm_Filiations.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -39,9 +39,9 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.CB_IdNatives = new ComboFK.ComboBoxFK();
-            this.CB_IdFiliation = new ComboFK.ComboBoxFK();
-            this.CB_IdSector = new ComboFK.ComboBoxFK();
+            this.CB_IdNatives = new CustomControls.ComboBoxFK();
+            this.CB_IdFiliation = new CustomControls.ComboBoxFK();
+            this.CB_IdSector = new CustomControls.ComboBoxFK();
             this.TB_IdFiliation = new CustomControls.SWTextBox();
             this.TB_IdNatives = new CustomControls.SWTextBox();
             this.TB_IdSector = new CustomControls.SWTextBox();
@@ -339,9 +339,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private ComboFK.ComboBoxFK CB_IdNatives;
-        private ComboFK.ComboBoxFK CB_IdFiliation;
-        private ComboFK.ComboBoxFK CB_IdSector;
+        private CustomControls.ComboBoxFK CB_IdNatives;
+        private CustomControls.ComboBoxFK CB_IdFiliation;
+        private CustomControls.ComboBoxFK CB_IdSector;
         private CustomControls.SWTextBox TB_IdSector;
         private CustomControls.SWTextBox TB_IdNatives;
         private CustomControls.SWTextBox TB_IdFiliation;

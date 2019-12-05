@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Dades;
-using ComboFK;
+using CustomControls;
 
 namespace Prototipat
 {
@@ -89,9 +89,9 @@ namespace Prototipat
 					ctr1.DataBindings.Add("Text", dts.Tables[0], ((CustomControls.SWTextBox)ctr1).CampoBD);
 				}
 
-				if (ctr1.GetType() == typeof(ComboFK.ComboBoxFK))
+				if (ctr1.GetType() == typeof(ComboBoxFK))
 				{
-					((ComboFK.ComboBoxFK)ctr1).CarregaDades();
+					((ComboBoxFK)ctr1).CarregaDades();
 				}
 
 			}

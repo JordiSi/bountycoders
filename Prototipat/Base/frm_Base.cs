@@ -9,32 +9,32 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Dades;
-using ComboFK;
+using CustomControls;
 
 namespace Base
 {
     public partial class frm_Base : Form
     {
-        private string _taula;
+        private DataRow row;
+        private DataSet dts;
+        private Class1 dades;
+        string query;
 
         public string taula
         {
             get { return _taula; }
             set { _taula = value; }
         }
-        private DataRow row;
-        private DataSet dts;
-        private Class1 dades;
-        string query = "select * from planets";
+        private string _taula;
 
         public frm_Base()
         {
             InitializeComponent();
-            dades = new Dades.Class1();
-            dts = dades.PortarTaula(query);
-            dtgUsers.DataSource = dts.Tables[0];
-            carregarCamps();
         }
+        //private void frm_Planetes_Load(object sender, EventArgs e)
+        //{
+        //    combo.ControlCombo();
+        //}
 
         private void btn_updateDTG_Click(object sender, EventArgs e)
         {
@@ -44,8 +44,10 @@ namespace Base
             {
                 crear();
             }
-            carregarCamps();
             dades.Actualitzar(query, dts);
+            dts = dades.PortarTaula(query);
+            dtgUsers.DataSource = dts.Tables[0];
+            carregarCamps();
             //MessageBox.Show(res + " Valores Cambiados");
             btn_Nou.Visible = true;
         }
@@ -60,9 +62,7 @@ namespace Base
                 }
             }
             btn_Nou.Visible = false;
-            ControlCombo();
-
-
+            //combo.ControlCombo();
         }
 
         private void crear()
@@ -89,35 +89,44 @@ namespace Base
                     ctr1.DataBindings.Add("Text", dts.Tables[0], ((CustomControls.SWTextBox)ctr1).CampoBD);
                 }
 
-                if (ctr1.GetType() == typeof(ComboFK.ComboBoxFK))
+                if (ctr1.GetType() == typeof(CustomControls.ComboBoxFK))
                 {
-                    ((ComboFK.ComboBoxFK)ctr1).CarregaDades();
+                    ((CustomControls.ComboBoxFK)ctr1).CarregaDades();
                 }
-
             }
         }
 
-        private void ControlCombo()
+        private void frm_Base_Load(object sender, EventArgs e)
         {
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (ctr1.GetType() == typeof(ComboBoxFK))
-                {
-                    foreach (Control ctr2 in this.Controls)
-                    {
-                        if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
-                        {
-                            if (((ComboBoxFK)ctr1).controlID == ((CustomControls.SWTextBox)ctr2).Name)
-                            {
-                                ((CustomControls.SWTextBox)ctr2).Text = ((ComboBoxFK)ctr1).SelectedValue.ToString();
-                            }
-                        }
-
-                    }
-                }
-
-            }
+            if (this.DesignMode) return;
+            dades = new Dades.Class1();
+            query = "select * from " + this.taula;
+            dts = dades.PortarTaula(query);
+            dtgUsers.DataSource = dts.Tables[0];
+            carregarCamps();
         }
+
+
+
+        //private void ControlCombo()
+        //{
+        //    foreach (Control ctr1 in this.Controls)
+        //    {
+        //        if (ctr1.GetType() == typeof(ComboBoxFK))
+        //        {
+        //            foreach (Control ctr2 in this.Controls)
+        //            {
+        //                if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
+        //                {
+        //                    if (((ComboBoxFK)ctr1).controlID == ((CustomControls.SWTextBox)ctr2).Name)
+        //                    {
+        //                        ((CustomControls.SWTextBox)ctr2).Text = ((ComboBoxFK)ctr1).SelectedValue.ToString();
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
 
     }
 }

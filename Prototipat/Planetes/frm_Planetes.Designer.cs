@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CB_IdNatives = new ComboFK.ComboBoxFK();
-            this.CB_IdFiliation = new ComboFK.ComboBoxFK();
-            this.CB_IdSector = new ComboFK.ComboBoxFK();
+            this.CB_IdNatives = new CustomControls.ComboBoxFK();
+            this.CB_IdFiliation = new CustomControls.ComboBoxFK();
+            this.CB_IdSector = new CustomControls.ComboBoxFK();
             this.TB_IdFiliation = new CustomControls.SWTextBox();
             this.TB_IdNatives = new CustomControls.SWTextBox();
             this.TB_IdSector = new CustomControls.SWTextBox();
@@ -319,8 +319,8 @@
 
         #endregion
 
-        private ComboFK.ComboBoxFK CB_IdNatives;
-        private ComboFK.ComboBoxFK CB_IdFiliation;
+        private CustomControls.ComboBoxFK CB_IdNatives;
+        private CustomControls.ComboBoxFK CB_IdFiliation;
         private CustomControls.SWTextBox TB_IdFiliation;
         private CustomControls.SWTextBox TB_IdNatives;
         private CustomControls.SWTextBox TB_IdSector;
@@ -337,6 +337,6 @@
         private CustomControls.SWTextBox TB_Long;
         private CustomControls.SWTextBox TB_DescPlanet;
         public CustomControls.SWTextBox TB_CodePlanet;
-        public ComboFK.ComboBoxFK CB_IdSector;
+        public CustomControls.ComboBoxFK CB_IdSector;
     }
 }

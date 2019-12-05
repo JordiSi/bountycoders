@@ -7,9 +7,9 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Dades;
-using ComboFK;
 using Base;
 using Planetes;
+using CustomControls;
 
 namespace Planetes
 {
@@ -18,7 +18,6 @@ namespace Planetes
         private DataRow row;
         private DataSet dts;
         private Class1 dades;
-        private ComboBoxFK combo;
         string query;
         
 
@@ -27,7 +26,6 @@ namespace Planetes
         {
             InitializeComponent();
             dades = new Dades.Class1();
-            combo = new ComboBoxFK();
             query = "select * from " + this.taula;
             dts = dades.PortarTaula(query);
             dtgUsers.DataSource = dts.Tables[0];
@@ -60,10 +58,26 @@ namespace Planetes
         {
             foreach (Control ctr1 in this.Controls)
             {
-                if (!((ctr1.GetType() == btn_updateDTG.GetType()) || ctr1 is Label || ctr1 is ComboBoxFK))
+                if (!((ctr1 is Button) || ctr1 is Label || ctr1 is ComboBoxFK))
                 {
-                    ctr1.DataBindings.Clear();
-                    ctr1.Text = "";
+                    if (ctr1 is CustomControls.SWTextBox){
+                        if(((CustomControls.SWTextBox)ctr1).Foranea == false)
+                        {
+                            ctr1.DataBindings.Clear();
+                            ctr1.Text = "";
+                        }
+                        else
+                        {
+                            ctr1.DataBindings.Clear();
+                        }
+
+                    }
+                    else
+                    {
+                        ctr1.DataBindings.Clear();
+                        ctr1.Text = "";
+                    }
+                    
                 }
             }
             btn_Nou.Visible = false;
@@ -94,9 +108,9 @@ namespace Planetes
                     ctr1.DataBindings.Add("Text", dts.Tables[0], ((CustomControls.SWTextBox)ctr1).CampoBD);
                 }
 
-                if (ctr1.GetType() == typeof(ComboFK.ComboBoxFK))
+                if (ctr1.GetType() == typeof(CustomControls.ComboBoxFK))
                 {
-                    ((ComboFK.ComboBoxFK)ctr1).CarregaDades();
+                    ((CustomControls.ComboBoxFK)ctr1).CarregaDades();
                 }
             }
         }

@@ -1,6 +1,6 @@
-﻿namespace Sectors
+﻿namespace Filiations
 {
-    partial class frm_Sectors
+    partial class Form1
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,17 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // frm_Sectors
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.ClientSize = new System.Drawing.Size(960, 516);
-            this.Location = new System.Drawing.Point(0, 0);
-            this.Name = "frm_Sectors";
-            this.taula = "sectors";
-            this.ResumeLayout(false);
-
+            this.components = new System.ComponentModel.Container();
         }
 
         #endregion

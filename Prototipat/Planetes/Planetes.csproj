@@ -56,10 +56,6 @@
       <Project>{FDD8C3B6-B722-4731-8FB8-B93982400B05}</Project>
       <Name>Base</Name>
     </ProjectReference>
-    <ProjectReference Include="..\ComboFK\ComboFK.csproj">
-      <Project>{A5AF7A37-6E5F-4AF6-A04E-31B62083A027}</Project>
-      <Name>ComboFK</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CustomControls\CustomControls.csproj">
       <Project>{39674C44-38C7-48D9-9022-47D7068CB20A}</Project>
       <Name>CustomControls</Name>

@@ -5,19 +5,16 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using Dades;
-using CustomControls;
-using Base;
-using Species;
 
-namespace Species
+namespace Filiations
 {
-    public partial class frm_Species : Base.frm_Base
+    public partial class Form1 : Base.frm_Base
     {
-        public frm_Species()
+        public Form1()
         {
             InitializeComponent();
+           
+            
         }
     }
 }

@@ -117,13 +117,17 @@ namespace CustomControls
         }
         private void SWTextBox_TextChanged(object sender, EventArgs e)
         {
-            foreach(Control ctr1 in this.Parent.Controls)
+            if (((SWTextBox)sender).Foranea)
             {
-                if(ctr1.Name == this.IdCombobox)
+                foreach (Control ctr1 in this.Parent.Controls)
                 {
-                    ((ComboBox)ctr1).SelectedValue = this.Text;
+                    if (ctr1.Name == this.IdCombobox && (ctr1.Text != ""))
+                    {
+                        ((ComboBoxFK)ctr1).SelectedValue = this.Text;
+                    }
                 }
             }
+
         }
     }
 }

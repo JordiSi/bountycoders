@@ -28,7 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frm_Species
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.ClientSize = new System.Drawing.Size(960, 516);
+            this.Location = new System.Drawing.Point(0, 0);
+            this.Name = "frm_Species";
+            this.taula = "Species";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

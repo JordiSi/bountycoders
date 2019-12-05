@@ -7,9 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using Dades;
-using ComboFK;
 using Base;
-using Filiations;
+using CustomControls;
 
 namespace Filiations
 {
@@ -19,5 +18,7 @@ namespace Filiations
         {
             InitializeComponent();
         }
+       
+
     }
 }
