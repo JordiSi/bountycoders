@@ -30,6 +30,8 @@
         {
             this.swTextBox1 = new CustomControls.SWTextBox();
             this.swTextBox2 = new CustomControls.SWTextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // swTextBox1
@@ -38,8 +40,8 @@
             this.swTextBox1.Foranea = false;
             this.swTextBox1.IdCombobox = null;
             this.swTextBox1.Llenar = false;
-            this.swTextBox1.Location = new System.Drawing.Point(147, 82);
-            this.swTextBox1.Name = "TB_coderoute";
+            this.swTextBox1.Location = new System.Drawing.Point(91, 82);
+            this.swTextBox1.Name = "swTextBox1";
             this.swTextBox1.Size = new System.Drawing.Size(100, 20);
             this.swTextBox1.TabIndex = 31;
             this.swTextBox1.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
@@ -50,16 +52,36 @@
             this.swTextBox2.Foranea = false;
             this.swTextBox2.IdCombobox = null;
             this.swTextBox2.Llenar = false;
-            this.swTextBox2.Location = new System.Drawing.Point(147, 124);
-            this.swTextBox2.Name = "TB_descroute";
+            this.swTextBox2.Location = new System.Drawing.Point(91, 124);
+            this.swTextBox2.Name = "swTextBox2";
             this.swTextBox2.Size = new System.Drawing.Size(100, 20);
             this.swTextBox2.TabIndex = 32;
             this.swTextBox2.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(24, 85);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.TabIndex = 33;
+            this.label1.Text = "CodeRoute";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(24, 127);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(61, 13);
+            this.label2.TabIndex = 34;
+            this.label2.Text = "DescRoute";
             // 
             // frm_Routes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(960, 516);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.swTextBox2);
             this.Controls.Add(this.swTextBox1);
             this.Location = new System.Drawing.Point(0, 0);
@@ -69,6 +91,8 @@
             this.Controls.SetChildIndex(this.btn_Nou, 0);
             this.Controls.SetChildIndex(this.swTextBox1, 0);
             this.Controls.SetChildIndex(this.swTextBox2, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -78,5 +102,7 @@
 
         private CustomControls.SWTextBox swTextBox1;
         private CustomControls.SWTextBox swTextBox2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
