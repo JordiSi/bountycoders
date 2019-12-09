@@ -28,19 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.TB_codespecie = new CustomControls.SWTextBox();
+            this.TB_descspecie = new CustomControls.SWTextBox();
             this.SuspendLayout();
+            // 
+            // TB_codespecie
+            // 
+            this.TB_codespecie.CampoBD = "codespecie";
+            this.TB_codespecie.Foranea = false;
+            this.TB_codespecie.IdCombobox = null;
+            this.TB_codespecie.Llenar = false;
+            this.TB_codespecie.Location = new System.Drawing.Point(58, 83);
+            this.TB_codespecie.Name = "TB_codespecie";
+            this.TB_codespecie.Size = new System.Drawing.Size(100, 20);
+            this.TB_codespecie.TabIndex = 32;
+            this.TB_codespecie.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
+            // 
+            // TB_descspecie
+            // 
+            this.TB_descspecie.CampoBD = "descspecie";
+            this.TB_descspecie.Foranea = false;
+            this.TB_descspecie.IdCombobox = null;
+            this.TB_descspecie.Llenar = false;
+            this.TB_descspecie.Location = new System.Drawing.Point(58, 131);
+            this.TB_descspecie.Name = "TB_descspecie";
+            this.TB_descspecie.Size = new System.Drawing.Size(100, 20);
+            this.TB_descspecie.TabIndex = 33;
+            this.TB_descspecie.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
             // 
             // frm_Species
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(960, 516);
+            this.Controls.Add(this.TB_descspecie);
+            this.Controls.Add(this.TB_codespecie);
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frm_Species";
             this.taula = "Species";
+            this.Controls.SetChildIndex(this.btn_updateDTG, 0);
+            this.Controls.SetChildIndex(this.btn_Nou, 0);
+            this.Controls.SetChildIndex(this.TB_codespecie, 0);
+            this.Controls.SetChildIndex(this.TB_descspecie, 0);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+        private CustomControls.SWTextBox TB_codespecie;
+        private CustomControls.SWTextBox TB_descspecie;
     }
 }

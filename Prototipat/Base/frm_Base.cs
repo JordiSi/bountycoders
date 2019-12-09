@@ -51,21 +51,38 @@ namespace Base
             //MessageBox.Show(res + " Valores Cambiados");
             btn_Nou.Visible = true;
         }
-        private void btn_Nou_Click(object sender, EventArgs e)
+        protected void btn_Nou_Click(object sender, EventArgs e)
         {
             foreach (Control ctr1 in this.Controls)
             {
-                if (!((ctr1.GetType() == btn_updateDTG.GetType()) || ctr1 is Label || ctr1 is ComboBoxFK))
+                if (!((ctr1 is Button) || ctr1 is Label || ctr1 is ComboBoxFK))
                 {
-                    ctr1.DataBindings.Clear();
-                    ctr1.Text = "";
+                    if (ctr1 is CustomControls.SWTextBox)
+                    {
+                        if (((CustomControls.SWTextBox)ctr1).Foranea == false)
+                        {
+                            ctr1.DataBindings.Clear();
+                            ctr1.Text = "";
+                        }
+                        else
+                        {
+                            ctr1.DataBindings.Clear();
+                        }
+
+                    }
+                    else
+                    {
+                        ctr1.DataBindings.Clear();
+                        ctr1.Text = "";
+                    }
+
                 }
             }
             btn_Nou.Visible = false;
             //combo.ControlCombo();
         }
 
-        private void crear()
+        protected void crear()
         {
             row = dts.Tables[0].NewRow();
             foreach (Control ctr1 in this.Controls)
@@ -79,7 +96,7 @@ namespace Base
             dtgUsers.DataSource = dts.Tables[0];
         }
 
-        private void carregarCamps()
+        protected void carregarCamps()
         {
             foreach (Control ctr1 in this.Controls)
             {
@@ -96,7 +113,7 @@ namespace Base
             }
         }
 
-        private void frm_Base_Load(object sender, EventArgs e)
+        protected void frm_Base_Load(object sender, EventArgs e)
         {
             if (this.DesignMode) return;
             dades = new Dades.Class1();
