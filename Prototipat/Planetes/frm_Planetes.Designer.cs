@@ -51,11 +51,11 @@
             // 
             // btn_Nou
             // 
-            this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
+            //this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
             // 
             // btn_updateDTG
             // 
-            this.btn_updateDTG.Click += new System.EventHandler(this.btn_updateDTG_Click);
+            //this.btn_updateDTG.Click += new System.EventHandler(this.btn_updateDTG_Click);
             // 
             // CB_IdNatives
             // 

@@ -15,23 +15,25 @@ namespace Planetes
 {
     public partial class frm_Planetes : Base.frm_Base
     {
-        private DataRow row;
-        private DataSet dts;
-        private Class1 dades;
-        string query;
+        //private DataRow row;
+        //private DataSet dts;
+        //private Class1 dades;
+        //string query;
         
 
 
         public frm_Planetes()
         {
             InitializeComponent();
-            dades = new Dades.Class1();
-            query = "select * from " + this.taula;
-            dts = dades.PortarTaula(query);
-            dtgUsers.DataSource = dts.Tables[0];
-            carregarCamps();
+            this.btn_updateDTG.Click += new System.EventHandler(this.btn_updateDTG_Click);
+            this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
+            //dades = new Dades.Class1();
+            //query = "select * from " + this.taula;
+            //dts = dades.PortarTaula(query);
+            //dtgUsers.DataSource = dts.Tables[0];
+            //carregarCamps();
 
-            
+
 
         }
         //private void frm_Planetes_Load(object sender, EventArgs e)
@@ -39,81 +41,82 @@ namespace Planetes
         //    combo.ControlCombo();
         //}
 
-        private void btn_updateDTG_Click(object sender, EventArgs e)
-        {
+        //private void btn_updateDTG_Click(object sender, EventArgs e)
+        //{
 
-            btn_updateDTG.Text = "UPDATE";
-            if (btn_Nou.Visible == false)
-            {
-                crear();
-            }
-            dades.Actualitzar(query, dts);
-            dts = dades.PortarTaula(query);
-            dtgUsers.DataSource = dts.Tables[0];
-            carregarCamps();
-            //MessageBox.Show(res + " Valores Cambiados");
-            btn_Nou.Visible = true;
-        }
-        private void btn_Nou_Click(object sender, EventArgs e)
-        {
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (!((ctr1 is Button) || ctr1 is Label || ctr1 is ComboBoxFK))
-                {
-                    if (ctr1 is CustomControls.SWTextBox){
-                        if(((CustomControls.SWTextBox)ctr1).Foranea == false)
-                        {
-                            ctr1.DataBindings.Clear();
-                            ctr1.Text = "";
-                        }
-                        else
-                        {
-                            ctr1.DataBindings.Clear();
-                        }
+        //    btn_updateDTG.Text = "UPDATE";
+        //    if (btn_Nou.Visible == false)
+        //    {
+        //        crear();
+        //    }
+        //    dades.Actualitzar(query, dts);
+        //    dts = dades.PortarTaula(query);
+        //    dtgUsers.DataSource = dts.Tables[0];
+        //    carregarCamps();
+        //    MessageBox.Show(res + " Valores Cambiados");
+        //    btn_Nou.Visible = true;
+        //}
+        //private void btn_Nou_Click(object sender, EventArgs e)
+        //{
+        //    foreach (Control ctr1 in this.Controls)
+        //    {
+        //        if (!((ctr1 is Button) || ctr1 is Label || ctr1 is ComboBoxFK))
+        //        {
+        //            if (ctr1 is CustomControls.SWTextBox)
+        //            {
+        //                if (((CustomControls.SWTextBox)ctr1).Foranea == false)
+        //                {
+        //                    ctr1.DataBindings.Clear();
+        //                    ctr1.Text = "";
+        //                }
+        //                else
+        //                {
+        //                    ctr1.DataBindings.Clear();
+        //                }
 
-                    }
-                    else
-                    {
-                        ctr1.DataBindings.Clear();
-                        ctr1.Text = "";
-                    }
-                    
-                }
-            }
-            btn_Nou.Visible = false;
-            //combo.ControlCombo();
-        }
+        //            }
+        //            else
+        //            {
+        //                ctr1.DataBindings.Clear();
+        //                ctr1.Text = "";
+        //            }
 
-        private void crear()
-        {
-            row = dts.Tables[0].NewRow();
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
-                {
-                    row[((CustomControls.SWTextBox)ctr1).CampoBD] = ctr1.Text;
-                }
-            }
-            dts.Tables[0].Rows.Add(row);
-            dtgUsers.DataSource = dts.Tables[0];
-        }
+        //        }
+        //    }
+        //    btn_Nou.Visible = false;
+        //    combo.ControlCombo();
+        //}
 
-        private void carregarCamps()
-        {
-            foreach (Control ctr1 in this.Controls)
-            {
-                if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
-                {
-                    ctr1.DataBindings.Clear();
-                    ctr1.DataBindings.Add("Text", dts.Tables[0], ((CustomControls.SWTextBox)ctr1).CampoBD);
-                }
+        //private void crear()
+        //{
+        //    row = dts.Tables[0].NewRow();
+        //    foreach (Control ctr1 in this.Controls)
+        //    {
+        //        if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
+        //        {
+        //            row[((CustomControls.SWTextBox)ctr1).CampoBD] = ctr1.Text;
+        //        }
+        //    }
+        //    dts.Tables[0].Rows.Add(row);
+        //    dtgUsers.DataSource = dts.Tables[0];
+        //}
 
-                if (ctr1.GetType() == typeof(CustomControls.ComboBoxFK))
-                {
-                    ((CustomControls.ComboBoxFK)ctr1).CarregaDades();
-                }
-            }
-        }
+        //private void carregarCamps()
+        //{
+        //    foreach (Control ctr1 in this.Controls)
+        //    {
+        //        if (ctr1.GetType() == typeof(CustomControls.SWTextBox))
+        //        {
+        //            ctr1.DataBindings.Clear();
+        //            ctr1.DataBindings.Add("Text", dts.Tables[0], ((CustomControls.SWTextBox)ctr1).CampoBD);
+        //        }
+
+        //        if (ctr1.GetType() == typeof(CustomControls.ComboBoxFK))
+        //        {
+        //            ((CustomControls.ComboBoxFK)ctr1).CarregaDades();
+        //        }
+        //    }
+        //}
 
 
 

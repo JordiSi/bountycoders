@@ -18,6 +18,8 @@ namespace Species
         public frm_Species()
         {
             InitializeComponent();
+            this.btn_updateDTG.Click += new System.EventHandler(this.btn_updateDTG_Click);
+            this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
         }
     }
 }

@@ -44,7 +44,7 @@
             this.swTextBox1.Name = "swTextBox1";
             this.swTextBox1.Size = new System.Drawing.Size(100, 20);
             this.swTextBox1.TabIndex = 31;
-            this.swTextBox1.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.swTextBox1.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
             // 
             // swTextBox2
             // 
@@ -56,7 +56,7 @@
             this.swTextBox2.Name = "swTextBox2";
             this.swTextBox2.Size = new System.Drawing.Size(100, 20);
             this.swTextBox2.TabIndex = 32;
-            this.swTextBox2.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
+            this.swTextBox2.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
             // 
             // label1
             // 
