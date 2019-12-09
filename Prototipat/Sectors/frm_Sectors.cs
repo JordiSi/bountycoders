@@ -22,6 +22,9 @@ namespace Sectors
             this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
         }
 
+        private void label3_Click(object sender, EventArgs e)
+        {
 
+        }
     }
 }
