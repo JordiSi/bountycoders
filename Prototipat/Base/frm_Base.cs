@@ -42,14 +42,20 @@ namespace Base
             btn_updateDTG.Text = "UPDATE";
             if (btn_Nou.Visible == false)
             {
-                crear();
+                if (!comprovar_ple())
+                {
+                    MessageBox.Show("Omplir tots els camps necessaris");
+                }
+                else
+                {
+                    crear();
+
+                    carregarCamps();
+                    btn_Nou.Visible = true;
+                }
             }
             dades.Actualitzar(query, dts);
-            dts = dades.PortarTaula(query);
-            dtgUsers.DataSource = dts.Tables[0];
-            carregarCamps();
-            //MessageBox.Show(res + " Valores Cambiados");
-            btn_Nou.Visible = true;
+            recarregar_taula();
         }
         protected void btn_Nou_Click(object sender, EventArgs e)
         {
@@ -93,7 +99,7 @@ namespace Base
                 }
             }
             dts.Tables[0].Rows.Add(row);
-            dtgUsers.DataSource = dts.Tables[0];
+            recarregar_taula();
         }
 
         protected void carregarCamps()
@@ -118,13 +124,30 @@ namespace Base
             if (this.DesignMode) return;
             dades = new Dades.Class1();
             query = "select * from " + this.taula;
-            dts = dades.PortarTaula(query);
-            dtgUsers.DataSource = dts.Tables[0];
+            recarregar_taula();
             carregarCamps();
         }
-
-
-
+        protected bool comprovar_ple()
+        {
+            bool comp = true;
+            foreach (Control ctr1 in this.Controls)
+            {
+                if(ctr1 is SWTextBox)
+                {
+                    if(ctr1.Text== "")
+                    {
+                        comp = false;
+                    }
+                }
+            }
+            
+            return comp;
+        }
+        protected void recarregar_taula()
+        {
+            dts = dades.PortarTaula(query);
+            dtgUsers.DataSource = dts.Tables[0];
+        }
         //private void ControlCombo()
         //{
         //    foreach (Control ctr1 in this.Controls)

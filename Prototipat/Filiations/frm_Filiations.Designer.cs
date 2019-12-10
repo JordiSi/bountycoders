@@ -41,7 +41,6 @@
             this.swTextBox1.IdCombobox = null;
             this.swTextBox1.Llenar = false;
             this.swTextBox1.Location = new System.Drawing.Point(97, 91);
-            this.swTextBox1.Location = new System.Drawing.Point(59, 91);
             this.swTextBox1.Name = "swTextBox1";
             this.swTextBox1.Size = new System.Drawing.Size(100, 20);
             this.swTextBox1.TabIndex = 31;
@@ -54,7 +53,6 @@
             this.swTextBox2.IdCombobox = null;
             this.swTextBox2.Llenar = true;
             this.swTextBox2.Location = new System.Drawing.Point(97, 121);
-            this.swTextBox2.Location = new System.Drawing.Point(59, 117);
             this.swTextBox2.Name = "swTextBox2";
             this.swTextBox2.Size = new System.Drawing.Size(310, 20);
             this.swTextBox2.TabIndex = 32;
