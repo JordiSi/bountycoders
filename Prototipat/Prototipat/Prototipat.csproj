@@ -46,11 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmPrincipal.cs">
+    <Compile Include="MenuOptions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPrincipal.Designer.cs">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    <Compile Include="MenuOptions.Designer.cs">
+      <DependentUpon>MenuOptions.cs</DependentUpon>
     </Compile>
     <Compile Include="Frm_login.cs">
       <SubType>Form</SubType>
@@ -66,8 +66,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmPrincipal.resx">
-      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    <EmbeddedResource Include="MenuOptions.resx">
+      <DependentUpon>MenuOptions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frm_login.resx">
       <DependentUpon>Frm_login.cs</DependentUpon>
@@ -118,9 +118,9 @@
       <Project>{1ceeef99-ec87-49f0-b1b6-36ac07055ac7}</Project>
       <Name>Filiations</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Planetes\Planetes.csproj">
+    <ProjectReference Include="..\Planetes\Planets.csproj">
       <Project>{132397ba-33c1-41b1-96a6-e0a6589d4f02}</Project>
-      <Name>Planetes</Name>
+      <Name>Planets</Name>
     </ProjectReference>
     <ProjectReference Include="..\Regions\Regions.csproj">
       <Project>{a0fe52dd-3f7e-4744-be1a-09d45c170483}</Project>
@@ -161,6 +161,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Eclipse-0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r5ANbt9.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenor %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenor %282%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1512512222_rWUJ1s.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Padoru gif.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tenor.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

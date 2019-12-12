@@ -63,9 +63,59 @@ namespace Prototipat.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Eclipse_0 {
+        internal static System.Drawing.Bitmap _1512512222_rWUJ1s {
             get {
-                object obj = ResourceManager.GetObject("Eclipse-0", resourceCulture);
+                object obj = ResourceManager.GetObject("_1512512222_rWUJ1s", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Padoru_gif {
+            get {
+                object obj = ResourceManager.GetObject("Padoru_gif", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap r5ANbt9 {
+            get {
+                object obj = ResourceManager.GetObject("r5ANbt9", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tenor {
+            get {
+                object obj = ResourceManager.GetObject("tenor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tenor__1_ {
+            get {
+                object obj = ResourceManager.GetObject("tenor__1_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tenor__2_ {
+            get {
+                object obj = ResourceManager.GetObject("tenor__2_", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

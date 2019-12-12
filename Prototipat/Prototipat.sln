@@ -13,7 +13,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomControls", "CustomCon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base", "Base\Base.csproj", "{FDD8C3B6-B722-4731-8FB8-B93982400B05}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planetes", "Planetes\Planetes.csproj", "{132397BA-33C1-41B1-96A6-E0A6589D4F02}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Planets", "Planetes\Planets.csproj", "{132397BA-33C1-41B1-96A6-E0A6589D4F02}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Filiations", "Filiations\Filiations.csproj", "{1CEEEF99-EC87-49F0-B1B6-36AC07055AC7}"
 EndProject
