@@ -180,5 +180,41 @@
   <ItemGroup>
     <None Include="Resources\tenor.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Happy-Wookiee-Star-Wars-Holiday-Special.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\img_2288.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reaction-gif-from-star-wars-of-finn-asking-are-we-actually-doing-this.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sin título.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\source %281%29.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\source.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\yoda-reaction-gif-that-is-why-you-fail-star-wars.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\c953b2e1a607b064b71ca1ce6e2dba0f.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ola.gif" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

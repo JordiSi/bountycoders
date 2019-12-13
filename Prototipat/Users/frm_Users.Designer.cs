@@ -103,10 +103,11 @@
             // TB_iduserank
             // 
             this.TB_iduserank.CampoBD = "iduserrank";
+            this.TB_iduserank.Enabled = false;
             this.TB_iduserank.Foranea = true;
             this.TB_iduserank.IdCombobox = "CB_iduserank";
             this.TB_iduserank.Llenar = false;
-            this.TB_iduserank.Location = new System.Drawing.Point(450, 43);
+            this.TB_iduserank.Location = new System.Drawing.Point(449, 86);
             this.TB_iduserank.Name = "TB_iduserank";
             this.TB_iduserank.Size = new System.Drawing.Size(100, 20);
             this.TB_iduserank.TabIndex = 35;
@@ -115,10 +116,11 @@
             // TB_idusercategory
             // 
             this.TB_idusercategory.CampoBD = "idusercategory";
+            this.TB_idusercategory.Enabled = false;
             this.TB_idusercategory.Foranea = true;
             this.TB_idusercategory.IdCombobox = "CB_idusercategory";
             this.TB_idusercategory.Llenar = false;
-            this.TB_idusercategory.Location = new System.Drawing.Point(450, 152);
+            this.TB_idusercategory.Location = new System.Drawing.Point(460, 126);
             this.TB_idusercategory.Name = "TB_idusercategory";
             this.TB_idusercategory.Size = new System.Drawing.Size(100, 20);
             this.TB_idusercategory.TabIndex = 36;
@@ -139,6 +141,7 @@
             // TB_idplanet
             // 
             this.TB_idplanet.CampoBD = "idplanet";
+            this.TB_idplanet.Enabled = false;
             this.TB_idplanet.Foranea = true;
             this.TB_idplanet.IdCombobox = "CB_idplanet";
             this.TB_idplanet.Llenar = false;
@@ -153,7 +156,7 @@
             this.CB_idplanet.controlID = "TB_idplanet";
             this.CB_idplanet.DisplayMember = "descplanet";
             this.CB_idplanet.FormattingEnabled = true;
-            this.CB_idplanet.Location = new System.Drawing.Point(647, 151);
+            this.CB_idplanet.Location = new System.Drawing.Point(647, 127);
             this.CB_idplanet.Name = "CB_idplanet";
             this.CB_idplanet.Size = new System.Drawing.Size(121, 21);
             this.CB_idplanet.TabIndex = 39;
@@ -163,10 +166,11 @@
             // TB_idspecie
             // 
             this.TB_idspecie.CampoBD = "idspecie";
+            this.TB_idspecie.Enabled = false;
             this.TB_idspecie.Foranea = true;
             this.TB_idspecie.IdCombobox = "CB_idspecie";
             this.TB_idspecie.Llenar = false;
-            this.TB_idspecie.Location = new System.Drawing.Point(832, 124);
+            this.TB_idspecie.Location = new System.Drawing.Point(848, 90);
             this.TB_idspecie.Name = "TB_idspecie";
             this.TB_idspecie.Size = new System.Drawing.Size(100, 20);
             this.TB_idspecie.TabIndex = 40;
@@ -177,7 +181,7 @@
             this.CB_idusercategory.controlID = "TB_idusercategory";
             this.CB_idusercategory.DisplayMember = "desccategory";
             this.CB_idusercategory.FormattingEnabled = true;
-            this.CB_idusercategory.Location = new System.Drawing.Point(449, 125);
+            this.CB_idusercategory.Location = new System.Drawing.Point(449, 126);
             this.CB_idusercategory.Name = "CB_idusercategory";
             this.CB_idusercategory.Size = new System.Drawing.Size(121, 21);
             this.CB_idusercategory.TabIndex = 41;

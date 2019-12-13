@@ -44,7 +44,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(86, 209);
+            this.label3.Location = new System.Drawing.Point(210, 184);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(82, 20);
             this.label3.TabIndex = 2;
@@ -52,7 +52,7 @@
             // 
             // txt_password
             // 
-            this.txt_password.Location = new System.Drawing.Point(174, 211);
+            this.txt_password.Location = new System.Drawing.Point(309, 184);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(100, 20);
             this.txt_password.TabIndex = 3;
@@ -61,7 +61,7 @@
             // 
             // txt_user
             // 
-            this.txt_user.Location = new System.Drawing.Point(174, 172);
+            this.txt_user.Location = new System.Drawing.Point(309, 129);
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(100, 20);
             this.txt_user.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(121, 170);
+            this.label2.Location = new System.Drawing.Point(245, 129);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 20);
             this.label2.TabIndex = 1;
@@ -82,11 +82,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 32F);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 39.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Gold;
-            this.label1.Location = new System.Drawing.Point(68, 85);
+            this.label1.Location = new System.Drawing.Point(32, 36);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(380, 51);
+            this.label1.Size = new System.Drawing.Size(465, 61);
             this.label1.TabIndex = 0;
             this.label1.Text = "Login Secure Core";
             // 
@@ -94,7 +94,7 @@
             // 
             this.login.BackColor = System.Drawing.Color.Gold;
             this.login.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.login.Location = new System.Drawing.Point(305, 183);
+            this.login.Location = new System.Drawing.Point(427, 152);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(100, 32);
             this.login.TabIndex = 1;
@@ -114,10 +114,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Prototipat.Properties.Resources.Padoru_gif;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Image = global::Prototipat.Properties.Resources.c953b2e1a607b064b71ca1ce6e2dba0f;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 114);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(68, 70);
+            this.pictureBox1.Size = new System.Drawing.Size(192, 143);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
