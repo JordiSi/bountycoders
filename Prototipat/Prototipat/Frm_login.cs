@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WMPLib;
 
 namespace Prototipat
 {
     public partial class Form_login: Form
     {
+        
         private string user = "bountycoders", password = "12345aA";
         public Form_login()
         {
@@ -24,6 +26,15 @@ namespace Prototipat
             txt_user.Text = "User";
             txt_password.Text = "Password";
             txt_password.ForeColor = Color.Gray;
+
+            WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
+
+            wplayer.URL = @"C:\Users\admin\Documents\GitHub\bountycoders\Prototipat\Prototipat\Resources\star wars cantina.mp3";
+            wplayer.controls.play();
+            //WindowsMediaPlayer wplayer = new WindowsMediaPlayer();
+            //wplayer.playlistCollection.newPlaylist("star wars cantina.mp3");
+            ////wplayer.controls.play();
+            //wplayer.PlayStateChange += wplayer_PlayStateChange;
         }
 
         private void txt_user_Click(object sender, EventArgs e)
