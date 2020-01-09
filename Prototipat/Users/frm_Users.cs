@@ -20,5 +20,12 @@ namespace Users
             this.btn_updateDTG.Click += new System.EventHandler(this.btn_updateDTG_Click);
             this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
         }
+
+        private void frm_Users_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'bountyCodersDataSet.Users' Puede moverla o quitarla según sea necesario.
+            this.usersTableAdapter.Fill(this.bountyCodersDataSet.Users);
+
+        }
     }
 }
