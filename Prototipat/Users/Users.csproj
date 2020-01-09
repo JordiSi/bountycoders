@@ -89,7 +89,6 @@
     </Compile>
     <Compile Include="Users.cs">
       <DependentUpon>ModelUsers.tt</DependentUpon>
-      <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>

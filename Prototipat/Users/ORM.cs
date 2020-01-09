@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Users
 {
-    public partial class Users : frm_Users
+    public partial class Form_Users : frm_Users
     {
-        public Users()
+        public Form_Users()
         {
             InitializeComponent();
         }
