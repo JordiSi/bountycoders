@@ -28,5 +28,13 @@ namespace Users
                  ).ToList();
             return _users;
         }
+        public static List<Users> SelectUsersByName(string name)
+        {
+            List<Users> _users = (from p in bd.Users
+                                  where p.UserName.Contains(name)
+                                  orderby p.UserName ascending
+                                  select p).ToList();
+            return _users;
+        }
     }
 }

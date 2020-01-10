@@ -26,7 +26,7 @@
         /// Método necesario para admitir el Diseñador. No se puede modificar
         /// el contenido de este método con el editor de código.
         /// </summary>
-        private void InitializeComponent()
+        protected void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
             this.TB_codeuser = new CustomControls.SWTextBox();
@@ -493,7 +493,7 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource BD_Users;
         private BountyCodersDataSet bountyCodersDataSet;
-        private System.Windows.Forms.BindingSource usersBindingSource;
+        protected System.Windows.Forms.BindingSource usersBindingSource;
         private BountyCodersDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn idUserDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeUserDataGridViewTextBoxColumn;
