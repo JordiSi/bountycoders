@@ -49,20 +49,12 @@
             this.TB_CodePlanet = new CustomControls.SWTextBox();
             this.SuspendLayout();
             // 
-            // btn_Nou
-            // 
-            //this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click);
-            // 
-            // btn_updateDTG
-            // 
-            //this.btn_updateDTG.Click += new System.EventHandler(this.btn_updateDTG_Click);
-            // 
             // CB_IdNatives
             // 
             this.CB_IdNatives.controlID = "TB_IdNatives";
             this.CB_IdNatives.DisplayMember = "DescSpecie";
             this.CB_IdNatives.FormattingEnabled = true;
-            this.CB_IdNatives.Location = new System.Drawing.Point(462, 139);
+            this.CB_IdNatives.Location = new System.Drawing.Point(461, 126);
             this.CB_IdNatives.Name = "CB_IdNatives";
             this.CB_IdNatives.Size = new System.Drawing.Size(100, 21);
             this.CB_IdNatives.TabIndex = 44;
@@ -74,7 +66,7 @@
             this.CB_IdFiliation.controlID = "TB_IdFiliation";
             this.CB_IdFiliation.DisplayMember = "DescFiliations";
             this.CB_IdFiliation.FormattingEnabled = true;
-            this.CB_IdFiliation.Location = new System.Drawing.Point(654, 139);
+            this.CB_IdFiliation.Location = new System.Drawing.Point(654, 126);
             this.CB_IdFiliation.Name = "CB_IdFiliation";
             this.CB_IdFiliation.Size = new System.Drawing.Size(100, 21);
             this.CB_IdFiliation.TabIndex = 45;
@@ -86,7 +78,7 @@
             this.CB_IdSector.controlID = "TB_IdSector";
             this.CB_IdSector.DisplayMember = "DescSector";
             this.CB_IdSector.FormattingEnabled = true;
-            this.CB_IdSector.Location = new System.Drawing.Point(462, 65);
+            this.CB_IdSector.Location = new System.Drawing.Point(463, 83);
             this.CB_IdSector.Name = "CB_IdSector";
             this.CB_IdSector.Size = new System.Drawing.Size(99, 21);
             this.CB_IdSector.TabIndex = 46;
@@ -210,7 +202,7 @@
             this.TB_Parsecs.Foranea = false;
             this.TB_Parsecs.IdCombobox = null;
             this.TB_Parsecs.Llenar = false;
-            this.TB_Parsecs.Location = new System.Drawing.Point(288, 127);
+            this.TB_Parsecs.Location = new System.Drawing.Point(288, 126);
             this.TB_Parsecs.Name = "TB_Parsecs";
             this.TB_Parsecs.Size = new System.Drawing.Size(100, 20);
             this.TB_Parsecs.TabIndex = 35;
@@ -222,7 +214,7 @@
             this.TB_Lat.Foranea = false;
             this.TB_Lat.IdCombobox = null;
             this.TB_Lat.Llenar = false;
-            this.TB_Lat.Location = new System.Drawing.Point(96, 127);
+            this.TB_Lat.Location = new System.Drawing.Point(96, 126);
             this.TB_Lat.Name = "TB_Lat";
             this.TB_Lat.Size = new System.Drawing.Size(100, 20);
             this.TB_Lat.TabIndex = 34;
@@ -290,7 +282,6 @@
             this.Location = new System.Drawing.Point(0, 0);
             this.Name = "frm_Planetes";
             this.taula = "planets";
-            //this.Load += new System.EventHandler(this.frm_Planetes_Load);
             this.Controls.SetChildIndex(this.btn_updateDTG, 0);
             this.Controls.SetChildIndex(this.btn_Nou, 0);
             this.Controls.SetChildIndex(this.TB_CodePlanet, 0);

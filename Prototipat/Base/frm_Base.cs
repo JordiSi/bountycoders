@@ -31,11 +31,6 @@ namespace Base
         {
             InitializeComponent();
         }
-        //private void frm_Planetes_Load(object sender, EventArgs e)
-        //{
-        //    combo.ControlCombo();
-        //}
-
         protected void btn_updateDTG_Click(object sender, EventArgs e)
         {
 
@@ -85,7 +80,6 @@ namespace Base
                 }
             }
             btn_Nou.Visible = false;
-            //combo.ControlCombo();
         }
 
         protected void crear()
@@ -148,25 +142,5 @@ namespace Base
             dts = dades.PortarTaula(query);
             dtgUsers.DataSource = dts.Tables[0];
         }
-        //private void ControlCombo()
-        //{
-        //    foreach (Control ctr1 in this.Controls)
-        //    {
-        //        if (ctr1.GetType() == typeof(ComboBoxFK))
-        //        {
-        //            foreach (Control ctr2 in this.Controls)
-        //            {
-        //                if (ctr2.GetType() == typeof(CustomControls.SWTextBox))
-        //                {
-        //                    if (((ComboBoxFK)ctr1).controlID == ((CustomControls.SWTextBox)ctr2).Name)
-        //                    {
-        //                        ((CustomControls.SWTextBox)ctr2).Text = ((ComboBoxFK)ctr1).SelectedValue.ToString();
-        //                    }
-        //                }
-        //            }
-        //        }
-        //    }
-        //}
-
     }
 }

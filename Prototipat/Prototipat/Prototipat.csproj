@@ -235,5 +235,17 @@
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star destroyer.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star destroyer1.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Star destroyer 2.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stars.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

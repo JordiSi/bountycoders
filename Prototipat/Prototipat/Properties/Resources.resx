@@ -118,11 +118,50 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Padoru_gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Padoru gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Star destroyer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Star destroyer.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="r5ANbt9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\r5ANbt9.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Star destroyer1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Star destroyer1.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="c953b2e1a607b064b71ca1ce6e2dba0f" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\c953b2e1a607b064b71ca1ce6e2dba0f.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Padoru_gif" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Padoru gif.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="img_2288" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\img_2288.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Star destroyer 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Star destroyer 2.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tenor__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tenor (2).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reaction_gif_from_star_wars_of_finn_asking_are_we_actually_doing_this" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reaction-gif-from-star-wars-of-finn-asking-are-we-actually-doing-this.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="source__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\source (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Happy_Wookiee_Star_Wars_Holiday_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Happy-Wookiee-Star-Wars-Holiday-Special.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="giphy__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\giphy (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="yoda_reaction_gif_that_is_why_you_fail_star_wars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\yoda-reaction-gif-that-is-why-you-fail-star-wars.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="_1512512222_rWUJ1s" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1512512222_rWUJ1s.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="tenor" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tenor.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -130,46 +169,19 @@
   <data name="tenor__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\tenor (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="tenor__2_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tenor (2).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="_1512512222_rWUJ1s" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1512512222_rWUJ1s.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="giphy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\giphy.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="giphy__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\giphy (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Happy_Wookiee_Star_Wars_Holiday_Special" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Happy-Wookiee-Star-Wars-Holiday-Special.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="img_2288" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\img_2288.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reaction_gif_from_star_wars_of_finn_asking_are_we_actually_doing_this" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reaction-gif-from-star-wars-of-finn-asking-are-we-actually-doing-this.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Sin_título" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sin título.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="source" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\source.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="source__1_" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\source (1).gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="yoda_reaction_gif_that_is_why_you_fail_star_wars" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\yoda-reaction-gif-that-is-why-you-fail-star-wars.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="c953b2e1a607b064b71ca1ce6e2dba0f" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\c953b2e1a607b064b71ca1ce6e2dba0f.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ola" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ola.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="stars" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\stars.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

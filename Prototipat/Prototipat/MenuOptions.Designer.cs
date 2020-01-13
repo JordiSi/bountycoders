@@ -28,6 +28,7 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.loginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.opcio1ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -41,15 +42,27 @@
             this.userRanksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sortirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Prototipat.Properties.Resources.Star_destroyer_2;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1288, 851);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.LightSlateGray;
-            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menuStrip1.BackgroundImage = global::Prototipat.Properties.Resources.stars;
+            this.menuStrip1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.loginToolStripMenuItem,
             this.opcio1ToolStripMenuItem,
@@ -69,10 +82,12 @@
             this.menuStrip1.Size = new System.Drawing.Size(1288, 30);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
             // 
             // loginToolStripMenuItem
             // 
-            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
             this.loginToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
             this.loginToolStripMenuItem.Text = "Login";
@@ -82,9 +97,10 @@
             // 
             this.opcio1ToolStripMenuItem.Checked = true;
             this.opcio1ToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.opcio1ToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opcio1ToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.opcio1ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.opcio1ToolStripMenuItem.Name = "opcio1ToolStripMenuItem";
-            this.opcio1ToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
+            this.opcio1ToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
             this.opcio1ToolStripMenuItem.Text = "Planetes";
             this.opcio1ToolStripMenuItem.Click += new System.EventHandler(this.planetesToolStripMenuItem_Click);
             // 
@@ -92,9 +108,10 @@
             // 
             this.filiationsToolStripMenuItem.Checked = true;
             this.filiationsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.filiationsToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filiationsToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.filiationsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.filiationsToolStripMenuItem.Name = "filiationsToolStripMenuItem";
-            this.filiationsToolStripMenuItem.Size = new System.Drawing.Size(84, 24);
+            this.filiationsToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
             this.filiationsToolStripMenuItem.Text = "Filiations";
             this.filiationsToolStripMenuItem.Click += new System.EventHandler(this.filiationsToolStripMenuItem_Click);
             // 
@@ -102,9 +119,10 @@
             // 
             this.regionsToolStripMenuItem.Checked = true;
             this.regionsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.regionsToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regionsToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.regionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.regionsToolStripMenuItem.Name = "regionsToolStripMenuItem";
-            this.regionsToolStripMenuItem.Size = new System.Drawing.Size(73, 24);
+            this.regionsToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
             this.regionsToolStripMenuItem.Text = "Regions";
             this.regionsToolStripMenuItem.Click += new System.EventHandler(this.regionsToolStripMenuItem_Click);
             // 
@@ -112,9 +130,10 @@
             // 
             this.sectorsToolStripMenuItem.Checked = true;
             this.sectorsToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.sectorsToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sectorsToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sectorsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.sectorsToolStripMenuItem.Name = "sectorsToolStripMenuItem";
-            this.sectorsToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
+            this.sectorsToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
             this.sectorsToolStripMenuItem.Text = "Sectors";
             this.sectorsToolStripMenuItem.Click += new System.EventHandler(this.sectorsToolStripMenuItem_Click);
             // 
@@ -122,9 +141,10 @@
             // 
             this.routesToolStripMenuItem.Checked = true;
             this.routesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.routesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.routesToolStripMenuItem.Name = "routesToolStripMenuItem";
-            this.routesToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.routesToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
             this.routesToolStripMenuItem.Text = "Routes";
             this.routesToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
             // 
@@ -132,9 +152,10 @@
             // 
             this.routeTypesToolStripMenuItem.Checked = true;
             this.routeTypesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.routeTypesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routeTypesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.routeTypesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.routeTypesToolStripMenuItem.Name = "routeTypesToolStripMenuItem";
-            this.routeTypesToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
+            this.routeTypesToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
             this.routeTypesToolStripMenuItem.Text = "RouteTypes";
             this.routeTypesToolStripMenuItem.Click += new System.EventHandler(this.routeTypesToolStripMenuItem_Click);
             // 
@@ -142,9 +163,10 @@
             // 
             this.speciesToolStripMenuItem.Checked = true;
             this.speciesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.speciesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.speciesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.speciesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.speciesToolStripMenuItem.Name = "speciesToolStripMenuItem";
-            this.speciesToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.speciesToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
             this.speciesToolStripMenuItem.Text = "Species";
             this.speciesToolStripMenuItem.Click += new System.EventHandler(this.speciesToolStripMenuItem_Click);
             // 
@@ -152,9 +174,10 @@
             // 
             this.userCategoriesToolStripMenuItem.Checked = true;
             this.userCategoriesToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.userCategoriesToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userCategoriesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userCategoriesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.userCategoriesToolStripMenuItem.Name = "userCategoriesToolStripMenuItem";
-            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(132, 24);
+            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
             this.userCategoriesToolStripMenuItem.Text = "User Categories";
             this.userCategoriesToolStripMenuItem.Click += new System.EventHandler(this.userCategoriesToolStripMenuItem_Click);
             // 
@@ -162,9 +185,10 @@
             // 
             this.userRanksToolStripMenuItem.Checked = true;
             this.userRanksToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.userRanksToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userRanksToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.userRanksToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.userRanksToolStripMenuItem.Name = "userRanksToolStripMenuItem";
-            this.userRanksToolStripMenuItem.Size = new System.Drawing.Size(95, 24);
+            this.userRanksToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
             this.userRanksToolStripMenuItem.Text = "UserRanks";
             this.userRanksToolStripMenuItem.Click += new System.EventHandler(this.userRanksToolStripMenuItem_Click);
             // 
@@ -172,30 +196,21 @@
             // 
             this.usersToolStripMenuItem.Checked = true;
             this.usersToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.usersToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usersToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usersToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(61, 24);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
             // sortirToolStripMenuItem
             // 
-            this.sortirToolStripMenuItem.Font = new System.Drawing.Font("Comic Sans MS", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortirToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sortirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.sortirToolStripMenuItem.Name = "sortirToolStripMenuItem";
-            this.sortirToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.sortirToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.sortirToolStripMenuItem.Text = "Sortir";
             this.sortirToolStripMenuItem.Click += new System.EventHandler(this.sortirToolStripMenuItem_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Prototipat.Properties.Resources.source;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1288, 851);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
             // 
             // Form_principal
             // 
@@ -215,9 +230,9 @@
             this.Text = "Menú Principal - BOUNTY CODERS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal_FormClosing);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

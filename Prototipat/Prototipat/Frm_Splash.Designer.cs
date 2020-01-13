@@ -77,7 +77,7 @@
             // 
             this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Image = global::Prototipat.Properties.Resources.tenor__1_;
+            this.pictureBox2.Image = global::Prototipat.Properties.Resources.source__1_;
             this.pictureBox2.Location = new System.Drawing.Point(28, 21);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(690, 364);
@@ -90,8 +90,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(749, 473);
+            this.BackgroundImage = global::Prototipat.Properties.Resources.stars;
+            this.ClientSize = new System.Drawing.Size(748, 473);
             this.ControlBox = false;
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label1);
