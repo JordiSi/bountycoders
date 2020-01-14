@@ -17,7 +17,7 @@ using Sectors;
 using Species;
 using UserCategories;
 using UserRanks;
-using Users;
+using UsersFinal;
 
 namespace Prototipat
 {

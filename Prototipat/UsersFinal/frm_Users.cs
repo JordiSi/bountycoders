@@ -16,5 +16,15 @@ namespace UsersFinal
         {
             InitializeComponent();
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            usersBindingSource.DataSource = ORM.SelectAllUsers();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            usersBindingSource.DataSource =
+                ORM.SelectUserNameByName(textBox1.Text);
+        }
     }
 }

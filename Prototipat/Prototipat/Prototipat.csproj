@@ -154,9 +154,9 @@
       <Project>{362dc535-725f-401a-8139-52e491673056}</Project>
       <Name>UserRanks</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Users\Users.csproj">
-      <Project>{bd5736da-df9b-4ba7-8141-5243b26ba1af}</Project>
-      <Name>Users</Name>
+    <ProjectReference Include="..\UsersFinal\UsersFinal.csproj">
+      <Project>{658e20a2-f20e-4d1e-a422-9f0aa7e57877}</Project>
+      <Name>UsersFinal</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

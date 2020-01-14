@@ -96,8 +96,6 @@
       <DependentUpon>ModelUsers.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
-    <None Include="Properties\DataSources\BountyCodersEntities.datasource" />
-    <None Include="Properties\DataSources\frm_Users.datasource" />
     <None Include="Properties\DataSources\Users.datasource" />
   </ItemGroup>
   <ItemGroup>
