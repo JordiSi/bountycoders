@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Users", "Users\Users.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsersFinal", "UsersFinal\UsersFinal.csproj", "{658E20A2-F20E-4D1E-A422-9F0AA7E57877}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalReports1", "CrystalReports1\CrystalReports1.csproj", "{C86FED08-B1BA-43CB-B673-96D31888F601}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{658E20A2-F20E-4D1E-A422-9F0AA7E57877}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{658E20A2-F20E-4D1E-A422-9F0AA7E57877}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{658E20A2-F20E-4D1E-A422-9F0AA7E57877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C86FED08-B1BA-43CB-B673-96D31888F601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C86FED08-B1BA-43CB-B673-96D31888F601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C86FED08-B1BA-43CB-B673-96D31888F601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C86FED08-B1BA-43CB-B673-96D31888F601}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
