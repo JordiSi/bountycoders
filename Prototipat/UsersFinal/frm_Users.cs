@@ -20,11 +20,9 @@ namespace UsersFinal
         {
             usersBindingSource.DataSource = ORM.SelectAllUsers();
         }
-
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            usersBindingSource.DataSource =
-                ORM.SelectUserNameByName(textBox1.Text);
+            usersBindingSource.DataSource = ORM.SelectUserNameByName(textBox1.Text);
         }
     }
 }

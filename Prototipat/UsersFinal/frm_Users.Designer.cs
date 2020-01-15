@@ -154,6 +154,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Name = "frm_Users";
             this.Text = "frm_Users";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -164,6 +165,8 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dataGridView1;
+        protected System.Windows.Forms.BindingSource usersBindingSource;
+        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn idUserDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeUserDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
@@ -174,7 +177,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn photoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idPlanetDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn idSpecieDataGridViewTextBoxColumn;
-        protected System.Windows.Forms.BindingSource usersBindingSource;
-        private System.Windows.Forms.TextBox textBox1;
     }
 }

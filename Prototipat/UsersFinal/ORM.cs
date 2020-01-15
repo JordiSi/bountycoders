@@ -8,6 +8,18 @@ namespace UsersFinal
 {
     public static class ORM
     {
+        public partial class Form1 : frm_Users
+        {
+            public Form1()
+            {
+                InitializeComponent();
+            }
+            private void Form1_Load(object sender, EventArgs e)
+            {
+                usersBindingSource.DataSource = ORM.SelectAllUsers();
+            }
+        }
+
         public static BountyCodersEntities bd = new BountyCodersEntities();
         public static List <Users> SelectAllUsers()
         {
@@ -24,17 +36,6 @@ namespace UsersFinal
                                   orderby u.UserName ascending
                                   select u).ToList();
             return _users;
-        }
-    }
-    public partial class Form1 : frm_Users
-    {
-        public Form1()
-        {
-            InitializeComponent();
-        }
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            
         }
     }
 }
