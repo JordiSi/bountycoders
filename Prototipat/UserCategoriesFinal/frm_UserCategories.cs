@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace UserCategoriesFinal
 {
-    public partial class frm_UsersCategories : Form
+    public partial class frm_UserCategories : Form
     {
-        public frm_UsersCategories()
+        public frm_UserCategories()
         {
             InitializeComponent();
         }

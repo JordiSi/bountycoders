@@ -24,5 +24,10 @@ namespace UsersFinal
         {
             usersBindingSource.DataSource = ORM.SelectUserNameByName(textBox1.Text);
         }
+
+        private void usersBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
