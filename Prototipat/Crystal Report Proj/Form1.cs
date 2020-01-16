@@ -5,12 +5,10 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using CrystalDecisions.Shared;
-using CrystalDecisions.CrystalReports.Engine;
-using CrystalDecisions.Windows.Forms;
 
-namespace CrystalReports1
+namespace Crystal_Report_Proj
 {
     public partial class Form1 : Form
     {
@@ -19,12 +17,11 @@ namespace CrystalReports1
             InitializeComponent();
         }
 
-        private void Form1_load(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
-            CrystalReports1.CrystalReport1 crpt = new CrystalReports1.CrystalReport1();
+            CrystalReport.crptCrystalReports crpt = new CrystalReport.crptCrystalReports();
             crvReport.ReportSource = null;
             crvReport.ReportSource = crpt;
         }
-
     }
 }
