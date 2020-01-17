@@ -118,14 +118,9 @@ namespace Prototipat
 			pictureBox1.Visible = false;
 		}
 
-		private void pictureBox1_Click(object sender, EventArgs e)
-		{
-
-		}
-
-		private void menuStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
-		{
-
-		}
-	}
+        private void Form_principal_Load(object sender, EventArgs e)
+        {
+            
+        }
+    }
 }

@@ -32,7 +32,7 @@ namespace CustomControls
         public ComboBoxFK()
         {
             dades = new Class1();
-            dades.Connectar();
+            dades.Connexio().Open();
 
             this.SuspendLayout();
             this.SelectedIndexChanged += new System.EventHandler(this.ComboBoxFK_SelectedIndexChanged);

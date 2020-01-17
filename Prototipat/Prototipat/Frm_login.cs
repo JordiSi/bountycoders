@@ -8,20 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WMPLib;
+using System.Data.SqlClient;
+using Dades;
 
 namespace Prototipat
 {
     public partial class Form_login: Form
     {
-        
-        private string user = "bountycoders", password = "12345aA";
+        public DataSet dts;
+        private Class1 dades;
+        private SqlConnection conn;
+
         public Form_login()
         {
             InitializeComponent();
         }
-
+        //dts = dades.PortarTaula(query);
         private void Form1_Load(object sender, EventArgs e)
         {
+            dades = new Dades.Class1();
             txt_user.ForeColor = Color.Gray;
             txt_user.Text = "User";
             txt_password.Text = "Password";
@@ -80,14 +85,31 @@ namespace Prototipat
 
         private void login_Click(object sender, EventArgs e)
         {
-            if (txt_user.Text == user && txt_password.Text == password)
+            string query = "select * from Users "; 
+            //SqlDataReader executereader
+            if (txt_user.Text!= "" && txt_password.Text != "")
             {
-                Form_splash frm = new Form_splash();
-                frm.Show();
-                this.Hide();
+                conn = dades.Connexio();
+                conn.Open();
+                query += "where UserName=" + "'" +txt_user.Text + "'" + " and Password=" + "'" + txt_password.Text + "'";
+                SqlCommand cmdBuilder = new SqlCommand(query, conn);
+                SqlDataReader reader = cmdBuilder.ExecuteReader();
+                if (reader.Read())
+                {
+                    Form_splash frm = new Form_splash();
+                    frm.Show();
+                    this.Hide();
+                    conn.Close();
+
+                }
+                else
+                {
+                    MessageBox.Show("Login Incorrecte");
+                }
             }
-            else {
-                MessageBox.Show("Login incorrecte");
+            else
+            {
+                MessageBox.Show("Introdueix les Dades");
             }
         }
     }

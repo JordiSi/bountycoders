@@ -16,28 +16,28 @@ namespace Dades
         private SqlDataAdapter adapter;
         private SqlConnection conn;
 
-        public void Connectar()
+        public SqlConnection Connexio()
         {
             string cnx = "Server = bountycoders.database.windows.net; Database = BountyCoders; User Id = bountycoders; Password = 123456aA;";
             conn = new SqlConnection(cnx);
+            return conn;
         }
 
         public DataSet PortarTaula(string query)
         {
-            Connectar();
-            conn.Open();
+            Connexio().Open();
             adapter = new SqlDataAdapter(query, conn);
             DataSet dts = new DataSet();
             adapter.Fill(dts);
             conn.Close();
             return dts;
+            
         }
 
         public void Actualitzar(string query, DataSet dts)
         {
             //int res=0;
-            Connectar();
-            conn.Open();
+            Connexio().Open();
             adapter = new SqlDataAdapter(query, conn);
             SqlCommandBuilder cmdBuilder;
             cmdBuilder = new SqlCommandBuilder(adapter);
