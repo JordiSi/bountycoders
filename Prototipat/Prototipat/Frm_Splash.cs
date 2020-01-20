@@ -13,14 +13,19 @@ namespace Prototipat
 {
     public partial class Form_splash : Form
     {
-        public Form_splash()
+        private string query_fin;
+        public Form_splash(string query)
         {
             InitializeComponent();
+            query_fin = query;
+            MessageBox.Show(query);
+
         }
 
         private void Splash_Load(object sender, EventArgs e)
         {
             timer1.Start();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -29,13 +34,21 @@ namespace Prototipat
             {
                 progressBar1.Value++;
                 label1.Text = progressBar1.Value.ToString() + "%";
+                
             }
             else
             {
                 timer1.Stop();
-                Form_principal frm = new Form_principal();
-                frm.Show();
-                this.Hide();
+                using (Form_principal frm = new Form_principal(query_fin))
+                {
+                    frm.ShowDialog();
+                    this.Close();
+                }
+
+                //timer1.Stop();
+                //Form_principal frm = new Form_principal();
+                //frm.Show();
+                //this.Hide();
             }
         }
     }

@@ -78,9 +78,9 @@ namespace Prototipat
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form_splash frm = new Form_splash();
-            frm.Show();
-            this.Hide();
+            //form_splash frm = new form_splash(query);
+            //frm.show();
+            //this.hide();
         }
 
         private void login_Click(object sender, EventArgs e)
@@ -96,9 +96,11 @@ namespace Prototipat
                 SqlDataReader reader = cmdBuilder.ExecuteReader();
                 if (reader.Read())
                 {
-                    Form_splash frm = new Form_splash();
-                    frm.Show();
-                    this.Hide();
+                    using (Form_splash frm = new Form_splash(query))
+                    {
+                        frm.ShowDialog();
+                        frm.Hide();
+                    }
                     conn.Close();
 
                 }
