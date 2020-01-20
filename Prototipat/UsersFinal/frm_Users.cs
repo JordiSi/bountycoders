@@ -29,5 +29,16 @@ namespace UsersFinal
         {
 
         }
+
+        private void Insertar_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            InsertUsers f = new InsertUsers();
+            f.ShowDialog();
+        }
     }
 }
