@@ -19,6 +19,10 @@ namespace UsersFinal
         private void Form1_Load(object sender, EventArgs e)
         {
             usersBindingSource.DataSource = ORM.SelectAllUsers();
+            PlanetsBindingSource.DataSource = ORM.SelectAllPlanets();
+            SpeciesBindingSource.DataSource = ORM.SelectAllSpecies();
+            UserCategoriesBindingSource.DataSource = ORM.SelectAllUserCategories();
+            UserRanksBindingSource.DataSource = ORM.SelectAllUserRanks();
         }
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -35,9 +39,46 @@ namespace UsersFinal
 
         }
 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Planets _planets;
+            if (comboBox1.SelectedItem != null)
+            {
+                _planets = (Planets)comboBox1.SelectedItem;
+                usersBindingSource.DataSource = _planets.Users.ToList();
+            }
+        }
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Species _species;
+            if (comboBox2.SelectedItem != null)
+            {
+                _species = (Species)comboBox2.SelectedItem;
+                usersBindingSource.DataSource = _species.Users.ToList();
+            }
+        }
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UserCategories _UserCategories;
+            if (comboBox4.SelectedItem != null)
+            {
+                _UserCategories = (UserCategories)comboBox4.SelectedItem;
+                usersBindingSource.DataSource = _UserCategories.Users.ToList();
+            }
+        }
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UserRanks _UserRanks;
+            if (comboBox5.SelectedItem != null)
+            {
+                _UserRanks = (UserRanks)comboBox5.SelectedItem;
+                usersBindingSource.DataSource = _UserRanks.Users.ToList();
+            }
+        }
+
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
-            InsertUsers f = new InsertUsers();
+            InsertUser f = new InsertUser();
             f.ShowDialog();
         }
     }

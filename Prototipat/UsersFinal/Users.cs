@@ -24,5 +24,10 @@ namespace UsersFinal
         public string Photo { get; set; }
         public Nullable<int> idPlanet { get; set; }
         public Nullable<int> idSpecie { get; set; }
+    
+        public virtual Planets Planets { get; set; }
+        public virtual Species Species { get; set; }
+        public virtual UserCategories UserCategories { get; set; }
+        public virtual UserRanks UserRanks { get; set; }
     }
 }

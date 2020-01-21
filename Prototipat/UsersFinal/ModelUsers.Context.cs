@@ -26,5 +26,9 @@ namespace UsersFinal
         }
     
         public virtual DbSet<Users> Users { get; set; }
+        public virtual DbSet<Planets> Planets { get; set; }
+        public virtual DbSet<Species> Species { get; set; }
+        public virtual DbSet<UserCategories> UserCategories { get; set; }
+        public virtual DbSet<UserRanks> UserRanks { get; set; }
     }
 }
