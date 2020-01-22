@@ -33,8 +33,7 @@ namespace Prototipat
 			frm.MdiParent = this;
 			frm.Show();
 			ocultar();
-
-		}
+        }
 		private void filiationsToolStripMenuItem_Click(object sender, EventArgs e)
 		{
 			frm_Filiations frm = new frm_Filiations();
@@ -116,6 +115,7 @@ namespace Prototipat
 		public void ocultar()
 		{
 			pictureBox1.Visible = false;
+            
 		}
 
         private void Form_principal_Load(object sender, EventArgs e)
