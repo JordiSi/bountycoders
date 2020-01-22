@@ -78,6 +78,20 @@ namespace Prototipat
             }
         }
 
+		private void successfulLogin(){ //Si la contrasenya és correcte
+			Form_splash frm;
+			if(frmSplash != null){
+				frm = frmSplash;
+			}else{
+				frm = new Form_splash();
+			}
+			frm.Show();
+			frm.frmLogin = this;
+			if(frmMenu != null)
+				frm.frmMenu = frmMenu;
+			this.Hide();
+		}
+
         private void login_Click(object sender, EventArgs e)
         {
             string query = "select * from Users "; 
@@ -89,31 +103,22 @@ namespace Prototipat
                 query += "where UserName=" + "'" +txt_user.Text + "'" + " and Password=" + "'" + txt_password.Text + "'";
                 SqlCommand cmdBuilder = new SqlCommand(query, conn);
                 SqlDataReader reader = cmdBuilder.ExecuteReader();
-                if (reader.Read())
-                {
-					Form_splash frm;
-					if(frmSplash != null){
-						frm = frmSplash;
-					}else{
-						frm = new Form_splash();
-					}
-                    frm.Show();
-					frm.frmLogin = this;
-					if(frmMenu != null)
-						frm.frmMenu = frmMenu;
-                    this.Hide();
-                    conn.Close();
 
+                if (reader.Read()) {
+					successfulLogin();
+                } else {
+                    MessageBox.Show("Login incorrecte");
                 }
-                else
-                {
-                    MessageBox.Show("Login Incorrecte");
-                }
+				conn.Close();
             }
             else
             {
-                MessageBox.Show("Introdueix les Dades");
+                MessageBox.Show("Introdueix les dades");
             }
         }
-    }
+
+		private void button1_Click(object sender,EventArgs e) {
+			successfulLogin();
+		}
+	}
 }
