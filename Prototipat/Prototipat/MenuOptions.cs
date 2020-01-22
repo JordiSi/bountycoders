@@ -23,9 +23,7 @@ namespace Prototipat
 {
 	public partial class Form_principal : Form
 	{
-        //private Form_login = ;
-
-		public Form_principal(string query)
+		public Form_principal()
 		{
 			InitializeComponent();
 		}
@@ -105,18 +103,24 @@ namespace Prototipat
 		}
 
 		private void sortirToolStripMenuItem_Click(object sender,EventArgs e) {
-            this.Close();
-        }
+			Environment.Exit(0);
+
+		}
 
 		private void loginToolStripMenuItem_Click(object sender,EventArgs e) {
-            //Form_login frm;
-            //frm.Show();
-			//this.Hide();
+			Form_login frm = new Form_login();
+			frm.Show();
+			this.Hide();
 
 		}
 		public void ocultar()
 		{
 			pictureBox1.Visible = false;
 		}
+
+        private void Form_principal_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
