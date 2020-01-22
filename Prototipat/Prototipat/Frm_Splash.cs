@@ -13,6 +13,9 @@ namespace Prototipat
 {
     public partial class Form_splash : Form
     {
+		public Form_login frmLogin;
+		public Form_principal frmMenu;
+
         public Form_splash()
         {
             InitializeComponent();
@@ -33,8 +36,15 @@ namespace Prototipat
             else
             {
                 timer1.Stop();
-                Form_principal frm = new Form_principal();
+				Form_principal frm;
+				if(frmMenu != null){
+					frm = frmMenu;
+				}else{
+					frm = new Form_principal();
+				}
                 frm.Show();
+				frm.frmLogin = frmLogin;
+				frm.frmSplash = this;
                 this.Hide();
             }
         }

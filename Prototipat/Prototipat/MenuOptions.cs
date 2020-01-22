@@ -23,13 +23,16 @@ namespace Prototipat
 {
 	public partial class Form_principal : Form
 	{
+		public Form_login frmLogin;
+		public Form_splash frmSplash;
+
 		public Form_principal()
 		{
 			InitializeComponent();
 		}
 
 		private void planetesToolStripMenuItem_Click(object sender,EventArgs e) {
-			frm_Planetes  frm = new frm_Planetes();
+			frm_Planetes frm = new frm_Planetes();
 			frm.MdiParent = this;
 			frm.Show();
 			ocultar();
@@ -97,30 +100,29 @@ namespace Prototipat
 			frm.Show();
 			ocultar();
 		}
+
 		private void frmPrincipal_FormClosing(object sender,FormClosingEventArgs e) {
-			 Environment.Exit(0);
+			salir();
 		}
 
 		private void sortirToolStripMenuItem_Click(object sender,EventArgs e) {
-			Environment.Exit(0);
-
+			salir();
 		}
 
 		private void loginToolStripMenuItem_Click(object sender,EventArgs e) {
-			Form_login frm = new Form_login();
+			Form_login frm = frmLogin;
 			frm.Show();
+			frm.frmMenu = this;
+			frm.frmSplash = frmSplash;
 			this.Hide();
 
 		}
-		public void ocultar()
-		{
-			pictureBox1.Visible = false;
-            
-		}
 
-        private void Form_principal_Load(object sender, EventArgs e)
-        {
-            
-        }
+		public void ocultar() {
+			pictureBox1.Visible = false;
+		}
+		public void salir(){
+			Application.Exit();
+		}
     }
 }

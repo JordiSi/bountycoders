@@ -18,6 +18,8 @@ namespace Prototipat
         public DataSet dts;
         private Class1 dades;
         private SqlConnection conn;
+		public Form_splash frmSplash;
+		public Form_principal frmMenu;
 
         public Form_login()
         {
@@ -42,7 +44,7 @@ namespace Prototipat
             //wplayer.PlayStateChange += wplayer_PlayStateChange;
         }
 
-        private void txt_user_Click(object sender, EventArgs e)
+        private void txt_user_Enter(object sender, EventArgs e)
         {
             if (txt_user.ForeColor == Color.Gray) {
                 txt_user.ForeColor = Color.Black;
@@ -58,7 +60,7 @@ namespace Prototipat
             }
         }
 
-        private void txt_password_Click(object sender, EventArgs e)
+        private void txt_password_Enter(object sender, EventArgs e)
         {
             if (txt_password.ForeColor == Color.Gray) {
                 txt_password.ForeColor = Color.Black;
@@ -76,13 +78,6 @@ namespace Prototipat
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form_splash frm = new Form_splash();
-            frm.Show();
-            this.Hide();
-        }
-
         private void login_Click(object sender, EventArgs e)
         {
             string query = "select * from Users "; 
@@ -96,8 +91,16 @@ namespace Prototipat
                 SqlDataReader reader = cmdBuilder.ExecuteReader();
                 if (reader.Read())
                 {
-                    Form_splash frm = new Form_splash();
+					Form_splash frm;
+					if(frmSplash != null){
+						frm = frmSplash;
+					}else{
+						frm = new Form_splash();
+					}
                     frm.Show();
+					frm.frmLogin = this;
+					if(frmMenu != null)
+						frm.frmMenu = frmMenu;
                     this.Hide();
                     conn.Close();
 

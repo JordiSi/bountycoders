@@ -57,8 +57,8 @@
 			this.txt_password.Location = new System.Drawing.Point(309, 184);
 			this.txt_password.Name = "txt_password";
 			this.txt_password.Size = new System.Drawing.Size(100, 20);
-			this.txt_password.TabIndex = 3;
-			this.txt_password.Click += new System.EventHandler(this.txt_password_Click);
+			this.txt_password.TabIndex = 2;
+			this.txt_password.Enter += new System.EventHandler(this.txt_password_Enter);
 			this.txt_password.Leave += new System.EventHandler(this.txt_password_Leave);
 			// 
 			// txt_user
@@ -66,8 +66,8 @@
 			this.txt_user.Location = new System.Drawing.Point(309, 129);
 			this.txt_user.Name = "txt_user";
 			this.txt_user.Size = new System.Drawing.Size(100, 20);
-			this.txt_user.TabIndex = 2;
-			this.txt_user.Click += new System.EventHandler(this.txt_user_Click);
+			this.txt_user.TabIndex = 1;
+			this.txt_user.Enter += new System.EventHandler(this.txt_user_Enter);
 			this.txt_user.Leave += new System.EventHandler(this.txt_user_Leave);
 			// 
 			// label2
@@ -99,7 +99,7 @@
 			this.login.Location = new System.Drawing.Point(427, 152);
 			this.login.Name = "login";
 			this.login.Size = new System.Drawing.Size(100, 32);
-			this.login.TabIndex = 1;
+			this.login.TabIndex = 3;
 			this.login.Text = "LOG IN";
 			this.login.UseVisualStyleBackColor = false;
 			this.login.Click += new System.EventHandler(this.login_Click);
@@ -112,7 +112,6 @@
 			this.button1.TabIndex = 4;
 			this.button1.Text = "No pulses este boton";
 			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
 			// 
 			// pictureBox1
 			// 
@@ -153,7 +152,7 @@
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
 			this.Name = "Form_login";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Login";
+			this.Text = "Login - BOUNTY CODERS";
 			this.Load += new System.EventHandler(this.Form1_Load);
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
 			((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).EndInit();
