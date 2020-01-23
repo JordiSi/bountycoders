@@ -131,7 +131,10 @@ namespace Prototipat
 
         private void fTPToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start(@"C:\Users\admin\Documents\GitHub\bountycoders\Prototipat\FTP\obj\Debug\FTP.exe");
+            frm_FTP frm = new frm_FTP();
+            frm.MdiParent = this;
+            frm.Show();
+            ocultar();
         }
     }
 }

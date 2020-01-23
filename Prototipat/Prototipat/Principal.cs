@@ -6,7 +6,7 @@ using System.Windows.Forms;
 
 namespace Prototipat
 {
-    static class Program
+    static class Principal
     {
         /// <summary>
         /// Punto de entrada principal para la aplicación.

@@ -8,12 +8,12 @@ using System.IO;
 
 namespace FTP
 {
-    class Program
+    class Programa
     {
         public static void Main(string[] args)
         {
                 {
-                FtpWebRequest request = (FtpWebRequest)WebRequest.Create("172.17.6.9:22");
+                FtpWebRequest request = (FtpWebRequest)WebRequest.Create("172.17.6.9");
                 request.Method = WebRequestMethods.Ftp.DownloadFile;
 
                 request.Credentials = new NetworkCredential("g06", "12345aA");

@@ -64,7 +64,7 @@
     <Compile Include="Frm_Splash.Designer.cs">
       <DependentUpon>Frm_Splash.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Principal.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MenuOptions.resx">
       <DependentUpon>MenuOptions.cs</DependentUpon>
