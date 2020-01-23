@@ -31,6 +31,17 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_Users));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.idUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idUserRankDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idUserCategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idPlanetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idSpecieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -52,24 +63,14 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
-            this.idUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idUserRankDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idUserCategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idPlanetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idSpecieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.SpeciesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.PlanetsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.UserCategoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.UserRanksBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpeciesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlanetsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserCategoriesBindingSource)).BeginInit();
@@ -100,6 +101,72 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(776, 198);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // idUserDataGridViewTextBoxColumn
+            // 
+            this.idUserDataGridViewTextBoxColumn.DataPropertyName = "idUser";
+            this.idUserDataGridViewTextBoxColumn.HeaderText = "idUser";
+            this.idUserDataGridViewTextBoxColumn.Name = "idUserDataGridViewTextBoxColumn";
+            // 
+            // codeUserDataGridViewTextBoxColumn
+            // 
+            this.codeUserDataGridViewTextBoxColumn.DataPropertyName = "CodeUser";
+            this.codeUserDataGridViewTextBoxColumn.HeaderText = "CodeUser";
+            this.codeUserDataGridViewTextBoxColumn.Name = "codeUserDataGridViewTextBoxColumn";
+            // 
+            // userNameDataGridViewTextBoxColumn
+            // 
+            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
+            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
+            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
+            // 
+            // loginDataGridViewTextBoxColumn
+            // 
+            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
+            this.loginDataGridViewTextBoxColumn.HeaderText = "Login";
+            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
+            // 
+            // passwordDataGridViewTextBoxColumn
+            // 
+            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
+            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
+            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
+            // 
+            // idUserRankDataGridViewTextBoxColumn
+            // 
+            this.idUserRankDataGridViewTextBoxColumn.DataPropertyName = "idUserRank";
+            this.idUserRankDataGridViewTextBoxColumn.HeaderText = "idUserRank";
+            this.idUserRankDataGridViewTextBoxColumn.Name = "idUserRankDataGridViewTextBoxColumn";
+            // 
+            // idUserCategoryDataGridViewTextBoxColumn
+            // 
+            this.idUserCategoryDataGridViewTextBoxColumn.DataPropertyName = "idUserCategory";
+            this.idUserCategoryDataGridViewTextBoxColumn.HeaderText = "idUserCategory";
+            this.idUserCategoryDataGridViewTextBoxColumn.Name = "idUserCategoryDataGridViewTextBoxColumn";
+            // 
+            // photoDataGridViewTextBoxColumn
+            // 
+            this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
+            this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
+            this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
+            this.photoDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // idPlanetDataGridViewTextBoxColumn
+            // 
+            this.idPlanetDataGridViewTextBoxColumn.DataPropertyName = "idPlanet";
+            this.idPlanetDataGridViewTextBoxColumn.HeaderText = "idPlanet";
+            this.idPlanetDataGridViewTextBoxColumn.Name = "idPlanetDataGridViewTextBoxColumn";
+            // 
+            // idSpecieDataGridViewTextBoxColumn
+            // 
+            this.idSpecieDataGridViewTextBoxColumn.DataPropertyName = "idSpecie";
+            this.idSpecieDataGridViewTextBoxColumn.HeaderText = "idSpecie";
+            this.idSpecieDataGridViewTextBoxColumn.Name = "idSpecieDataGridViewTextBoxColumn";
+            // 
+            // usersBindingSource
+            // 
+            this.usersBindingSource.DataSource = typeof(UsersFinal.Users);
+            this.usersBindingSource.CurrentChanged += new System.EventHandler(this.usersBindingSource_CurrentChanged);
             // 
             // textBox1
             // 
@@ -273,72 +340,6 @@
             this.textBox10.Size = new System.Drawing.Size(100, 20);
             this.textBox10.TabIndex = 20;
             // 
-            // idUserDataGridViewTextBoxColumn
-            // 
-            this.idUserDataGridViewTextBoxColumn.DataPropertyName = "idUser";
-            this.idUserDataGridViewTextBoxColumn.HeaderText = "idUser";
-            this.idUserDataGridViewTextBoxColumn.Name = "idUserDataGridViewTextBoxColumn";
-            // 
-            // codeUserDataGridViewTextBoxColumn
-            // 
-            this.codeUserDataGridViewTextBoxColumn.DataPropertyName = "CodeUser";
-            this.codeUserDataGridViewTextBoxColumn.HeaderText = "CodeUser";
-            this.codeUserDataGridViewTextBoxColumn.Name = "codeUserDataGridViewTextBoxColumn";
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            // 
-            // loginDataGridViewTextBoxColumn
-            // 
-            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
-            this.loginDataGridViewTextBoxColumn.HeaderText = "Login";
-            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            // 
-            // idUserRankDataGridViewTextBoxColumn
-            // 
-            this.idUserRankDataGridViewTextBoxColumn.DataPropertyName = "idUserRank";
-            this.idUserRankDataGridViewTextBoxColumn.HeaderText = "idUserRank";
-            this.idUserRankDataGridViewTextBoxColumn.Name = "idUserRankDataGridViewTextBoxColumn";
-            // 
-            // idUserCategoryDataGridViewTextBoxColumn
-            // 
-            this.idUserCategoryDataGridViewTextBoxColumn.DataPropertyName = "idUserCategory";
-            this.idUserCategoryDataGridViewTextBoxColumn.HeaderText = "idUserCategory";
-            this.idUserCategoryDataGridViewTextBoxColumn.Name = "idUserCategoryDataGridViewTextBoxColumn";
-            // 
-            // photoDataGridViewTextBoxColumn
-            // 
-            this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
-            this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
-            this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
-            this.photoDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // idPlanetDataGridViewTextBoxColumn
-            // 
-            this.idPlanetDataGridViewTextBoxColumn.DataPropertyName = "idPlanet";
-            this.idPlanetDataGridViewTextBoxColumn.HeaderText = "idPlanet";
-            this.idPlanetDataGridViewTextBoxColumn.Name = "idPlanetDataGridViewTextBoxColumn";
-            // 
-            // idSpecieDataGridViewTextBoxColumn
-            // 
-            this.idSpecieDataGridViewTextBoxColumn.DataPropertyName = "idSpecie";
-            this.idSpecieDataGridViewTextBoxColumn.HeaderText = "idSpecie";
-            this.idSpecieDataGridViewTextBoxColumn.Name = "idSpecieDataGridViewTextBoxColumn";
-            // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataSource = typeof(UsersFinal.Users);
-            this.usersBindingSource.CurrentChanged += new System.EventHandler(this.usersBindingSource_CurrentChanged);
-            // 
             // SpeciesBindingSource
             // 
             this.SpeciesBindingSource.DataSource = typeof(UsersFinal.Species);
@@ -355,6 +356,15 @@
             // 
             this.UserRanksBindingSource.DataSource = typeof(UsersFinal.UserRanks);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(662, 202);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(105, 32);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "IMPRIMIR";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // frm_Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -362,6 +372,7 @@
             this.BackgroundImage = global::UsersFinal.Properties.Resources.kosmos_tumannost_zvezdy_7332;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(801, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
@@ -391,9 +402,9 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpeciesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PlanetsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.UserCategoriesBindingSource)).EndInit();
@@ -442,5 +453,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Button button1;
     }
 }
