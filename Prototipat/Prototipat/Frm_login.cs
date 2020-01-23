@@ -23,7 +23,6 @@ namespace Prototipat
         {
             InitializeComponent();
         }
-        //dts = dades.PortarTaula(query);
         private void Form1_Load(object sender, EventArgs e)
         {
             dades = new Dades.Class1();
@@ -85,23 +84,26 @@ namespace Prototipat
 
         private void login_Click(object sender, EventArgs e)
         {
-            string query = "select * from Users "; 
+            int accesslevel;
+            string query = "select AccessLevel from Users, usercategories "; 
             //SqlDataReader executereader
             if (txt_user.Text!= "" && txt_password.Text != "")
             {
                 conn = dades.Connexio();
                 conn.Open();
-                query += "where UserName=" + "'" +txt_user.Text + "'" + " and Password=" + "'" + txt_password.Text + "'";
+                query += "where users.idUserCategory=usercategories.idUserCategory and UserName=" + "'" +txt_user.Text + "'" + " and Password=" + "'" + txt_password.Text + "'";
                 SqlCommand cmdBuilder = new SqlCommand(query, conn);
                 SqlDataReader reader = cmdBuilder.ExecuteReader();
                 if (reader.Read())
                 {
-                    using (Form_splash frm = new Form_splash(query))
+                    accesslevel = reader.GetInt32(0);
+                    using (Form_splash frm = new Form_splash(accesslevel))
                     {
+                        conn.Close();
                         frm.ShowDialog();
                         frm.Hide();
                     }
-                    conn.Close();
+                    
 
                 }
                 else

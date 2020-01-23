@@ -98,8 +98,8 @@
             this.opcio1ToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opcio1ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.opcio1ToolStripMenuItem.Name = "opcio1ToolStripMenuItem";
-            this.opcio1ToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
-            this.opcio1ToolStripMenuItem.Text = "Planetes";
+            this.opcio1ToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.opcio1ToolStripMenuItem.Text = "Planets";
             this.opcio1ToolStripMenuItem.Click += new System.EventHandler(this.planetesToolStripMenuItem_Click);
             // 
             // filiationsToolStripMenuItem
@@ -175,8 +175,8 @@
             this.userCategoriesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userCategoriesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.userCategoriesToolStripMenuItem.Name = "userCategoriesToolStripMenuItem";
-            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
-            this.userCategoriesToolStripMenuItem.Text = "User Categories";
+            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
+            this.userCategoriesToolStripMenuItem.Text = "UserCategories";
             this.userCategoriesToolStripMenuItem.Click += new System.EventHandler(this.userCategoriesToolStripMenuItem_Click);
             // 
             // userRanksToolStripMenuItem
@@ -227,6 +227,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menú Principal - BOUNTY CODERS";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPrincipal_FormClosing);
+            this.Load += new System.EventHandler(this.Form_principal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

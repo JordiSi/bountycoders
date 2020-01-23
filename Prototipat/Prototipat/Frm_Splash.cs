@@ -13,12 +13,11 @@ namespace Prototipat
 {
     public partial class Form_splash : Form
     {
-        private string query_fin;
-        public Form_splash(string query)
+        private int accesslevel_fin;
+        public Form_splash(int accesslevel)
         {
             InitializeComponent();
-            query_fin = query;
-            MessageBox.Show(query);
+            accesslevel_fin = accesslevel;
 
         }
 
@@ -39,7 +38,7 @@ namespace Prototipat
             else
             {
                 timer1.Stop();
-                using (Form_principal frm = new Form_principal(query_fin))
+                using (Form_principal frm = new Form_principal(accesslevel_fin))
                 {
                     frm.ShowDialog();
                     this.Close();

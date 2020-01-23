@@ -18,18 +18,57 @@ using Species;
 using UserCategories;
 using UserRanks;
 using Users;
+using Dades;
+using System.Data.SqlClient;
 
 namespace Prototipat
 {
 	public partial class Form_principal : Form
 	{
-        //private Form_login = ;
+        private int accesslevel_usuari, accesslevel_taula;
 
-		public Form_principal(string query)
+        private Class1 dades;
+        private SqlConnection conn;
+        private string query;
+        public Form_principal(int accesslevel_t)
 		{
 			InitializeComponent();
+            accesslevel_usuari = accesslevel_t;
 		}
-
+        private void Form_principal_Load(object sender, EventArgs e)
+        {
+            dades = new Dades.Class1();
+            conn = dades.Connexio();
+            try
+            {
+                conn.Close();
+            }
+            catch (Exception ex) { }
+            
+            foreach (Control ctr1 in this.Controls)
+            {
+                if(ctr1.Name.Equals("menuStrip1"))
+                {
+                    foreach (ToolStripMenuItem ctr2 in ((MenuStrip)ctr1).Items)
+                    {
+                        if (ctr2.Text != "Login" && ctr2.Text != "Sortir")
+                        {
+                            conn.Open();
+                            query = "select accesslevel from menuaccess where table_name=" + "'" + ctr2.Text + "'";
+                            SqlCommand cmdBuilder = new SqlCommand(query, conn);
+                            var dataset = dades.PortarTaula(query);
+                                accesslevel_taula = (int)dataset.Tables[0].Rows[0][0];
+                            if (accesslevel_taula > accesslevel_usuari)
+                            {
+                                ctr2.Visible = false;
+                            }
+                            conn.Close();
+                        }
+                    }
+                }
+            }
+            
+        }
 		private void planetesToolStripMenuItem_Click(object sender,EventArgs e) {
 			frm_Planetes  frm = new frm_Planetes();
 			frm.MdiParent = this;
@@ -100,7 +139,7 @@ namespace Prototipat
 			ocultar();
 		}
 		private void frmPrincipal_FormClosing(object sender,FormClosingEventArgs e) {
-			 Environment.Exit(0);
+			 Application.Exit();
 		}
 
 		private void sortirToolStripMenuItem_Click(object sender,EventArgs e) {
@@ -117,6 +156,9 @@ namespace Prototipat
 		{
 			pictureBox1.Visible = false;
             
+            
 		}
+
+
     }
 }
