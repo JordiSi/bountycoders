@@ -13,8 +13,10 @@ namespace Prototipat
 {
     public partial class Form_splash : Form
     {
+        public int accesslevel;
+
         private int accesslevel_fin;
-        public Form_splash(int accesslevel)
+        public Form_splash()
         {
             InitializeComponent();
             accesslevel_fin = accesslevel;
@@ -38,16 +40,10 @@ namespace Prototipat
             else
             {
                 timer1.Stop();
-                using (Form_principal frm = new Form_principal(accesslevel_fin))
-                {
-                    frm.ShowDialog();
-                    this.Close();
-                }
-
-                //timer1.Stop();
-                //Form_principal frm = new Form_principal();
-                //frm.Show();
-                //this.Hide();
+                Form_principal frm = new Form_principal();
+                frm.accesslevel_usuari = accesslevel;
+                frm.ShowDialog();
+                this.Close();
             }
         }
     }

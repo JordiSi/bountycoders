@@ -77,9 +77,6 @@ namespace Prototipat
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //form_splash frm = new form_splash(query);
-            //frm.show();
-            //this.hide();
         }
 
         private void login_Click(object sender, EventArgs e)
@@ -97,14 +94,12 @@ namespace Prototipat
                 if (reader.Read())
                 {
                     accesslevel = reader.GetInt32(0);
-                    using (Form_splash frm = new Form_splash(accesslevel))
-                    {
-                        conn.Close();
-                        frm.ShowDialog();
-                        frm.Hide();
-                    }
+                    Form_splash frm = new Form_splash();
+                    conn.Close();
+                    frm.accesslevel = accesslevel;
+                    frm.ShowDialog();
+                    frm.Hide();
                     
-
                 }
                 else
                 {

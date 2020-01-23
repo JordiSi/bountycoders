@@ -25,15 +25,14 @@ namespace Prototipat
 {
 	public partial class Form_principal : Form
 	{
-        private int accesslevel_usuari, accesslevel_taula;
+        public int accesslevel_usuari, accesslevel_taula;
 
         private Class1 dades;
         private SqlConnection conn;
         private string query;
-        public Form_principal(int accesslevel_t)
+        public Form_principal()
 		{
 			InitializeComponent();
-            accesslevel_usuari = accesslevel_t;
 		}
         private void Form_principal_Load(object sender, EventArgs e)
         {
