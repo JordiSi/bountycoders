@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="BountyCodersModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="BountyCodersModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="UserCategories">
           <Key>
             <PropertyRef Name="idUserCategory" />
@@ -17,11 +17,13 @@
         <EntityContainer Name="BountyCodersModelStoreContainer">
           <EntitySet Name="UserCategories" EntityType="Self.UserCategories" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="BountyCodersModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="BountyCodersEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="UserCategories" EntityType="BountyCodersModel.UserCategories" />
+        </EntityContainer>
         <EntityType Name="UserCategories">
           <Key>
             <PropertyRef Name="idUserCategory" />
@@ -31,9 +33,6 @@
           <Property Name="DescCategory" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="AccessLevel" Type="Int32" />
         </EntityType>
-        <EntityContainer Name="BountyCodersEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="UserCategories" EntityType="Self.UserCategories" />
-        </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -43,10 +42,10 @@
           <EntitySetMapping Name="UserCategories">
             <EntityTypeMapping TypeName="BountyCodersModel.UserCategories">
               <MappingFragment StoreEntitySet="UserCategories">
-                <ScalarProperty Name="idUserCategory" ColumnName="idUserCategory" />
-                <ScalarProperty Name="CodeCategory" ColumnName="CodeCategory" />
-                <ScalarProperty Name="DescCategory" ColumnName="DescCategory" />
                 <ScalarProperty Name="AccessLevel" ColumnName="AccessLevel" />
+                <ScalarProperty Name="DescCategory" ColumnName="DescCategory" />
+                <ScalarProperty Name="CodeCategory" ColumnName="CodeCategory" />
+                <ScalarProperty Name="idUserCategory" ColumnName="idUserCategory" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace UserCategoriesFinal
+namespace UsersCategoriesFinal
 {
     using System;
     using System.Data.Entity;

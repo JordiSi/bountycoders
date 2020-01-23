@@ -8,7 +8,7 @@
         <EntityTypeShape EntityType="BountyCodersModel.Users" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="BountyCodersModel.Planets" Width="1.5" PointX="3" PointY="11.625" />
         <EntityTypeShape EntityType="BountyCodersModel.Species" Width="1.5" PointX="0.75" PointY="7.125" />
-        <EntityTypeShape EntityType="BountyCodersModel.UserCategories" Width="1.5" PointX="3" PointY="6.375" />
+        <EntityTypeShape EntityType="BountyCodersModel.UserCategories" Width="1.5" PointX="4.75" PointY="6.25" />
         <EntityTypeShape EntityType="BountyCodersModel.UserRanks" Width="1.5" PointX="3" PointY="9" />
         <AssociationConnector Association="BountyCodersModel.FK_Planets_Species" />
         <AssociationConnector Association="BountyCodersModel.FK_Users_Planets" />

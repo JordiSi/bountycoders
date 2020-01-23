@@ -15,7 +15,7 @@ using Routes;
 using RouteTypes;
 using Sectors;
 using Species;
-using UserCategories;
+using UsersCategoriesFinal;
 using UserRanks;
 using UsersFinal;
 
@@ -79,7 +79,7 @@ namespace Prototipat
 		}
 		private void userCategoriesToolStripMenuItem_Click(object sender, EventArgs e)
 		{
-			frm_UserCategories frm = new frm_UserCategories();
+			frm_UsersCategories frm = new frm_UsersCategories();
 			frm.MdiParent = this;
 			frm.Show();
 			ocultar();

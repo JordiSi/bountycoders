@@ -154,13 +154,13 @@
       <Project>{74bf33a0-03ff-4760-be0c-58aeae194035}</Project>
       <Name>Taula_opcions</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UserCategories\UserCategories.csproj">
-      <Project>{b6c8e78b-47ae-4eb2-8331-f16af7e1b25d}</Project>
-      <Name>UserCategories</Name>
-    </ProjectReference>
     <ProjectReference Include="..\UserRanks\UserRanks.csproj">
       <Project>{362dc535-725f-401a-8139-52e491673056}</Project>
       <Name>UserRanks</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UsersCategoriesFinal\UsersCategoriesFinal.csproj">
+      <Project>{d5bef281-8ec0-4b61-8097-fe91e58782d8}</Project>
+      <Name>UsersCategoriesFinal</Name>
     </ProjectReference>
     <ProjectReference Include="..\UsersFinal\UsersFinal.csproj">
       <Project>{658e20a2-f20e-4d1e-a422-9f0aa7e57877}</Project>
