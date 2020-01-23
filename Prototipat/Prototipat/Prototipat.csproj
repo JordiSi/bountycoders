@@ -118,6 +118,10 @@
       <Project>{1ceeef99-ec87-49f0-b1b6-36ac07055ac7}</Project>
       <Name>Filiations</Name>
     </ProjectReference>
+    <ProjectReference Include="..\FTP\FTP.csproj">
+      <Project>{52cd7408-c59e-44a7-8133-1a4b35df226f}</Project>
+      <Name>FTP</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Planetes\Planets.csproj">
       <Project>{132397ba-33c1-41b1-96a6-e0a6589d4f02}</Project>
       <Name>Planets</Name>

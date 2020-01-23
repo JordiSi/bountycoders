@@ -42,6 +42,7 @@
             this.userRanksToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usersToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sortirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.fTPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -50,9 +51,9 @@
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::Prototipat.Properties.Resources.Star_destroyer_2;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 30);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 33);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1288, 851);
+            this.pictureBox1.Size = new System.Drawing.Size(1288, 848);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -75,11 +76,12 @@
             this.userCategoriesToolStripMenuItem,
             this.userRanksToolStripMenuItem,
             this.usersToolStripMenuItem,
-            this.sortirToolStripMenuItem});
+            this.sortirToolStripMenuItem,
+            this.fTPToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
-            this.menuStrip1.Size = new System.Drawing.Size(1288, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1288, 33);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             this.menuStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.menuStrip1_ItemClicked);
@@ -89,7 +91,7 @@
             this.loginToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(57, 24);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(57, 27);
             this.loginToolStripMenuItem.Text = "Login";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.loginToolStripMenuItem_Click);
             // 
@@ -100,7 +102,7 @@
             this.opcio1ToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opcio1ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.opcio1ToolStripMenuItem.Name = "opcio1ToolStripMenuItem";
-            this.opcio1ToolStripMenuItem.Size = new System.Drawing.Size(74, 24);
+            this.opcio1ToolStripMenuItem.Size = new System.Drawing.Size(74, 27);
             this.opcio1ToolStripMenuItem.Text = "Planetes";
             this.opcio1ToolStripMenuItem.Click += new System.EventHandler(this.planetesToolStripMenuItem_Click);
             // 
@@ -111,7 +113,7 @@
             this.filiationsToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.filiationsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.filiationsToolStripMenuItem.Name = "filiationsToolStripMenuItem";
-            this.filiationsToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
+            this.filiationsToolStripMenuItem.Size = new System.Drawing.Size(79, 27);
             this.filiationsToolStripMenuItem.Text = "Filiations";
             this.filiationsToolStripMenuItem.Click += new System.EventHandler(this.filiationsToolStripMenuItem_Click);
             // 
@@ -122,7 +124,7 @@
             this.regionsToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.regionsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.regionsToolStripMenuItem.Name = "regionsToolStripMenuItem";
-            this.regionsToolStripMenuItem.Size = new System.Drawing.Size(72, 24);
+            this.regionsToolStripMenuItem.Size = new System.Drawing.Size(72, 27);
             this.regionsToolStripMenuItem.Text = "Regions";
             this.regionsToolStripMenuItem.Click += new System.EventHandler(this.regionsToolStripMenuItem_Click);
             // 
@@ -133,7 +135,7 @@
             this.sectorsToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sectorsToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.sectorsToolStripMenuItem.Name = "sectorsToolStripMenuItem";
-            this.sectorsToolStripMenuItem.Size = new System.Drawing.Size(68, 24);
+            this.sectorsToolStripMenuItem.Size = new System.Drawing.Size(68, 27);
             this.sectorsToolStripMenuItem.Text = "Sectors";
             this.sectorsToolStripMenuItem.Click += new System.EventHandler(this.sectorsToolStripMenuItem_Click);
             // 
@@ -144,7 +146,7 @@
             this.routesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.routesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.routesToolStripMenuItem.Name = "routesToolStripMenuItem";
-            this.routesToolStripMenuItem.Size = new System.Drawing.Size(64, 24);
+            this.routesToolStripMenuItem.Size = new System.Drawing.Size(64, 27);
             this.routesToolStripMenuItem.Text = "Routes";
             this.routesToolStripMenuItem.Click += new System.EventHandler(this.routesToolStripMenuItem_Click);
             // 
@@ -155,7 +157,7 @@
             this.routeTypesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.routeTypesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.routeTypesToolStripMenuItem.Name = "routeTypesToolStripMenuItem";
-            this.routeTypesToolStripMenuItem.Size = new System.Drawing.Size(94, 24);
+            this.routeTypesToolStripMenuItem.Size = new System.Drawing.Size(94, 27);
             this.routeTypesToolStripMenuItem.Text = "RouteTypes";
             this.routeTypesToolStripMenuItem.Click += new System.EventHandler(this.routeTypesToolStripMenuItem_Click);
             // 
@@ -166,7 +168,7 @@
             this.speciesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.speciesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.speciesToolStripMenuItem.Name = "speciesToolStripMenuItem";
-            this.speciesToolStripMenuItem.Size = new System.Drawing.Size(70, 24);
+            this.speciesToolStripMenuItem.Size = new System.Drawing.Size(70, 27);
             this.speciesToolStripMenuItem.Text = "Species";
             this.speciesToolStripMenuItem.Click += new System.EventHandler(this.speciesToolStripMenuItem_Click);
             // 
@@ -177,7 +179,7 @@
             this.userCategoriesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userCategoriesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.userCategoriesToolStripMenuItem.Name = "userCategoriesToolStripMenuItem";
-            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(119, 24);
+            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(119, 27);
             this.userCategoriesToolStripMenuItem.Text = "User Categories";
             this.userCategoriesToolStripMenuItem.Click += new System.EventHandler(this.userCategoriesToolStripMenuItem_Click);
             // 
@@ -188,7 +190,7 @@
             this.userRanksToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userRanksToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.userRanksToolStripMenuItem.Name = "userRanksToolStripMenuItem";
-            this.userRanksToolStripMenuItem.Size = new System.Drawing.Size(87, 24);
+            this.userRanksToolStripMenuItem.Size = new System.Drawing.Size(87, 27);
             this.userRanksToolStripMenuItem.Text = "UserRanks";
             this.userRanksToolStripMenuItem.Click += new System.EventHandler(this.userRanksToolStripMenuItem_Click);
             // 
@@ -199,7 +201,7 @@
             this.usersToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usersToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.usersToolStripMenuItem.Name = "usersToolStripMenuItem";
-            this.usersToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.usersToolStripMenuItem.Size = new System.Drawing.Size(56, 27);
             this.usersToolStripMenuItem.Text = "Users";
             this.usersToolStripMenuItem.Click += new System.EventHandler(this.usersToolStripMenuItem_Click);
             // 
@@ -208,9 +210,18 @@
             this.sortirToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.sortirToolStripMenuItem.Name = "sortirToolStripMenuItem";
-            this.sortirToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
+            this.sortirToolStripMenuItem.Size = new System.Drawing.Size(56, 27);
             this.sortirToolStripMenuItem.Text = "Sortir";
             this.sortirToolStripMenuItem.Click += new System.EventHandler(this.sortirToolStripMenuItem_Click);
+            // 
+            // fTPToolStripMenuItem
+            // 
+            this.fTPToolStripMenuItem.Font = new System.Drawing.Font("Arial Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fTPToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.fTPToolStripMenuItem.Name = "fTPToolStripMenuItem";
+            this.fTPToolStripMenuItem.Size = new System.Drawing.Size(57, 27);
+            this.fTPToolStripMenuItem.Text = "FTP";
+            this.fTPToolStripMenuItem.Click += new System.EventHandler(this.fTPToolStripMenuItem_Click);
             // 
             // Form_principal
             // 
@@ -254,5 +265,6 @@
         private System.Windows.Forms.ToolStripMenuItem userRanksToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usersToolStripMenuItem;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ToolStripMenuItem fTPToolStripMenuItem;
     }
 }

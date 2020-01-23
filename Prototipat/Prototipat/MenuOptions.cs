@@ -18,6 +18,7 @@ using Species;
 using UserCategories;
 using UserRanks;
 using Users;
+using FTP;
 
 namespace Prototipat
 {
@@ -127,5 +128,10 @@ namespace Prototipat
 		{
 
 		}
-	}
+
+        private void fTPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start(@"C:\Users\admin\Documents\GitHub\bountycoders\Prototipat\FTP\obj\Debug\FTP.exe");
+        }
+    }
 }
