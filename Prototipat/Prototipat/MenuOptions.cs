@@ -143,11 +143,14 @@ namespace Prototipat
 
         private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            /* METODO VOLVER AL LOGIN MANUALMENTE
             Form_login frm = frmLogin;
             frm.Show();
             frm.frmMenu = this;
             frm.frmSplash = frmSplash;
             this.Hide();
+            */
+            Application.Restart();
 
         }
 
@@ -158,6 +161,7 @@ namespace Prototipat
         public void salir()
         {
             Application.Exit();
+            //frmLogin.Close();
         }
 
 
