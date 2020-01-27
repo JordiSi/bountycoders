@@ -13,7 +13,7 @@ namespace Encriptacio
         {
 
         }
-        public string generarHash(string password)
+        public string CrearHash(string password)
         {
             MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
             byte[] Hash = md5.ComputeHash(Encoding.ASCII.GetBytes(password));

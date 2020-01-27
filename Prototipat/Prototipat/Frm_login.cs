@@ -18,7 +18,7 @@ namespace Prototipat
     {
         public DataSet dts;
         private Class1 dades;
-        protected SqlConnection conn;
+        private Encriptar E;
 
         public Form_login()
         {
@@ -26,6 +26,7 @@ namespace Prototipat
         }
         private void Form1_Load(object sender, EventArgs e)
         {
+            E = new Encriptar();
             dades = new Dades.Class1();
             txt_user.ForeColor = Color.Gray;
             txt_user.Text = "User";
@@ -98,29 +99,39 @@ namespace Prototipat
         {
             Encriptar E = new Encriptar();
             string contrasenyaEncriptada = "";
+            string queryencriptar = "select Username, password from users where username = '" + txt_user.Text + "'";
 
-            int accesslevel;
             string query = "select AccessLevel from Users, usercategories ";
             if (txt_user.Text != "" && txt_password.Text != "")
             {
-                conn = dades.Connexio();
-                conn.Open();
-
-                query += "where users.idUserCategory=usercategories.idUserCategory and UserName=" + "'" + txt_user.Text + "'" + " and Password=" + "'" + txt_password.Text + "'";
-                SqlCommand cmdBuilder = new SqlCommand(query, conn);
-                SqlDataReader reader = cmdBuilder.ExecuteReader();
-
-                if (reader.Read())
+                var dataset = dades.PortarTaula(queryencriptar);
+                try
                 {
-                    int accesslevel = reader.GetInt32(0);
-                    conn.Close();
-                    successfulLogin(accesslevel);
+                    if (dataset.Tables[0].Rows.Count != 0) {
+                        contrasenyaEncriptada = E.CrearHash(txt_password.Text.Trim());
+                        if (dataset.Tables[0].Rows[0][1].ToString() == contrasenyaEncriptada)
+                        {
+                            query += "where users.idUserCategory=usercategories.idUserCategory and UserName=" + "'" + txt_user.Text + "'" + " and Password=" + "'" + contrasenyaEncriptada + "'";
+                            dataset = dades.PortarTaula(query);
+                            int accesslevel = (int)dataset.Tables[0].Rows[0][0];
+                            successfulLogin(accesslevel);
+                        }
+                        
+                    }
                 }
-                else
-                {
+                catch (Exception ex) {
                     MessageBox.Show("Login incorrecte");
-                }
-                conn.Close();
+                };
+
+                //if ((int)dataset.Tables[0].Rows[0][0] != null)
+                //{
+                //    int accesslevel = (int)dataset.Tables[0].Rows[0][0];
+                //    successfulLogin(accesslevel);
+                //}
+                //else
+                //{
+                //    MessageBox.Show("Login incorrecte");
+                //}
             }
             else
             {

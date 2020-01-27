@@ -35,17 +35,15 @@ namespace Dades
 
         public void Actualitzar(string query, DataSet dts)
         {
-            //int res=0;
             Connexio().Open();
             adapter = new SqlDataAdapter(query, conn);
             SqlCommandBuilder cmdBuilder;
             cmdBuilder = new SqlCommandBuilder(adapter);
-            if (dts.HasChanges())
-            {
+            //if (dts.HasChanges())
+            //{
                 adapter.Update(dts.Tables[0]);
-            }
+            //}
             conn.Close();
-            //return res;
         }
     }
 }
