@@ -31,7 +31,6 @@ namespace Dades
             adapter.Fill(dts);
             conn.Close();
             return dts;
-            
         }
 
         public void Actualitzar(string query, DataSet dts)

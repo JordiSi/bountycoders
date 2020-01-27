@@ -114,6 +114,10 @@
       <Project>{ff6daa49-93eb-4d8b-8514-d7239a23f6be}</Project>
       <Name>Dades</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Encriptar\Encriptacio.csproj">
+      <Project>{0597e96d-5d96-42bd-87cf-ea4173baf0fd}</Project>
+      <Name>Encriptacio</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Filiations\Filiations.csproj">
       <Project>{1ceeef99-ec87-49f0-b1b6-36ac07055ac7}</Project>
       <Name>Filiations</Name>

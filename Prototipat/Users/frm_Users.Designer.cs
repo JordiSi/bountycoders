@@ -50,25 +50,12 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.BD_Users = new System.Windows.Forms.BindingSource(this.components);
-            this.bountyCodersDataSet = new BountyCodersDataSet();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usersTableAdapter = new BountyCodersDataSetTableAdapters.UsersTableAdapter();
-            this.idUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loginDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idUserRankDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idUserCategoryDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.photoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idPlanetDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idSpecieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BD_Users)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bountyCodersDataSet)).BeginInit();
+            this.BD_Users = new System.Windows.Forms.BindingSource(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BD_Users)).BeginInit();
             this.SuspendLayout();
             // 
             // TB_codeuser
@@ -212,7 +199,7 @@
             this.CB_idspecie.controlID = "TB_idspecie";
             this.CB_idspecie.DisplayMember = "descspecie";
             this.CB_idspecie.FormattingEnabled = true;
-            this.CB_idspecie.Location = new System.Drawing.Point(841, 90);
+            this.CB_idspecie.Location = new System.Drawing.Point(839, 91);
             this.CB_idspecie.Name = "CB_idspecie";
             this.CB_idspecie.Size = new System.Drawing.Size(109, 21);
             this.CB_idspecie.TabIndex = 42;
@@ -303,112 +290,35 @@
             this.label8.TabIndex = 51;
             this.label8.Text = "idPlanet";
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.idUserDataGridViewTextBoxColumn,
-            this.codeUserDataGridViewTextBoxColumn,
-            this.userNameDataGridViewTextBoxColumn,
-            this.loginDataGridViewTextBoxColumn,
-            this.passwordDataGridViewTextBoxColumn,
-            this.idUserRankDataGridViewTextBoxColumn,
-            this.idUserCategoryDataGridViewTextBoxColumn,
-            this.photoDataGridViewTextBoxColumn,
-            this.idPlanetDataGridViewTextBoxColumn,
-            this.idSpecieDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.usersBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 166);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(905, 320);
-            this.dataGridView1.TabIndex = 52;
-            // 
-            // BD_Users
-            // 
-            this.BD_Users.DataSource = this.bountyCodersDataSet;
-            this.BD_Users.Position = 0;
-            // 
-            // bountyCodersDataSet
-            // 
-            this.bountyCodersDataSet.DataSetName = "BountyCodersDataSet";
-            this.bountyCodersDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // usersBindingSource
             // 
             this.usersBindingSource.DataMember = "Users";
             this.usersBindingSource.DataSource = this.BD_Users;
             // 
-            // usersTableAdapter
+            // button1
             // 
-            this.usersTableAdapter.ClearBeforeFill = true;
+            this.button1.Location = new System.Drawing.Point(871, 31);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(77, 32);
+            this.button1.TabIndex = 52;
+            this.button1.Text = "IMPRIMIR";
+            this.button1.UseVisualStyleBackColor = true;
             // 
-            // idUserDataGridViewTextBoxColumn
+            // label9
             // 
-            this.idUserDataGridViewTextBoxColumn.DataPropertyName = "idUser";
-            this.idUserDataGridViewTextBoxColumn.HeaderText = "idUser";
-            this.idUserDataGridViewTextBoxColumn.Name = "idUserDataGridViewTextBoxColumn";
-            this.idUserDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // codeUserDataGridViewTextBoxColumn
-            // 
-            this.codeUserDataGridViewTextBoxColumn.DataPropertyName = "CodeUser";
-            this.codeUserDataGridViewTextBoxColumn.HeaderText = "CodeUser";
-            this.codeUserDataGridViewTextBoxColumn.Name = "codeUserDataGridViewTextBoxColumn";
-            // 
-            // userNameDataGridViewTextBoxColumn
-            // 
-            this.userNameDataGridViewTextBoxColumn.DataPropertyName = "UserName";
-            this.userNameDataGridViewTextBoxColumn.HeaderText = "UserName";
-            this.userNameDataGridViewTextBoxColumn.Name = "userNameDataGridViewTextBoxColumn";
-            // 
-            // loginDataGridViewTextBoxColumn
-            // 
-            this.loginDataGridViewTextBoxColumn.DataPropertyName = "Login";
-            this.loginDataGridViewTextBoxColumn.HeaderText = "Login";
-            this.loginDataGridViewTextBoxColumn.Name = "loginDataGridViewTextBoxColumn";
-            // 
-            // passwordDataGridViewTextBoxColumn
-            // 
-            this.passwordDataGridViewTextBoxColumn.DataPropertyName = "Password";
-            this.passwordDataGridViewTextBoxColumn.HeaderText = "Password";
-            this.passwordDataGridViewTextBoxColumn.Name = "passwordDataGridViewTextBoxColumn";
-            // 
-            // idUserRankDataGridViewTextBoxColumn
-            // 
-            this.idUserRankDataGridViewTextBoxColumn.DataPropertyName = "idUserRank";
-            this.idUserRankDataGridViewTextBoxColumn.HeaderText = "idUserRank";
-            this.idUserRankDataGridViewTextBoxColumn.Name = "idUserRankDataGridViewTextBoxColumn";
-            // 
-            // idUserCategoryDataGridViewTextBoxColumn
-            // 
-            this.idUserCategoryDataGridViewTextBoxColumn.DataPropertyName = "idUserCategory";
-            this.idUserCategoryDataGridViewTextBoxColumn.HeaderText = "idUserCategory";
-            this.idUserCategoryDataGridViewTextBoxColumn.Name = "idUserCategoryDataGridViewTextBoxColumn";
-            // 
-            // photoDataGridViewTextBoxColumn
-            // 
-            this.photoDataGridViewTextBoxColumn.DataPropertyName = "Photo";
-            this.photoDataGridViewTextBoxColumn.HeaderText = "Photo";
-            this.photoDataGridViewTextBoxColumn.Name = "photoDataGridViewTextBoxColumn";
-            // 
-            // idPlanetDataGridViewTextBoxColumn
-            // 
-            this.idPlanetDataGridViewTextBoxColumn.DataPropertyName = "idPlanet";
-            this.idPlanetDataGridViewTextBoxColumn.HeaderText = "idPlanet";
-            this.idPlanetDataGridViewTextBoxColumn.Name = "idPlanetDataGridViewTextBoxColumn";
-            // 
-            // idSpecieDataGridViewTextBoxColumn
-            // 
-            this.idSpecieDataGridViewTextBoxColumn.DataPropertyName = "idSpecie";
-            this.idSpecieDataGridViewTextBoxColumn.HeaderText = "idSpecie";
-            this.idSpecieDataGridViewTextBoxColumn.Name = "idSpecieDataGridViewTextBoxColumn";
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(785, 94);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.TabIndex = 53;
+            this.label9.Text = "idSpecie";
             // 
             // frm_Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(960, 516);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -457,11 +367,8 @@
             this.Controls.SetChildIndex(this.label6, 0);
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.label8, 0);
-            this.Controls.SetChildIndex(this.dataGridView1, 0);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BD_Users)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bountyCodersDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).EndInit();
+            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.label9, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -490,20 +397,9 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.BindingSource BD_Users;
-        private BountyCodersDataSet bountyCodersDataSet;
         protected System.Windows.Forms.BindingSource usersBindingSource;
-        private BountyCodersDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idUserDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codeUserDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn userNameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn loginDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn passwordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idUserRankDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idUserCategoryDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn photoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idPlanetDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idSpecieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label9;
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using WMPLib;
 using System.Data.SqlClient;
 using Dades;
+using Encriptacio;
 
 namespace Prototipat
 {
@@ -120,6 +121,9 @@ namespace Prototipat
 
         private void login_Click(object sender, EventArgs e)
         {
+            Encriptar E = new Encriptar();
+            string contrasenyaEncriptada = "";
+
             int accesslevel;
             string query = "select AccessLevel from Users, usercategories ";
             if (txt_user.Text != "" && txt_password.Text != "")
@@ -129,7 +133,6 @@ namespace Prototipat
                 query += "where users.idUserCategory=usercategories.idUserCategory and UserName=" + "'" + txt_user.Text + "'" + " and Password=" + "'" + txt_password.Text + "'";
                 SqlCommand cmdBuilder = new SqlCommand(query, conn);
                 SqlDataReader reader = cmdBuilder.ExecuteReader();
-                
 
                 if (reader.Read())
                 {
