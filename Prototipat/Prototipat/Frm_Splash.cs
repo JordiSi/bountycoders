@@ -14,7 +14,6 @@ namespace Prototipat
     public partial class Form_splash : Form
     {
         public Form_login frmLogin;
-        public Form_principal frmMenu;
 
         public Form_splash()
         {
@@ -25,16 +24,6 @@ namespace Prototipat
         private void Splash_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            Form_principal frm;
-            if (frmMenu != null)
-            {
-                frm = frmMenu;
-            }
-            else
-            {
-                frm = new Form_principal();
-            }
-            frm.accesslevel_usuari = 100;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -47,20 +36,13 @@ namespace Prototipat
             else
             {
                 timer1.Stop();
-                Form_principal frm;
-                if (frmMenu != null)
-                {
-                    frm = frmMenu;
-                }
-                else
-                {
-                    frm = new Form_principal();
-                }
+                Form_principal frm = new Form_principal();
                 frm.accesslevel_usuari = accesslevel;
                 frm.Show();
                 frm.frmLogin = frmLogin;
                 frm.frmSplash = this;
                 this.Hide();
+                
             }
         }
     }

@@ -17,9 +17,7 @@ namespace Prototipat
     {
         public DataSet dts;
         private Class1 dades;
-        private SqlConnection conn;
-        public Form_splash frmSplash;
-        public Form_principal frmMenu;
+        protected SqlConnection conn;
 
         public Form_login()
         {
@@ -80,81 +78,44 @@ namespace Prototipat
                 txt_password.PasswordChar = char.Parse("\0");
             }
         }
+        
+        private void successfulLogin(int accesslevel)
+        {
+            Form_splash frm = new Form_splash();
 
-        //<<<<<<< HEAD
-        private void successfulLogin()
-        { 
-            Form_splash frm;
-            if (frmSplash != null)
-            {
-                frm = frmSplash;
-            }
-            else
-            {
-                frm = new Form_splash();
-            }
+            frm.accesslevel = accesslevel;
             frm.Show();
             frm.frmLogin = this;
-            if (frmMenu != null)
-                frm.frmMenu = frmMenu;
             this.Hide();
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            Form_splash frm;
-            if (frmSplash != null)
-            {
-                frm = frmSplash;
-            }
-            else
-            {
-                frm = new Form_splash();
-            }
-            frm.accesslevel = 100;
-            frm.Show();
-            frm.frmLogin = this;
-            if (frmMenu != null)
-                frm.frmMenu = frmMenu;
-            this.Hide();
+            successfulLogin(10);
         }
 
         private void login_Click(object sender, EventArgs e)
         {
-            int accesslevel;
             string query = "select AccessLevel from Users, usercategories ";
             if (txt_user.Text != "" && txt_password.Text != "")
             {
                 conn = dades.Connexio();
                 conn.Open();
+
                 query += "where users.idUserCategory=usercategories.idUserCategory and UserName=" + "'" + txt_user.Text + "'" + " and Password=" + "'" + txt_password.Text + "'";
                 SqlCommand cmdBuilder = new SqlCommand(query, conn);
                 SqlDataReader reader = cmdBuilder.ExecuteReader();
-                
 
                 if (reader.Read())
                 {
-                    accesslevel = reader.GetInt32(0);
-                    Form_splash frm;
-                    if (frmSplash != null)
-                    {
-                        frm = frmSplash;
-                    }
-                    else
-                    {
-                        frm = new Form_splash();
-                    }
+                    int accesslevel = reader.GetInt32(0);
                     conn.Close();
-                    frm.accesslevel = accesslevel;
-                    frm.Show();
-                    frm.frmLogin = this;
-                    if (frmMenu != null)
-                        frm.frmMenu = frmMenu;
-                    this.Hide();
+                    successfulLogin(accesslevel);
                 }
                 else
                 {
                     MessageBox.Show("Login incorrecte");
                 }
+                conn.Close();
             }
             else
             {
