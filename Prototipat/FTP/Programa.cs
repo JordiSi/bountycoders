@@ -25,15 +25,11 @@ namespace FTP
                 Console.WriteLine(reader.ReadToEnd());
 
                 Console.WriteLine("Download Complete, status {0}", response.StatusDescription);
-
+                
                 reader.Close();
                 reader.Dispose();
                 response.Close();
             }
-        }
-
-        public void getIP() {
-            
         }
     }
 }
