@@ -19,6 +19,7 @@ using UserRanks;
 using Users;
 using Dades;
 using System.Data.SqlClient;
+using FTP;
 
 namespace Prototipat
 {
@@ -164,6 +165,12 @@ namespace Prototipat
             //frmLogin.Close();
         }
 
-
+        private void fTPToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frm_FTP frm = new frm_FTP();
+            frm.MdiParent = this;
+            frm.Show();
+            ocultar();
+        }
     }
 }
