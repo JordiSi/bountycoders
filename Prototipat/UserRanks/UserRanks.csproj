@@ -53,7 +53,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Base\Base.csproj">
-      <Project>{FDD8C3B6-B722-4731-8FB8-B93982400B05}</Project>
+      <Project>{fdd8c3b6-b722-4731-8fb8-b93982400b05}</Project>
       <Name>Base</Name>
     </ProjectReference>
     <ProjectReference Include="..\CustomControls\CustomControls.csproj">

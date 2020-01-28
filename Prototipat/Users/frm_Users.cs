@@ -26,5 +26,10 @@ namespace Users
             // TODO: esta línea de código carga datos en la tabla 'bountyCodersDataSet.Users' Puede moverla o quitarla según sea necesario.
 
         }
+
+        private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

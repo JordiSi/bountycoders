@@ -52,7 +52,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.BD_Users = new System.Windows.Forms.BindingSource(this.components);
-            this.button1 = new System.Windows.Forms.Button();
+            this.btn_imprimir = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BD_Users)).BeginInit();
@@ -199,7 +199,7 @@
             this.CB_idspecie.controlID = "TB_idspecie";
             this.CB_idspecie.DisplayMember = "descspecie";
             this.CB_idspecie.FormattingEnabled = true;
-            this.CB_idspecie.Location = new System.Drawing.Point(839, 91);
+            this.CB_idspecie.Location = new System.Drawing.Point(839, 92);
             this.CB_idspecie.Name = "CB_idspecie";
             this.CB_idspecie.Size = new System.Drawing.Size(109, 21);
             this.CB_idspecie.TabIndex = 42;
@@ -295,14 +295,15 @@
             this.usersBindingSource.DataMember = "Users";
             this.usersBindingSource.DataSource = this.BD_Users;
             // 
-            // button1
+            // btn_imprimir
             // 
-            this.button1.Location = new System.Drawing.Point(871, 31);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(77, 32);
-            this.button1.TabIndex = 52;
-            this.button1.Text = "IMPRIMIR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btn_imprimir.Location = new System.Drawing.Point(871, 31);
+            this.btn_imprimir.Name = "btn_imprimir";
+            this.btn_imprimir.Size = new System.Drawing.Size(77, 32);
+            this.btn_imprimir.TabIndex = 52;
+            this.btn_imprimir.Text = "IMPRIMIR";
+            this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // label9
             // 
@@ -318,7 +319,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.ClientSize = new System.Drawing.Size(960, 516);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btn_imprimir);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -367,7 +368,7 @@
             this.Controls.SetChildIndex(this.label6, 0);
             this.Controls.SetChildIndex(this.label7, 0);
             this.Controls.SetChildIndex(this.label8, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
+            this.Controls.SetChildIndex(this.btn_imprimir, 0);
             this.Controls.SetChildIndex(this.label9, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -399,7 +400,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.BindingSource BD_Users;
         protected System.Windows.Forms.BindingSource usersBindingSource;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btn_imprimir;
         private System.Windows.Forms.Label label9;
     }
 }
