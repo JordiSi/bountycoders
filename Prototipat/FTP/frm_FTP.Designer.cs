@@ -49,7 +49,7 @@
             this.consoleControl1.SendKeyboardCommandsToProcess = false;
             this.consoleControl1.ShowDiagnostics = false;
             this.consoleControl1.Size = new System.Drawing.Size(804, 453);
-            this.consoleControl1.TabIndex = 0;
+            this.consoleControl1.TabIndex = 9;
             this.consoleControl1.Visible = false;
             // 
             // backgroundWorker
@@ -79,21 +79,21 @@
             this.txtUserName.Location = new System.Drawing.Point(339, 170);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(100, 20);
-            this.txtUserName.TabIndex = 3;
+            this.txtUserName.TabIndex = 2;
             // 
             // txtServer
             // 
             this.txtServer.Location = new System.Drawing.Point(339, 143);
             this.txtServer.Name = "txtServer";
             this.txtServer.Size = new System.Drawing.Size(100, 20);
-            this.txtServer.TabIndex = 4;
+            this.txtServer.TabIndex = 1;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(339, 196);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
-            this.txtPassword.TabIndex = 5;
+            this.txtPassword.TabIndex = 3;
             // 
             // label1
             // 
@@ -127,7 +127,7 @@
             this.btnUpload.Location = new System.Drawing.Point(456, 194);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(75, 23);
-            this.btnUpload.TabIndex = 9;
+            this.btnUpload.TabIndex = 4;
             this.btnUpload.Text = "Upload";
             this.btnUpload.UseVisualStyleBackColor = true;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
@@ -149,6 +149,7 @@
             this.Controls.Add(this.consoleControl1);
             this.Name = "frm_FTP";
             this.Text = "frm_FTP";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

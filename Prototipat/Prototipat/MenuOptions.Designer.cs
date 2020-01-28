@@ -75,8 +75,8 @@
             this.userCategoriesToolStripMenuItem,
             this.userRanksToolStripMenuItem,
             this.usersToolStripMenuItem,
-            this.sortirToolStripMenuItem,
-            this.fTPToolStripMenuItem});
+            this.fTPToolStripMenuItem,
+            this.sortirToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(9, 3, 0, 3);
@@ -89,7 +89,7 @@
             this.loginToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.loginToolStripMenuItem.Name = "loginToolStripMenuItem";
-            this.loginToolStripMenuItem.Size = new System.Drawing.Size(65, 24);
+            this.loginToolStripMenuItem.Size = new System.Drawing.Size(65, 27);
             this.loginToolStripMenuItem.Text = "Logout";
             this.loginToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
@@ -100,7 +100,7 @@
             this.opcio1ToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.opcio1ToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.opcio1ToolStripMenuItem.Name = "opcio1ToolStripMenuItem";
-            this.opcio1ToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.opcio1ToolStripMenuItem.Size = new System.Drawing.Size(67, 27);
             this.opcio1ToolStripMenuItem.Text = "Planets";
             this.opcio1ToolStripMenuItem.Click += new System.EventHandler(this.planetesToolStripMenuItem_Click);
             // 
@@ -177,7 +177,7 @@
             this.userCategoriesToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.userCategoriesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.userCategoriesToolStripMenuItem.Name = "userCategoriesToolStripMenuItem";
-            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(115, 24);
+            this.userCategoriesToolStripMenuItem.Size = new System.Drawing.Size(115, 27);
             this.userCategoriesToolStripMenuItem.Text = "UserCategories";
             this.userCategoriesToolStripMenuItem.Click += new System.EventHandler(this.userCategoriesToolStripMenuItem_Click);
             // 
@@ -208,7 +208,7 @@
             this.sortirToolStripMenuItem.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sortirToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.sortirToolStripMenuItem.Name = "sortirToolStripMenuItem";
-            this.sortirToolStripMenuItem.Size = new System.Drawing.Size(44, 24);
+            this.sortirToolStripMenuItem.Size = new System.Drawing.Size(44, 27);
             this.sortirToolStripMenuItem.Text = "Exit";
             this.sortirToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
