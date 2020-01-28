@@ -39,10 +39,10 @@ namespace Dades
             adapter = new SqlDataAdapter(query, conn);
             SqlCommandBuilder cmdBuilder;
             cmdBuilder = new SqlCommandBuilder(adapter);
-            //if (dts.HasChanges())
-            //{
+            if (dts.HasChanges())
+            {
                 adapter.Update(dts.Tables[0]);
-            //}
+            }
             conn.Close();
         }
     }

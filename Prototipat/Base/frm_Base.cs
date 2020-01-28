@@ -93,7 +93,7 @@ namespace Base
                 }
             }
             dts.Tables[0].Rows.Add(row);
-            recarregar_taula();
+            //recarregar_taula();
         }
 
         protected void carregarCamps()
