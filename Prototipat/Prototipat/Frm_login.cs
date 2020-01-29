@@ -92,7 +92,7 @@ namespace Prototipat
         }
         private void button1_Click(object sender, EventArgs e)
         {
-            successfulLogin(10);
+            successfulLogin(100);
         }
 
         private void login_Click(object sender, EventArgs e)

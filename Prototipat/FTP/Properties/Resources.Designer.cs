@@ -59,5 +59,15 @@ namespace FTP.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kosmos_tumannost_zvezdy_7332 {
+            get {
+                object obj = ResourceManager.GetObject("kosmos-tumannost-zvezdy-7332", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

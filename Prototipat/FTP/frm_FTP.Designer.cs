@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.consoleControl1 = new ConsoleControl.ConsoleControl();
             this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.lblStatus = new System.Windows.Forms.Label();
@@ -41,17 +40,6 @@
             this.btnUpload = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // consoleControl1
-            // 
-            this.consoleControl1.IsInputEnabled = true;
-            this.consoleControl1.Location = new System.Drawing.Point(-2, -1);
-            this.consoleControl1.Name = "consoleControl1";
-            this.consoleControl1.SendKeyboardCommandsToProcess = false;
-            this.consoleControl1.ShowDiagnostics = false;
-            this.consoleControl1.Size = new System.Drawing.Size(804, 453);
-            this.consoleControl1.TabIndex = 9;
-            this.consoleControl1.Visible = false;
-            // 
             // backgroundWorker
             // 
             this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
@@ -60,7 +48,7 @@
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(48, 252);
+            this.progressBar.Location = new System.Drawing.Point(131, 256);
             this.progressBar.Name = "progressBar";
             this.progressBar.Size = new System.Drawing.Size(712, 23);
             this.progressBar.TabIndex = 1;
@@ -68,7 +56,7 @@
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(387, 299);
+            this.lblStatus.Location = new System.Drawing.Point(470, 303);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(43, 13);
             this.lblStatus.TabIndex = 2;
@@ -76,21 +64,21 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(339, 170);
+            this.txtUserName.Location = new System.Drawing.Point(422, 174);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(100, 20);
             this.txtUserName.TabIndex = 2;
             // 
             // txtServer
             // 
-            this.txtServer.Location = new System.Drawing.Point(339, 143);
+            this.txtServer.Location = new System.Drawing.Point(422, 147);
             this.txtServer.Name = "txtServer";
             this.txtServer.Size = new System.Drawing.Size(100, 20);
             this.txtServer.TabIndex = 1;
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(339, 196);
+            this.txtPassword.Location = new System.Drawing.Point(422, 200);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 3;
@@ -98,7 +86,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(277, 146);
+            this.label1.Location = new System.Drawing.Point(360, 150);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 6;
@@ -107,7 +95,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(277, 173);
+            this.label2.Location = new System.Drawing.Point(360, 177);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 7;
@@ -116,7 +104,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(277, 199);
+            this.label3.Location = new System.Drawing.Point(360, 203);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 8;
@@ -124,7 +112,7 @@
             // 
             // btnUpload
             // 
-            this.btnUpload.Location = new System.Drawing.Point(456, 194);
+            this.btnUpload.Location = new System.Drawing.Point(539, 198);
             this.btnUpload.Name = "btnUpload";
             this.btnUpload.Size = new System.Drawing.Size(75, 23);
             this.btnUpload.TabIndex = 4;
@@ -136,7 +124,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackgroundImage = global::FTP.Properties.Resources.kosmos_tumannost_zvezdy_7332;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1000, 543);
             this.Controls.Add(this.btnUpload);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -146,9 +137,11 @@
             this.Controls.Add(this.txtUserName);
             this.Controls.Add(this.lblStatus);
             this.Controls.Add(this.progressBar);
-            this.Controls.Add(this.consoleControl1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_FTP";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_FTP";
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,8 +149,6 @@
         }
 
         #endregion
-
-        private ConsoleControl.ConsoleControl consoleControl1;
         private System.ComponentModel.BackgroundWorker backgroundWorker;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label lblStatus;
