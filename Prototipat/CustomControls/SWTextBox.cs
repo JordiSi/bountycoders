@@ -60,34 +60,42 @@ namespace CustomControls
         private void InitializeComponent()
         {
             this.SuspendLayout();
+            // 
+            // SWTextBox
+            // 
+            this.TextChanged += new System.EventHandler(this.SWTextBox_TextChanged);
+            this.Enter += new System.EventHandler(this.SWTextBox_Enter);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SWTextBox_KeyPress);
             this.Leave += new System.EventHandler(this.SWTextBox_Leave);
-            this.Enter += new System.EventHandler(this.SWTextBox_Enter);
-            this.TextChanged += new System.EventHandler(this.SWTextBox_TextChanged);
+            this.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.SWTextBox_PreviewKeyDown);
             this.ResumeLayout(false);
 
         }
 
-        Regex rgxFecha = new Regex("^([0]?[1-9]|[1][0-2])[./-]([0]?[1-9]|[1|2][0-9]|[3][0|1])[./-]([0-9]{4}|[0-9]{2})$", RegexOptions.IgnoreCase);
+        Regex rgxFecha = new Regex("^([0]?[1-9]|[1][0-2])" + "[./-]" +"([0]?[1-9]|[1|2][0-9]|[3][0|1])" +"[./-]" +"([0-9]{4}|[0-9]{2})$", RegexOptions.IgnoreCase);
         Regex rgxCodigo = new Regex("^([A-Z]{4})[-]([0-9]{3})[/]([1]|[3]|[5]|[7]|[9])([A]|[E]|[I]|[O]|[U])", RegexOptions.IgnoreCase);
+        Char Borrar = '\b';
 
         private void SWTextBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (TipoValor == TipoDato.Numero)
             {
-                if (char.IsLetter(e.KeyChar) || !char.IsLetterOrDigit(e.KeyChar))
+                if (char.IsLetter(e.KeyChar))
+                {
+                    e.Handled = true;
+                }else if(!(Borrar == e.KeyChar)&& !(char.IsLetterOrDigit(e.KeyChar)))
                 {
                     e.Handled = true;
                 }
             }
             else if (TipoValor == TipoDato.Texto)
             {
-                if (char.IsDigit(e.KeyChar))
+                if (!(Borrar == e.KeyChar) && !char.IsLetterOrDigit(e.KeyChar))
                 {
                     e.Handled = true;
                 }
             }
-            else { }
+            else {  }
         }
         private void SWTextBox_Leave(object sender, EventArgs e)
         {
@@ -128,6 +136,29 @@ namespace CustomControls
                 }
             }
 
+        }
+
+        private void SWTextBox_PreviewKeyDown(object sender, PreviewKeyDownEventArgs e)
+        {
+            //if (TipoValor == TipoDato.Numero)
+            //{
+            //    if (char.IsLetter() || !char.IsLetterOrDigit(e.KeyChar))
+            //    {
+            //        e.Handled = true;
+            //    }
+            //}
+            //else if (TipoValor == TipoDato.Texto)
+            //{
+            //    if (char.IsDigit(e.KeyChar))
+            //    {
+            //        e.Handled = true;
+            //    }
+            //    else if (!rgxFecha.IsMatch((e.KeyChar).ToString()))
+            //    {
+            //        e.Handled = true;
+            //    }
+            //}
+            //else { }
         }
     }
 }
