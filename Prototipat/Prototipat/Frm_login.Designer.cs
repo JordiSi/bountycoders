@@ -38,6 +38,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.axWindowsMediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
+            this.btn_sign = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.axWindowsMediaPlayer1)).BeginInit();
             this.SuspendLayout();
@@ -133,6 +134,17 @@
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(111, 61);
             this.axWindowsMediaPlayer1.TabIndex = 6;
             // 
+            // btn_sign
+            // 
+            this.btn_sign.BackColor = System.Drawing.Color.Gold;
+            this.btn_sign.Location = new System.Drawing.Point(309, 224);
+            this.btn_sign.Name = "btn_sign";
+            this.btn_sign.Size = new System.Drawing.Size(100, 33);
+            this.btn_sign.TabIndex = 7;
+            this.btn_sign.Text = "SIGN IN";
+            this.btn_sign.UseVisualStyleBackColor = false;
+            this.btn_sign.Click += new System.EventHandler(this.btn_sign_Click);
+            // 
             // Form_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -140,6 +152,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::Prototipat.Properties.Resources.stars;
             this.ClientSize = new System.Drawing.Size(539, 304);
+            this.Controls.Add(this.btn_sign);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.login);
@@ -173,6 +186,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private AxWMPLib.AxWindowsMediaPlayer axWindowsMediaPlayer1;
+        private System.Windows.Forms.Button btn_sign;
     }
 }
 

@@ -102,7 +102,7 @@ namespace Prototipat
             string queryencriptar = "select Username, password from users where username = '" + txt_user.Text + "'";
 
             string query = "select AccessLevel from Users, usercategories ";
-            if (txt_user.Text != "" && txt_password.Text != "")
+            if ((txt_user.Text != "" && txt_password.Text != "")&& (txt_user.Text != "User" && txt_password.Text != "Password"))
             {
                 var dataset = dades.PortarTaula(queryencriptar);
                 try
@@ -137,6 +137,13 @@ namespace Prototipat
             {
                 MessageBox.Show("Introdueix les dades");
             }
+        }
+
+        private void btn_sign_Click(object sender, EventArgs e)
+        {
+            Sign_In frm_sign = new Sign_In();
+            frm_sign.frmLogin = this;
+            frm_sign.Show();
         }
     }
 }
