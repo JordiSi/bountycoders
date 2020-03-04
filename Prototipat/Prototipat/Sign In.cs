@@ -33,7 +33,7 @@ namespace Prototipat
         {
             if (Name_txt.Text == "" && Login_txt.Text == "" && Password_txt.Text == "")
             {
-                dades.Actualitzar()
+                //dades.Actualitzar();
             }
         }
     }
