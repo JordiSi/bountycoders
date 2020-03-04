@@ -57,7 +57,7 @@
             this.CB_IdNatives.Location = new System.Drawing.Point(461, 126);
             this.CB_IdNatives.Name = "CB_IdNatives";
             this.CB_IdNatives.Size = new System.Drawing.Size(100, 21);
-            this.CB_IdNatives.TabIndex = 44;
+            this.CB_IdNatives.TabIndex = 6;
             this.CB_IdNatives.taulaBD = "Species";
             this.CB_IdNatives.ValueMember = "IdSpecie";
             // 
@@ -69,7 +69,7 @@
             this.CB_IdFiliation.Location = new System.Drawing.Point(654, 126);
             this.CB_IdFiliation.Name = "CB_IdFiliation";
             this.CB_IdFiliation.Size = new System.Drawing.Size(100, 21);
-            this.CB_IdFiliation.TabIndex = 45;
+            this.CB_IdFiliation.TabIndex = 7;
             this.CB_IdFiliation.taulaBD = "Filiations";
             this.CB_IdFiliation.ValueMember = "idFiliation";
             // 
@@ -81,7 +81,7 @@
             this.CB_IdSector.Location = new System.Drawing.Point(463, 83);
             this.CB_IdSector.Name = "CB_IdSector";
             this.CB_IdSector.Size = new System.Drawing.Size(99, 21);
-            this.CB_IdSector.TabIndex = 46;
+            this.CB_IdSector.TabIndex = 2;
             this.CB_IdSector.taulaBD = "Sectors";
             this.CB_IdSector.ValueMember = "IdSector";
             // 
@@ -205,7 +205,7 @@
             this.TB_Parsecs.Location = new System.Drawing.Point(288, 126);
             this.TB_Parsecs.Name = "TB_Parsecs";
             this.TB_Parsecs.Size = new System.Drawing.Size(100, 20);
-            this.TB_Parsecs.TabIndex = 35;
+            this.TB_Parsecs.TabIndex = 5;
             this.TB_Parsecs.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
             // 
             // TB_Lat
@@ -217,7 +217,7 @@
             this.TB_Lat.Location = new System.Drawing.Point(96, 126);
             this.TB_Lat.Name = "TB_Lat";
             this.TB_Lat.Size = new System.Drawing.Size(100, 20);
-            this.TB_Lat.TabIndex = 34;
+            this.TB_Lat.TabIndex = 4;
             this.TB_Lat.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
             // 
             // TB_Long
@@ -229,7 +229,7 @@
             this.TB_Long.Location = new System.Drawing.Point(654, 83);
             this.TB_Long.Name = "TB_Long";
             this.TB_Long.Size = new System.Drawing.Size(100, 20);
-            this.TB_Long.TabIndex = 33;
+            this.TB_Long.TabIndex = 3;
             this.TB_Long.TipoValor = CustomControls.SWTextBox.TipoDato.Numero;
             // 
             // TB_DescPlanet
@@ -241,7 +241,7 @@
             this.TB_DescPlanet.Location = new System.Drawing.Point(288, 83);
             this.TB_DescPlanet.Name = "TB_DescPlanet";
             this.TB_DescPlanet.Size = new System.Drawing.Size(100, 20);
-            this.TB_DescPlanet.TabIndex = 32;
+            this.TB_DescPlanet.TabIndex = 1;
             this.TB_DescPlanet.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
             // 
             // TB_CodePlanet
@@ -253,7 +253,7 @@
             this.TB_CodePlanet.Location = new System.Drawing.Point(96, 83);
             this.TB_CodePlanet.Name = "TB_CodePlanet";
             this.TB_CodePlanet.Size = new System.Drawing.Size(100, 20);
-            this.TB_CodePlanet.TabIndex = 31;
+            this.TB_CodePlanet.TabIndex = 0;
             this.TB_CodePlanet.TipoValor = CustomControls.SWTextBox.TipoDato.Texto;
             // 
             // frm_Planetes

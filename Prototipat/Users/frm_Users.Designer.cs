@@ -28,7 +28,6 @@
         /// </summary>
         protected void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.TB_codeuser = new CustomControls.SWTextBox();
             this.TB_username = new CustomControls.SWTextBox();
             this.TB_login = new CustomControls.SWTextBox();
@@ -50,17 +49,18 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.BD_Users = new System.Windows.Forms.BindingSource(this.components);
             this.btn_imprimir = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.usersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BD_Users)).BeginInit();
             this.SuspendLayout();
+            // 
+            // btn_Nou
+            // 
+            this.btn_Nou.Click += new System.EventHandler(this.btn_Nou_Click_1);
             // 
             // TB_codeuser
             // 
             this.TB_codeuser.CampoBD = "codeuser";
+            this.TB_codeuser.Encrip = false;
             this.TB_codeuser.Foranea = false;
             this.TB_codeuser.IdCombobox = null;
             this.TB_codeuser.Llenar = false;
@@ -73,6 +73,7 @@
             // TB_username
             // 
             this.TB_username.CampoBD = "username";
+            this.TB_username.Encrip = false;
             this.TB_username.Foranea = false;
             this.TB_username.IdCombobox = null;
             this.TB_username.Llenar = false;
@@ -85,6 +86,7 @@
             // TB_login
             // 
             this.TB_login.CampoBD = "login";
+            this.TB_login.Encrip = false;
             this.TB_login.Foranea = false;
             this.TB_login.IdCombobox = null;
             this.TB_login.Llenar = false;
@@ -97,6 +99,7 @@
             // TB_password
             // 
             this.TB_password.CampoBD = "password";
+            this.TB_password.Encrip = true;
             this.TB_password.Foranea = false;
             this.TB_password.IdCombobox = null;
             this.TB_password.Llenar = false;
@@ -110,6 +113,7 @@
             // 
             this.TB_iduserank.CampoBD = "iduserrank";
             this.TB_iduserank.Enabled = false;
+            this.TB_iduserank.Encrip = false;
             this.TB_iduserank.Foranea = true;
             this.TB_iduserank.IdCombobox = "CB_iduserank";
             this.TB_iduserank.Llenar = false;
@@ -123,6 +127,7 @@
             // 
             this.TB_idusercategory.CampoBD = "idusercategory";
             this.TB_idusercategory.Enabled = false;
+            this.TB_idusercategory.Encrip = false;
             this.TB_idusercategory.Foranea = true;
             this.TB_idusercategory.IdCombobox = "CB_idusercategory";
             this.TB_idusercategory.Llenar = false;
@@ -148,6 +153,7 @@
             // 
             this.TB_idplanet.CampoBD = "idplanet";
             this.TB_idplanet.Enabled = false;
+            this.TB_idplanet.Encrip = false;
             this.TB_idplanet.Foranea = true;
             this.TB_idplanet.IdCombobox = "CB_idplanet";
             this.TB_idplanet.Llenar = false;
@@ -173,10 +179,11 @@
             // 
             this.TB_idspecie.CampoBD = "idspecie";
             this.TB_idspecie.Enabled = false;
+            this.TB_idspecie.Encrip = false;
             this.TB_idspecie.Foranea = true;
             this.TB_idspecie.IdCombobox = "CB_idspecie";
             this.TB_idspecie.Llenar = false;
-            this.TB_idspecie.Location = new System.Drawing.Point(848, 90);
+            this.TB_idspecie.Location = new System.Drawing.Point(848, 92);
             this.TB_idspecie.Name = "TB_idspecie";
             this.TB_idspecie.Size = new System.Drawing.Size(100, 20);
             this.TB_idspecie.TabIndex = 40;
@@ -209,6 +216,7 @@
             // TB_photo
             // 
             this.TB_photo.CampoBD = "photo";
+            this.TB_photo.Encrip = false;
             this.TB_photo.Foranea = false;
             this.TB_photo.IdCombobox = null;
             this.TB_photo.Llenar = false;
@@ -290,11 +298,6 @@
             this.label8.TabIndex = 51;
             this.label8.Text = "idPlanet";
             // 
-            // usersBindingSource
-            // 
-            this.usersBindingSource.DataMember = "Users";
-            this.usersBindingSource.DataSource = this.BD_Users;
-            // 
             // btn_imprimir
             // 
             this.btn_imprimir.Location = new System.Drawing.Point(871, 31);
@@ -303,6 +306,7 @@
             this.btn_imprimir.TabIndex = 52;
             this.btn_imprimir.Text = "IMPRIMIR";
             this.btn_imprimir.UseVisualStyleBackColor = true;
+            this.btn_imprimir.Visible = false;
             this.btn_imprimir.Click += new System.EventHandler(this.btn_imprimir_Click);
             // 
             // label9
@@ -398,8 +402,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.BindingSource BD_Users;
-        protected System.Windows.Forms.BindingSource usersBindingSource;
         private System.Windows.Forms.Button btn_imprimir;
         private System.Windows.Forms.Label label9;
     }
