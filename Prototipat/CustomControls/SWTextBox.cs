@@ -39,12 +39,18 @@ namespace CustomControls
             get { return _Foranea; }
             set { _Foranea = value; }
         }
+        public bool Encrip
+        {
+            get { return _Encrip; }
+            set { _Encrip = value; }
+        }
 
         private TipoDato _TipoValor;
         private string _CampoBD;
         private bool _Llenar;
         private bool _Foranea;
         private string _IdCombobox;
+        private bool _Encrip;
 
         public SWTextBox()
         {

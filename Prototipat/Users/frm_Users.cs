@@ -27,7 +27,13 @@ namespace Users
 
         }
 
+
         private void btn_imprimir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_Nou_Click_1(object sender, EventArgs e)
         {
 
         }

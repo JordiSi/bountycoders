@@ -18,7 +18,7 @@ namespace FTP
         {
             InitializeComponent();
         }
-        struct FtpSetting
+        struct FtpSetting 
         {
             public string Server { get; set; }
             public string Username { get; set; }
@@ -29,54 +29,8 @@ namespace FTP
 
         FtpSetting _inputParameter;
 
-        private void backgroundWorker_DoWork(object sender, DoWorkEventArgs e)
-        {
-            string fileName = ((FtpSetting)e.Argument).FileName;
-            string fullName = ((FtpSetting)e.Argument).FullName;
-            string userName = ((FtpSetting)e.Argument).Username;
-            string password = ((FtpSetting)e.Argument).Password;
-            string server = ((FtpSetting)e.Argument).Server;
-            FtpWebRequest request = (FtpWebRequest)WebRequest.Create(new Uri(string.Format("{0}/{1}", server, fileName)));
-            request.Method = WebRequestMethods.Ftp.UploadFile;
-            request.Credentials = new NetworkCredential(userName, password);
-            Stream ftpStream = request.GetRequestStream();
-            FileStream fs = File.OpenRead(fullName);
-            byte[] buffer = new byte[1024];
-            double total = (double)fs.Length;
-            int byteRead = 0;
-            double read = 0;
-            do
-            {
-                if (!backgroundWorker.CancellationPending)
-                {
-                    //Upload file & update process bar
-                    byteRead = fs.Read(buffer, 0, 1024);
-                    ftpStream.Write(buffer, 0, byteRead);
-                    read += (double)byteRead;
-                    double percentage = read / total * 100;
-                    //backgroundWorker.ReportProgress((int)percentage);
-                    
-                }
-            }
-            while (byteRead != 0);
-            fs.Close();
-            ftpStream.Close();
-        }
-
-        private void backgroundWorker_ProgressChanged(object sender, ProgressChangedEventArgs e)
-        {
-            lblStatus.Text = "Uploaded " + e.ProgressPercentage + "%";
-            progressBar.Value = e.ProgressPercentage;
-            progressBar.Update();
-        }
-
-        private void backgroundWorker_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            lblStatus.Text = "Upload complete !";
-        }
-
         private void btnUpload_Click(object sender, EventArgs e)
-        {
+        { 
             using (OpenFileDialog ofd = new OpenFileDialog() { Multiselect = false, ValidateNames = true, Filter = "All files|*.*" })
             {
                 if (ofd.ShowDialog() == DialogResult.OK)
@@ -87,9 +41,87 @@ namespace FTP
                     _inputParameter.Server = txtServer.Text;
                     _inputParameter.FileName = fi.Name;
                     _inputParameter.FullName = fi.FullName;
-                    backgroundWorker.RunWorkerAsync(_inputParameter);
                 }
             }
+            string Nom_Fitxer = _inputParameter.FileName;
+            string Ruta = _inputParameter.FullName;
+            string Usuari = _inputParameter.Username;
+            string psswd = _inputParameter.Password;
+            string server = _inputParameter.Server;
+            FtpWebRequest Connexio = (FtpWebRequest)WebRequest.Create(new Uri("ftp://" + server + "/" + Nom_Fitxer));
+            Connexio.Method = WebRequestMethods.Ftp.UploadFile;
+            Connexio.Credentials = new NetworkCredential(Usuari, psswd);
+            Stream ftpStream = Connexio.GetRequestStream();
+            FileStream fs = File.OpenRead(Ruta);
+            byte[] buffer = new byte[1024];
+            double total = (double)fs.Length;
+            int byteRead = 0;
+            double read = 0;
+
+            do
+            {
+                byteRead = fs.Read(buffer, 0, 1024);
+                ftpStream.Write(buffer, 0, byteRead);
+                read += (double)byteRead;
+                double percentage = read / total * 100;
+            }
+            while (byteRead != 0);
+            fs.Close();
+            ftpStream.Close();
+            lblStatus.Text = "Upload complete !";
+        }
+
+        private void btn_Download_Click(object sender, EventArgs e)
+        {
+            string Nom_Fitxer = "bimmer.jpg";
+            string Usuari = txtUserName.Text;
+            string psswd = txtPassword.Text;
+            string server = txtServer.Text;
+            FtpWebRequest Connexio = (FtpWebRequest)WebRequest.Create(new Uri("ftp://" + server + "/" + Nom_Fitxer));
+            Connexio.Method = WebRequestMethods.Ftp.DownloadFile;
+            Connexio.Credentials = new NetworkCredential(Usuari, psswd);
+            FtpWebResponse response = (FtpWebResponse)Connexio.GetResponse();
+
+            Stream responseStream = response.GetResponseStream();
+
+            StreamReader reader = new StreamReader(responseStream);
+            reader.re(1, )
+
+            String file = @"C://Bountycoders";
+
+            FileStream fs = new FileStream(file, FileMode.OpenOrCreate, FileAccess.Write);
+            StreamReader sr = new StreamReader(fs);
+            StreamWriter sw = new StreamWriter(fs);
+            sw.Write('',)
+
+            using FileStream fs = File.OpenWrite(Nom_Fitxer);
+            byte[] buffer = new byte[1024];
+                    double total = (double)fs.Length;
+
+                        fs.WriteLine(buffer, 0, 1024);
+            byte[] buffer = new byte[1024];
+            double total = (double)fs.Length;
+            int byteRead = 0;
+            double read = 0;
+
+            do
+            {
+                byteRead = fs.Read(buffer, 0, 1024);
+                ftpStream.Write(buffer, 0, byteRead);
+                read += (double)byteRead;
+                double percentage = read / total * 100;
+            }
+
+            MessageBox.Show(reader.ReadToEnd());
+
+            Console.WriteLine("Download Complete, status {0}", response.StatusDescription);
+
+            reader.Close();
+
+            response.Close();
+
+
+
         }
     }
 }

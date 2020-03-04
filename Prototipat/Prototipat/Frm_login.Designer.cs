@@ -58,7 +58,7 @@
             this.txt_password.Location = new System.Drawing.Point(309, 184);
             this.txt_password.Name = "txt_password";
             this.txt_password.Size = new System.Drawing.Size(100, 20);
-            this.txt_password.TabIndex = 2;
+            this.txt_password.TabIndex = 3;
             this.txt_password.Enter += new System.EventHandler(this.txt_password_Enter);
             this.txt_password.Leave += new System.EventHandler(this.txt_password_Leave);
             // 
@@ -67,7 +67,7 @@
             this.txt_user.Location = new System.Drawing.Point(309, 129);
             this.txt_user.Name = "txt_user";
             this.txt_user.Size = new System.Drawing.Size(100, 20);
-            this.txt_user.TabIndex = 1;
+            this.txt_user.TabIndex = 2;
             this.txt_user.Enter += new System.EventHandler(this.txt_user_Enter);
             this.txt_user.Leave += new System.EventHandler(this.txt_user_Leave);
             // 
@@ -100,7 +100,7 @@
             this.login.Location = new System.Drawing.Point(427, 152);
             this.login.Name = "login";
             this.login.Size = new System.Drawing.Size(100, 32);
-            this.login.TabIndex = 3;
+            this.login.TabIndex = 4;
             this.login.Text = "LOG IN";
             this.login.UseVisualStyleBackColor = false;
             this.login.Click += new System.EventHandler(this.login_Click);
@@ -113,6 +113,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Entrar como invitado";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Visible = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // pictureBox1
@@ -132,7 +133,7 @@
             this.axWindowsMediaPlayer1.Name = "axWindowsMediaPlayer1";
             this.axWindowsMediaPlayer1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axWindowsMediaPlayer1.OcxState")));
             this.axWindowsMediaPlayer1.Size = new System.Drawing.Size(111, 61);
-            this.axWindowsMediaPlayer1.TabIndex = 6;
+            this.axWindowsMediaPlayer1.TabIndex = 1;
             // 
             // btn_sign
             // 
@@ -140,7 +141,7 @@
             this.btn_sign.Location = new System.Drawing.Point(309, 224);
             this.btn_sign.Name = "btn_sign";
             this.btn_sign.Size = new System.Drawing.Size(100, 33);
-            this.btn_sign.TabIndex = 7;
+            this.btn_sign.TabIndex = 5;
             this.btn_sign.Text = "SIGN IN";
             this.btn_sign.UseVisualStyleBackColor = false;
             this.btn_sign.Click += new System.EventHandler(this.btn_sign_Click);

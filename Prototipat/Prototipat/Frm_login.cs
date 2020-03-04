@@ -33,14 +33,10 @@ namespace Prototipat
             txt_password.Text = "Password";
             txt_password.ForeColor = Color.Gray;
 
-            WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
+            //WMPLib.WindowsMediaPlayer wplayer = new WMPLib.WindowsMediaPlayer();
 
-            wplayer.URL = @"C:\Users\admin\Documents\GitHub\bountycoders\Prototipat\Prototipat\Resources\star wars cantina.mp3";
-            wplayer.controls.play();
-            //WindowsMediaPlayer wplayer = new WindowsMediaPlayer();
-            //wplayer.playlistCollection.newPlaylist("star wars cantina.mp3");
-            ////wplayer.controls.play();
-            //wplayer.PlayStateChange += wplayer_PlayStateChange;
+            //wplayer.URL = @"C:\Users\admin\Documents\GitHub\bountycoders\Prototipat\Prototipat\Resources\star wars cantina.mp3";
+            //wplayer.controls.play();
         }
 
         private void txt_user_Enter(object sender, EventArgs e)
@@ -67,7 +63,7 @@ namespace Prototipat
             {
                 txt_password.ForeColor = Color.Black;
                 txt_password.Text = "";
-                txt_password.PasswordChar = '*';
+                txt_password.UseSystemPasswordChar = true;
             }
         }
 
@@ -77,7 +73,8 @@ namespace Prototipat
             {
                 txt_password.ForeColor = Color.Gray;
                 txt_password.Text = "Password";
-                txt_password.PasswordChar = char.Parse("\0");
+                //txt_password.PasswordChar = char.Parse("\0");
+                txt_password.UseSystemPasswordChar = false;
             }
         }
         

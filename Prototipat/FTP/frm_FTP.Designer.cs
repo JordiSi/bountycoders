@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.lblStatus = new System.Windows.Forms.Label();
             this.txtUserName = new System.Windows.Forms.TextBox();
@@ -38,25 +37,20 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnUpload = new System.Windows.Forms.Button();
+            this.btn_Download = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // backgroundWorker
-            // 
-            this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
-            this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProgressChanged);
-            this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
             // 
             // progressBar
             // 
-            this.progressBar.Location = new System.Drawing.Point(131, 256);
+            this.progressBar.Location = new System.Drawing.Point(473, 241);
             this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(712, 23);
+            this.progressBar.Size = new System.Drawing.Size(10, 10);
             this.progressBar.TabIndex = 1;
             // 
             // lblStatus
             // 
             this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(470, 303);
+            this.lblStatus.Location = new System.Drawing.Point(454, 238);
             this.lblStatus.Name = "lblStatus";
             this.lblStatus.Size = new System.Drawing.Size(43, 13);
             this.lblStatus.TabIndex = 2;
@@ -75,6 +69,7 @@
             this.txtServer.Name = "txtServer";
             this.txtServer.Size = new System.Drawing.Size(100, 20);
             this.txtServer.TabIndex = 1;
+            this.txtServer.Text = "ftp://172.17.6.0";
             // 
             // txtPassword
             // 
@@ -82,11 +77,12 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(100, 20);
             this.txtPassword.TabIndex = 3;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(360, 150);
+            this.label1.Location = new System.Drawing.Point(375, 150);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 6;
@@ -120,6 +116,16 @@
             this.btnUpload.UseVisualStyleBackColor = true;
             this.btnUpload.Click += new System.EventHandler(this.btnUpload_Click);
             // 
+            // btn_Download
+            // 
+            this.btn_Download.Location = new System.Drawing.Point(502, 301);
+            this.btn_Download.Name = "btn_Download";
+            this.btn_Download.Size = new System.Drawing.Size(75, 23);
+            this.btn_Download.TabIndex = 9;
+            this.btn_Download.Text = "Download";
+            this.btn_Download.UseVisualStyleBackColor = true;
+            this.btn_Download.Click += new System.EventHandler(this.btn_Download_Click);
+            // 
             // frm_FTP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -128,6 +134,7 @@
             this.BackgroundImage = global::FTP.Properties.Resources.kosmos_tumannost_zvezdy_7332;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1000, 543);
+            this.Controls.Add(this.btn_Download);
             this.Controls.Add(this.btnUpload);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -149,7 +156,6 @@
         }
 
         #endregion
-        private System.ComponentModel.BackgroundWorker backgroundWorker;
         private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.Label lblStatus;
         private System.Windows.Forms.TextBox txtUserName;
@@ -159,5 +165,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnUpload;
+        private System.Windows.Forms.Button btn_Download;
     }
 }
